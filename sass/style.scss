@@ -14,9 +14,9 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	// background-color: $bg-color;
 	font-size: 1.6rem;
 	background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+	background-attachment: fixed;
 
 	h2 {
 		text-transform: uppercase;
@@ -117,10 +117,6 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		// background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
-		// background-position: center;
-		// background-size: cover;
-		// background-attachment: fixed;
 		z-index: 0;
 	}
 	.hero-shadow {
@@ -149,13 +145,16 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	// align-content:space-between;
+	
 	flex-wrap: wrap;
 	align-content: center;
 
 	margin: 10% 1%;
 	background-color: #ddd;
 	align-items: baseline;
+	.fa-solid{
+		font-size: 3rem;
+	}
 
 	.square {
 		height: 20em;
@@ -166,6 +165,7 @@ header {
 		padding: 3%;
 		background-color: white;
 		text-align: center;
+		
 	}
 }
 

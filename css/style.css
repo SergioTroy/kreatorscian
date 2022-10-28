@@ -15,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+  background-attachment: fixed;
 }
 body h2 {
   text-transform: uppercase;
@@ -144,6 +145,9 @@ header .hero-text span {
   margin: 10% 1%;
   background-color: #ddd;
   align-items: baseline;
+}
+.flex-container .fa-solid {
+  font-size: 3rem;
 }
 .flex-container .square {
   height: 20em;
