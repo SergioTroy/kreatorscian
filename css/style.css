@@ -101,6 +101,16 @@ a.navbar-brand:hover .logo-top {
   border-top: 1px solid rgb(55, 55, 55);
 }
 
+button:focus:not(:focus-visible) {
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 header {
   color: white;
 }

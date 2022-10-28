@@ -1,6 +1,5 @@
 @use "./colors" as *;
 
-
 *,
 *::before,
 *::after {
@@ -44,6 +43,7 @@ nav {
 	transition: background-color 0.6s;
 	z-index: 1;
 	background-color: rgba(0, 0, 0, 0.6);
+
 	.logo {
 		height: 3em;
 		width: 3em;
@@ -102,6 +102,15 @@ a.navbar-brand:hover {
 .navbar-collapse {
 	border-top: 1px solid rgb(55, 55, 55);
 }
+button:focus:not(:focus-visible){
+  outline: none;
+  border:1px solid transparent;
+}
+.navbar-toggler:focus{
+  outline:none;
+  box-shadow: none;
+}
+
 
 header {
 	color: $white;
