@@ -130,9 +130,9 @@ header .hero-text {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10px;
+  padding: 2em;
   text-align: center;
-  z-index: 2;
+  z-index: 10;
 }
 header .hero-text span {
   color: rgb(25, 177, 191);
