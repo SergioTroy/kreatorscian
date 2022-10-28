@@ -1,5 +1,5 @@
 @use "./colors" as *;
-@import "./animate";
+
 
 *,
 *::before,
@@ -31,7 +31,6 @@ h2 {
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.9);
-	
 }
 
 .wrapper {
@@ -81,7 +80,6 @@ nav {
 	.nav-link:hover {
 		color: $main-color;
 	}
-
 }
 .navbar-nav {
 	.nav-link.active {
@@ -118,7 +116,7 @@ header {
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: linear-gradient(to top, #330867 0%,  #30cfd0 100%);
+		background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
 		// background-position: center;
 		// background-size: cover;
 		// background-attachment: fixed;
@@ -153,7 +151,6 @@ header {
 	header {
 		h1 {
 			font-size: 4.5rem;
-			
 		}
 		p {
 			font-size: 2rem;
@@ -200,13 +197,11 @@ header {
 	.navbar-collapse {
 		border-top: none;
 	}
-	
 }
 @media (min-width: 1200px) {
 	header {
 		h1 {
 			font-size: 5.5rem;
-			
 		}
 		p {
 			font-size: 2.5rem;
