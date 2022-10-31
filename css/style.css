@@ -13,26 +13,27 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ebeff6;
   font-size: 1.6rem;
-  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
-  background-attachment: fixed;
 }
-body h2 {
+
+h2 {
   text-transform: uppercase;
   text-align: center;
-  z-index: 10;
-  color: #ebeff6;
 }
-body .underline {
+
+.underline {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
   background-color: rgb(25, 177, 191);
 }
-body .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.9);
 }
-body .wrapper {
+
+.wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -67,7 +68,7 @@ nav .social-media__box {
 }
 nav .nav-link {
   text-align: center;
-  padding: 1.5em 0;
+  padding: 0.7em 0;
   font-size: 1.3rem;
   margin: 0 1em;
   font-weight: bold;
@@ -100,6 +101,16 @@ a.navbar-brand:hover .logo-top {
   border-top: 1px solid rgb(55, 55, 55);
 }
 
+button:focus:not(:focus-visible) {
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 header {
   color: white;
 }
@@ -113,6 +124,7 @@ header p {
 header .hero-img {
   position: relative;
   height: 100vh;
+  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
   z-index: 0;
 }
 header .hero-shadow {
@@ -128,36 +140,12 @@ header .hero-text {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10px;
+  padding: 2em;
   text-align: center;
-  z-index: 2;
+  z-index: 10;
 }
 header .hero-text span {
   color: rgb(25, 177, 191);
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 10% 1%;
-  background-color: #ddd;
-  align-items: baseline;
-}
-.flex-container .fa-solid {
-  font-size: 3rem;
-}
-.flex-container .square {
-  height: 25em;
-  width: 25em;
-  justify-content: center;
-  align-items: center;
-  margin: 1%;
-  padding: 3%;
-  background-color: white;
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -194,6 +182,25 @@ header .hero-text span {
   nav .social-media__box i:hover {
     color: rgb(25, 177, 191);
   }
+  .navbar-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar-collapse {
+    border-top: none;
+  }
+}
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 5.5rem;
+  }
+  header p {
+    font-size: 2.5rem;
+    padding-top: 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */ }
   .navbar-nav {
     position: absolute;
     top: 50%;
