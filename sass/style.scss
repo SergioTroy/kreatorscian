@@ -141,31 +141,32 @@ header {
 		}
 	}
 }
+
 .flex-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 	flex-wrap: wrap;
-	align-content: center;
+	align-items: center;
 
 	margin: 10% 1%;
 	background-color: #ddd;
 	align-items: baseline;
-	.fa-solid{
+	.fa-solid {
 		font-size: 3rem;
 	}
 
 	.square {
-		height: 20em;
-		width: 30em;
+		
+		height: 25em;
+		width: 25em;
 		justify-content: center;
 		align-items: center;
 		margin: 1%;
 		padding: 3%;
 		background-color: white;
 		text-align: center;
-		
 	}
 }
 
