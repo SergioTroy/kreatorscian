@@ -108,7 +108,7 @@ a.navbar-brand:hover {
 }
 .parallax {
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -120,34 +120,39 @@ a.navbar-brand:hover {
 
 		top: 0;
 		left: 0;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 
 		pointer-events: none;
 	}
 	.comet {
 		position: absolute;
-		top: 10%;
+		top: 14%;
 		left: 0;
-		width: 15%;
-		height: 15%;
+		object-fit: contain;
+		width: 19%;
+		height: 19%;
 	}
 
 	.text {
 		position: absolute;
 		color: $white;
-		font-size: 1.4em;
+		font-size: 1.3em;
 		text-align: center;
 		line-height: 2.5em;
 		transform: translateY(-50%);
 
 		span {
 			font-size: 4em;
-			letter-spacing: 0.2em;
-			font-weight: 400;
+			letter-spacing: 0.15em;
+			font-weight:400;
 			color: $main-color;
+			
 			font-family: 'Caveat Brush', cursive;
+			.kreator {
+				color: $white;
+			}
 		}
 	}
 

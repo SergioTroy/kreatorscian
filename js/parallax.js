@@ -1,4 +1,4 @@
-let text = document.getElementsById('text');
+let text = document.getElementsById('text')
 let bgc1 = document.getElementsByClassName('bgc1')
 let planets1 = document.getElementsByClassName('planets1')
 let planets2 = document.getElementsByClassName('planets2')
