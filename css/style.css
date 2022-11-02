@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 *,
 *::before,
 *::after {
@@ -14,28 +13,27 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ebeff6;
   font-size: 1.6rem;
-  background-image: linear-gradient(to bottom, #3e08bb 0%, #30cfd0 100%);
 }
-body .shadow {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-body h2 {
+
+h2 {
   text-transform: uppercase;
   text-align: center;
-  z-index: 10;
-  color: #ebeff6;
 }
-body .underline {
+
+.underline {
   margin: 0 auto 40px;
   width: 60px;
   height: 4px;
-  background-color: #19b1bf;
+  background-color: rgb(25, 177, 191);
 }
-body .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.9);
 }
-body .wrapper {
+
+.wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -70,7 +68,7 @@ nav .social-media__box {
 }
 nav .nav-link {
   text-align: center;
-  padding: 1.5em 0;
+  padding: 0.7em 0;
   font-size: 1.3rem;
   margin: 0 1em;
   font-weight: bold;
@@ -78,11 +76,11 @@ nav .nav-link {
   transition: color 0.3s;
 }
 nav .nav-link:hover {
-  color: #19b1bf;
+  color: rgb(25, 177, 191);
 }
 
 .navbar-nav .nav-link.active {
-  color: #19b1bf;
+  color: rgb(25, 177, 191);
 }
 
 a.navbar-brand {
@@ -103,67 +101,14 @@ a.navbar-brand:hover .logo-top {
   border-top: 1px solid rgb(55, 55, 55);
 }
 
-.parallax {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.parallax img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-}
-.parallax .comet {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  width: 15%;
-  height: 15%;
-}
-.parallax .text {
-  position: absolute;
-  color: white;
-  font-style: 10vw;
-  text-align: center;
-  line-height: 2.5em;
-  transform: translateY(-50%);
-}
-.parallax .text span {
-  font-size: 4em;
-  letter-spacing: 0.2em;
-  font-weight: 400;
-  color: #19b1bf;
-  font-family: "Caveat Brush", cursive;
-}
-.parallax .btn {
-  text-decoration: none;
-  display: inline-block;
-  background: #fff;
-  color: #19b1bf;
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 0 0.3em;
-  letter-spacing: 0.2em;
-  border-radius: 40px;
-  transform: translateY(70px);
+button:focus:not(:focus-visible) {
+  outline: none;
+  border: 1px solid transparent;
 }
 
-.parallax::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10%;
-  background-image: linear-gradient(to top, #3e08bb, transparent);
-  z-index: 10;
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 header {
@@ -177,17 +122,85 @@ header p {
   font-size: 1.5rem;
 }
 header .hero-img {
-  background-image: url(/img/wall.png);
   position: relative;
   height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100vw;
+  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
   z-index: 0;
 }
 header .hero-shadow {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+header .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2em;
+  text-align: center;
+  z-index: 10;
+}
+header .hero-text span {
+  color: rgb(25, 177, 191);
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+  header p {
+    font-size: 2rem;
+    padding-top: 0.5em;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  nav .logo {
+    height: 5em;
+    width: 5em;
+    padding: 0.5em;
+    margin-left: 2em;
+  }
+  nav .social-media__box {
+    display: block;
+    position: absolute;
+    right: 1.3em;
+    margin: 0 0.5em;
+  }
+  nav .social-media__box i {
+    font-size: 1.7rem;
+    padding: 0 0.7em;
+    color: white;
+    transition: color 0.3s;
+  }
+  nav .social-media__box i:hover {
+    color: rgb(25, 177, 191);
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navbar-collapse {
+    border-top: none;
+  }
+}
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 5.5rem;
+  }
+  header p {
+    font-size: 2.5rem;
+    padding-top: 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */lative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);

@@ -16,7 +16,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	background-image: linear-gradient(to bottom, #3e08bb 0%, #30cfd0 100%);
-	
 
 	.shadow {
 		background-color: rgba(0, 0, 0, 0.1);
@@ -123,7 +122,7 @@ a.navbar-brand:hover {
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		// object-fit: cover;
+		object-fit: cover;
 
 		pointer-events: none;
 	}
@@ -138,7 +137,7 @@ a.navbar-brand:hover {
 	.text {
 		position: absolute;
 		color: $white;
-		font-style: 10vw;
+		font-size: 1.4em;
 		text-align: center;
 		line-height: 2.5em;
 		transform: translateY(-50%);
@@ -151,6 +150,7 @@ a.navbar-brand:hover {
 			font-family: 'Caveat Brush', cursive;
 		}
 	}
+
 	.btn {
 		text-decoration: none;
 		display: inline-block;
