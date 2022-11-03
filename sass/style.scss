@@ -67,6 +67,20 @@ nav {
 	.social-media__box {
 		display: none;
 	}
+	.social-media__box-mobile{
+		text-align: center;
+		margin: 0.6em 0;
+		i {
+			font-size: 1.7rem;
+			padding: 0 0.7em;
+			color: $white;
+			transition: color 0.3s;
+		}
+
+		i:hover {
+			color: $main-color;
+		}
+	}
 
 	.nav-link {
 		text-align: center;
@@ -76,6 +90,10 @@ nav {
 		font-weight: bold;
 		color: $white;
 		transition: color 0.3s;
+	}
+	.nav-link:first-child{
+		
+		padding-top: 0;
 	}
 	.nav-link:hover {
 		color: $main-color;
@@ -166,6 +184,7 @@ header {
 			padding-top: 0.5em;
 		}
 	}
+	
 }
 @media (min-width: 992px) {
 	nav {
@@ -195,6 +214,14 @@ header {
 				color: $main-color;
 			}
 		}
+		.nav-link:first-child{
+		
+			padding-top: 0.7em;
+		}
+	}
+	.social-media__box-mobile{
+		display: none;
+		
 	}
 
 	.navbar-nav {
@@ -206,6 +233,7 @@ header {
 	.navbar-collapse {
 		border-top: none;
 	}
+	
 }
 @media (min-width: 1200px) {
 	header {
