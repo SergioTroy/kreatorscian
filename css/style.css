@@ -232,8 +232,8 @@ header .hero-text span {
   z-index: 1;
 }
 .about__card:hover > .text {
-  -webkit-clip-path: circle(100% at 50% 90%);
-          clip-path: circle(100% at 50% 90%);
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
 }
 .about__card::before {
   position: absolute;
