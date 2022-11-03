@@ -209,7 +209,7 @@ header {
 			height: 100%;
 			display: flex;
 			align-items: center;
-			padding:0 0.5em;
+			padding:1em 0.5em;
 			border-radius: 8px;
 			// top: 50%;
 			// transform: translateY(-50%);
@@ -316,7 +316,7 @@ header {
             }
             &--three{
                 grid-row:1/2;
-			grid-column:7/11;
+			grid-column:7/10;
             }
             &--four{
                 grid-row:2/3;
@@ -328,7 +328,7 @@ header {
             }
             &--six{
                 grid-row:2/3;
-			grid-column:7/11;
+			grid-column:7/10;
             }
         }
 
