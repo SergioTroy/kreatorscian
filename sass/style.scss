@@ -1,5 +1,5 @@
 @use "./colors" as *;
-
+@use "./animations" as *;
 *,
 *::before,
 *::after {
@@ -41,7 +41,7 @@ h2 {
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.6);
 
 	.logo {
@@ -171,6 +171,119 @@ header {
 		}
 	}
 }
+///OFERTA///
+
+.about {
+	background-color: $white;
+	overflow: hidden;
+	h2{
+		margin-top: 2em;
+	}
+	&__box {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 2em;
+		padding: 2em 2em;
+
+		
+	}
+
+	&__card {
+		position: relative;
+		display: grid;
+		justify-items: center;
+		padding: 3em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $bg-color;
+		transition: background-color 0.3s, border 0.3s;
+		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+		z-index: 5;
+		// overflow: hidden;
+		.text{
+			
+			position: absolute;
+			font-size: 1.4rem;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding:0 0.5em;
+			border-radius: 8px;
+			// top: 50%;
+			// transform: translateY(-50%);
+			background-color: #fff;
+			clip-path:circle(0% at 50% 50%);
+			transition: clip-path .5s;
+			
+		}
+
+		&:hover{
+			
+			background-color: $white;
+			border: 1px solid $main-color;
+			z-index: 1;
+		}
+		&:hover>.text{
+			clip-path:circle(100% at 50% 90%);
+		}
+		
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			border: 1px solid $main-color;
+			border-radius: 8px;
+			opacity: 0;
+		}
+
+		&:hover::before {
+			animation: pulse 1s;
+		}
+
+		i{
+			font-size: 2rem;
+			margin-bottom: 1em;
+			
+		}
+
+		h3 {
+			margin-bottom: 0.6em;
+			text-transform: uppercase;
+		}
+
+		&--one {
+			grid-row: 1/2;
+			grid-column: 1/-1;
+		}
+
+		&--two {
+			grid-row: 2/3;
+			grid-column: 1/-1;
+		}
+
+		&--three {
+			grid-row: 3/4;
+			grid-column: 1/-1;
+		}
+		&--four {
+			grid-row: 4/5;
+			grid-column: 1/-1;
+		}
+		&--five {
+			grid-row: 5/6;
+			grid-column: 1/-1;
+		}
+		&--six {
+			grid-row: 6/7;
+			grid-column: 1/-1;
+		}
+	}
+}
+
 
 // @media (min-width: 375px) {
 // }
@@ -184,7 +297,42 @@ header {
 			padding-top: 0.5em;
 		}
 	}
-	
+	.about{
+
+        &__box{
+            padding: 5em 2em;
+            
+        }
+
+        &__card{
+
+            &--one{
+                grid-row:1/2;
+			grid-column:1/5;
+            }
+            &--two{
+                grid-row:1/2;
+			grid-column:5/9;
+            }
+            &--three{
+                grid-row:1/2;
+			grid-column:9/13;
+            }
+            &--four{
+                grid-row:2/3;
+			grid-column:1/5;
+            }
+            &--five{
+                grid-row:2/3;
+			grid-column:5/9;
+            }
+            &--six{
+                grid-row:2/3;
+			grid-column:9/13;
+            }
+        }
+
+    }
 }
 @media (min-width: 992px) {
 	nav {
