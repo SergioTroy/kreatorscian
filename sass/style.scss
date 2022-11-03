@@ -91,10 +91,7 @@ nav {
 		color: $white;
 		transition: color 0.3s;
 	}
-	.nav-link:first-child{
-		
-		padding-top: 0;
-	}
+	
 	.nav-link:hover {
 		color: $main-color;
 	}
@@ -362,10 +359,7 @@ header {
 				color: $main-color;
 			}
 		}
-		.nav-link:first-child{
 		
-			padding-top: 0.7em;
-		}
 	}
 	.social-media__box-mobile{
 		display: none;

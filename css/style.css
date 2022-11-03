@@ -108,9 +108,6 @@ nav .nav-link {
   color: white;
   transition: color 0.3s;
 }
-nav .nav-link:first-child {
-  padding-top: 0;
-}
 nav .nav-link:hover {
   color: rgb(25, 177, 191);
 }
@@ -341,9 +338,6 @@ header .hero-text span {
   }
   nav .social-media__box i:hover {
     color: rgb(25, 177, 191);
-  }
-  nav .nav-link:first-child {
-    padding-top: 0.7em;
   }
   .social-media__box-mobile {
     display: none;
