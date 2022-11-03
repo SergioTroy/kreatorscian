@@ -189,7 +189,7 @@ header {
 		justify-items: center;
 		align-items: center;
 		justify-content: center;
-		padding: 3em;
+		padding: 6.5em;
 		text-align: center;
 		border: 1px solid transparent;
 		border-radius: 8px;
@@ -199,13 +199,14 @@ header {
 		z-index: 5;
 		// overflow: hidden;
 		.text {
+			
 			position: absolute;
 			font-size: 1.4rem;
 			width: 100%;
 			height: 100%;
 			display: flex;
 			align-items: center;
-			padding: 1em 0.5em;
+			padding: 2em 0.5em;
 			border-radius: 8px;
 			// top: 50%;
 			// transform: translateY(-50%);
@@ -238,7 +239,7 @@ header {
 		}
 
 		i {
-			font-size: 2rem;
+			font-size: 3rem;
 			margin-bottom: 1em;
 		}
 
