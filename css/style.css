@@ -198,6 +198,8 @@ header .hero-text span {
   position: relative;
   display: grid;
   justify-items: center;
+  align-items: center;
+  justify-content: center;
   padding: 3em;
   text-align: center;
   border: 1px solid transparent;
@@ -276,6 +278,51 @@ header .hero-text span {
 .about__card--six {
   grid-row: 6/7;
   grid-column: 1/-1;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 3em 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 3rem;
+  margin: 0.5em 0;
+  text-shadow: 2px 2px 5px #000000;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 2.5rem;
+}
+.aboutus-hero a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fa9483;
+  transition: color 0.3s;
+}
+.aboutus-hero a i {
+  font-size: 2rem;
+  padding: 0 0.3em;
+}
+.aboutus-hero a:hover {
+  color: #f3deca;
 }
 
 @media (min-width: 768px) {
@@ -359,5 +406,8 @@ header .hero-text span {
   header p {
     font-size: 2.5rem;
     padding-top: 0.5em;
+  }
+  h2 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
