@@ -417,6 +417,9 @@ header .hero-text span {
   background-color: #f7f7f7;
 }
 
+.contact {
+  margin: 4em 0;
+}
 .contact h3 {
   text-align: center;
   text-transform: uppercase;
@@ -484,7 +487,8 @@ header .hero-text span {
   margin-bottom: 30px;
   position: relative;
 }
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   padding: 0.7em;
   outline: 0;
@@ -505,18 +509,24 @@ header .hero-text span {
 }
 .contact button {
   padding: 0.7em 0;
-  color: #000;
+  color: white;
   outline: none;
-  background: transparent;
-  border: 1px solid rgb(25, 177, 191);
+  background: rgb(25, 177, 191);
+  border: none;
   width: 100%;
   cursor: pointer;
+  transition: background 0.3s;
 }
-.contact input:focus ~ label, .contact input:valid ~ label {
+.contact button:hover {
+  background: #000;
+}
+.contact input:focus ~ label,
+.contact input:valid ~ label {
   top: -35px;
   font-size: 1.3rem;
 }
-.contact textarea:focus ~ label, .contact textarea:valid ~ label {
+.contact textarea:focus ~ label,
+.contact textarea:valid ~ label {
   top: -35px;
   font-size: 1.3rem;
 }
@@ -527,6 +537,57 @@ header .hero-text span {
 }
 .contact .row .input-group {
   flex-basis: 48%;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em;
+}
+footer span.logo-element {
+  color: rgb(25, 177, 191);
+  font-size: 2rem;
+  font-weight: bold;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+footer .socials {
+  display: flex;
+  justify-content: center;
+}
+footer .socials a {
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s;
+}
+footer .socials a:hover {
+  background-color: rgb(25, 177, 191);
+}
+footer .socials i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .copyright {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
