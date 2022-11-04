@@ -64,9 +64,9 @@ h2 {
 }
 
 .underline {
-  margin: 0 auto 40px;
-  width: 60px;
-  height: 4px;
+  margin: 1.5em auto 3em;
+  width: 4em;
+  height: 2px;
   background-color: rgb(25, 177, 191);
 }
 
@@ -413,6 +413,114 @@ header .hero-text span {
   transform-origin: left;
 }
 
+.cooperation {
+  background-color: #f7f7f7;
+}
+
+.contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact p {
+  text-align: center;
+  padding-top: 1em;
+}
+.contact .contact-data:first-of-type {
+  margin-top: 2em;
+}
+.contact .contact-data {
+  position: relative;
+  padding-left: 70px;
+  padding-top: 2em;
+}
+.contact .contact-data h4 {
+  text-align: left;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact .contact-data p {
+  text-align: left;
+}
+.contact .contact-data a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+}
+.contact .contact-data a:first-of-type {
+  margin-top: 1em;
+}
+.contact .contact-data a:hover {
+  color: rgb(25, 177, 191);
+}
+.contact .contact-icon {
+  height: 40px;
+  width: 40px;
+  border: 2px solid rgb(25, 177, 191);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+}
+.contact .contact-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact .contact-text {
+  display: inline-block;
+}
+.contact form {
+  padding: 0 4em;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 4em;
+}
+.contact .input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 0.7em;
+  outline: 0;
+  border: 1px solid rgb(25, 177, 191);
+  color: rgb(25, 177, 191);
+  background: transparent;
+  font-size: 1.5rem;
+}
+.contact label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.7em;
+  color: #000;
+  cursor: text;
+  transition: top 0.3s, font-size 0.3s;
+}
+.contact button {
+  padding: 0.7em 0;
+  color: #000;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgb(25, 177, 191);
+  width: 100%;
+  cursor: pointer;
+}
+.contact input:focus ~ label {
+  top: -35px;
+  font-size: 1.3rem;
+}
+.contact textarea:focus ~ label {
+  top: -35px;
+  font-size: 1.3rem;
+}
+
 @media (min-width: 768px) {
   header h1 {
     font-size: 4.5rem;
@@ -447,6 +555,15 @@ header .hero-text span {
   .about__card--six {
     grid-row: 2/3;
     grid-column: 7/10;
+  }
+  .contact h3 {
+    text-align: left;
+  }
+  .contact p {
+    text-align: left;
+  }
+  .contact form {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {

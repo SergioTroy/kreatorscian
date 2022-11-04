@@ -24,9 +24,9 @@ h2 {
 	margin-top: 1.5em;
 }
 .underline {
-	margin: 0 auto 40px;
-	width: 60px;
-	height: 4px;
+	margin: 1.5em auto 3em;
+	width: 4em;
+	height: 2px;
 	background-color: $main-color;
 }
 .shadow-bg {
@@ -173,7 +173,6 @@ header {
 .about {
 	background-color: $white;
 	overflow: hidden;
-	
 
 	&__box {
 		display: grid;
@@ -198,7 +197,6 @@ header {
 		z-index: 5;
 		// overflow: hidden;
 		.text {
-			
 			position: absolute;
 			font-size: 1.4rem;
 			width: 100%;
@@ -307,7 +305,7 @@ header {
 		position: relative;
 		height: 40px;
 		width: 40px;
-		
+
 		// bottom: 3em;
 		left: 50%;
 		// // padding: 2em;
@@ -327,66 +325,64 @@ header {
 			animation: pulse2 2s infinite;
 		}
 		.read-more {
-			
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%,-50%);
-	
+			transform: translate(-50%, -50%);
+
 			color: $second-color;
 			font-size: 4rem;
 			text-shadow: (2px 2px 5px #000000);
 			cursor: pointer;
-			transition: color .3s;
+			transition: color 0.3s;
 		}
-		.read-more:hover{
-			color:#d5604c;
+		.read-more:hover {
+			color: #d5604c;
 		}
 	}
 }
 
 /////portfolio////
-/// 
-.carousel{
+///
+
+.carousel {
 	display: none;
 }
-.card-body{
-	h5{
+.card-body {
+	h5 {
 		font-size: 1.5rem;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
 		padding: 2em;
 	}
-	.option-btn{
-		margin:0.8em 0;
-			padding: 0.8em;
-			width: 50%;
-			color: $pure-white;
-			background-color: $main-color;
-			border: none;
-			border-radius: 8px;
-			cursor: pointer;
-display: inline-block;
+	.option-btn {
+		margin: 0.8em 0;
+		padding: 0.8em;
+		width: 50%;
+		color: $pure-white;
+		background-color: $main-color;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		display: inline-block;
 
-left: 50%;
-transform: translateX(-50%);
-			
-		
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.option-btn::before {
 		background-color: rgb(8, 115, 125);
 	}
-	
-	.btn-special-animation{
+
+	.btn-special-animation {
 		position: relative;
-		transition: background-color .3s;
+		transition: background-color 0.3s;
 		overflow: hidden;
-		z-index:0;
-	
-		&::before{
+		z-index: 0;
+
+		&::before {
 			display: block;
-			content: '';
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -394,19 +390,138 @@ transform: translateX(-50%);
 			height: 100%;
 			transform: scaleX(0);
 			transform-origin: right;
-			transition: transform .3s;
-			z-index:-1;
+			transition: transform 0.3s;
+			z-index: -1;
 		}
-	
-		&:hover::before{
+
+		&:hover::before {
 			transform: scaleX(1);
 			transform-origin: left;
 		}
-	
 	}
-	
+}
+//cooperation///
+.cooperation {
+	background-color: #f7f7f7;
 }
 
+//contact//
+
+.contact {
+	//
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	p{
+		text-align: center;
+		padding-top: 1em;
+
+	}
+	
+	.contact-data:first-of-type{
+		margin-top: 2em;
+	}
+	.contact-data{
+		position: relative;
+		padding-left: 70px;
+		padding-top: 2em;
+		
+		h4{
+			text-align: left;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		p{
+			text-align: left;
+		}
+		a{
+			display: block;
+			text-align: left;
+			text-decoration: none;
+			color:#000000;
+			transition: color .3s;
+		}
+		a:first-of-type{
+			margin-top: 1em;
+		}
+		a:hover{
+			color:$main-color;
+		}
+	}
+
+	.contact-icon{
+		height: 40px;
+		width: 40px;
+		border:2px solid $main-color;
+		border-radius:50%;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		i{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			// color:$main-color;
+		}	
+		
+	}
+	.contact-text{
+		display: inline-block;
+	}
+	
+		form {
+			padding: 0 4em;
+			width: 90%;
+			max-width: 600px;
+			margin-top: 4em;
+		}
+	.input-group{
+		margin-bottom: 30px;
+		position: relative;
+	}
+
+input, textarea{
+	width: 100%;
+	padding: 0.7em;
+	outline: 0;
+	border:1px solid $main-color;
+	color:$main-color;
+	background: transparent;
+	font-size: 1.5rem;
+}
+label{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0.7em;
+	color:#000;
+	cursor: text;
+	transition: top .3s, font-size .3s;
+}
+button{
+	padding:0.7em 0;
+	color: #000;
+	outline: none;
+	background: transparent;
+	border:1px solid $main-color;
+	width: 100%;
+	cursor: pointer;
+}
+
+input:focus~label{
+	top:-35px;
+	font-size: 1.3rem;
+}
+textarea:focus~label{
+	top:-35px;
+	font-size: 1.3rem;
+}
+}
 
 // @media (min-width: 375px) {
 // }
@@ -452,11 +567,22 @@ transform: translateX(-50%);
 			}
 		}
 	}
+	.contact{
+		h3{
+			text-align: left;
+		}
+		p{
+			text-align: left;
+		}
+		form{
+			margin-top: 0;
+		}
+	}
 }
 @media (min-width: 992px) {
 	nav {
 		background-color: rgba(0, 0, 0, 0.4);
-		
+
 		.logo {
 			height: 5em;
 			width: 5em;
@@ -492,53 +618,50 @@ transform: translateX(-50%);
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-	
 	}
 	.navbar-collapse {
 		border-top: none;
 	}
-	.carousel{
+	.carousel {
 		display: block;
-		.carousel-caption{
+		.carousel-caption {
 			background-color: rgba(0, 0, 0, 0.5);
 			left: 0;
 			right: 0;
-			
-			
-			p{
-				padding:1em;
+
+			p {
+				padding: 1em;
 			}
-			.to-gallery{
+			.to-gallery {
 				display: inline-block;
-				padding:1em;
+				padding: 1em;
 				text-decoration: none;
 				font-weight: bold;
 				text-transform: uppercase;
 				color: $white;
-				transition:color .3s;
+				transition: color 0.3s;
 			}
-			a:hover{
-				color:$main-color;
+			a:hover {
+				color: $main-color;
 			}
 		}
-		.carousel-indicators{
+		.carousel-indicators {
 			padding-bottom: 1em;
-			
 		}
-		.carousel-indicators [data-bs-target]{
-			background-color:$main-color;
+		.carousel-indicators [data-bs-target] {
+			background-color: $main-color;
 		}
-		.carousel-control-next-icon{
+		.carousel-control-next-icon {
 			width: 3rem;
 			height: 3rem;
 			background-color: rgba(0, 0, 0, 0.5);
-			border-radius:50%;
+			border-radius: 50%;
 		}
-		.carousel-control-prev-icon{
+		.carousel-control-prev-icon {
 			width: 3rem;
 			height: 3rem;
 			background-color: rgba(0, 0, 0, 0.5);
-			border-radius:50%;
+			border-radius: 50%;
 		}
 	}
 }
