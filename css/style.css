@@ -60,6 +60,7 @@ body {
 h2 {
   text-transform: uppercase;
   text-align: center;
+  margin-top: 1.5em;
 }
 
 .underline {
@@ -204,9 +205,6 @@ header .hero-text span {
 .about {
   background-color: white;
   overflow: hidden;
-}
-.about h2 {
-  margin-top: 2em;
 }
 .about__box {
   display: grid;
@@ -362,6 +360,49 @@ header .hero-text span {
 }
 .aboutus-hero .info-circle .read-more:hover {
   color: #d5604c;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+}
+.carousel-caption p {
+  padding: 1em;
+}
+.carousel-caption .to-gallery {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  transition: color 0.3s;
+}
+.carousel-caption a:hover {
+  color: rgb(25, 177, 191);
+}
+
+.carousel-indicators {
+  padding-bottom: 1em;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(25, 177, 191);
+}
+
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {

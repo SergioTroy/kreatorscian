@@ -21,6 +21,7 @@ body {
 h2 {
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 1.5em;
 }
 .underline {
 	margin: 0 auto 40px;
@@ -167,14 +168,12 @@ header {
 		}
 	}
 }
-///OFERTA///
+///about us///
 
 .about {
 	background-color: $white;
 	overflow: hidden;
-	h2 {
-		margin-top: 2em;
-	}
+	
 
 	&__box {
 		display: grid;
@@ -344,8 +343,52 @@ header {
 			color:#d5604c;
 		}
 	}
+}
+
+/////portfolio////
+/// 
+.carousel-caption{
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	right: 0;
+	
+	
+	p{
+		padding:1em;
+	}
+	.to-gallery{
+		display: inline-block;
+		padding:1em;
+		text-decoration: none;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $white;
+		transition:color .3s;
+	}
+	a:hover{
+		color:$main-color;
+	}
+}
+.carousel-indicators{
+	padding-bottom: 1em;
 	
 }
+.carousel-indicators [data-bs-target]{
+	background-color:$main-color;
+}
+.carousel-control-next-icon{
+	width: 3rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:50%;
+}
+.carousel-control-prev-icon{
+	width: 3rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:50%;
+}
+
 
 // @media (min-width: 375px) {
 // }
