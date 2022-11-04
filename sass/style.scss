@@ -87,7 +87,7 @@ nav {
 		text-align: center;
 		padding: 0.7em 0;
 		font-size: 1.3rem;
-		margin: 0 1em;
+		margin: 0 0.9em;
 		font-weight: bold;
 		color: $white;
 		transition: color 0.3s;
@@ -347,46 +347,59 @@ header {
 
 /////portfolio////
 /// 
-.carousel-caption{
-	background-color: rgba(0, 0, 0, 0.5);
-	left: 0;
-	right: 0;
-	
-	
-	p{
-		padding:1em;
-	}
-	.to-gallery{
-		display: inline-block;
-		padding:1em;
-		text-decoration: none;
-		font-weight: bold;
+.carousel{
+	display: none;
+}
+.card-body{
+	h5{
+		font-size: 1.5rem;
+		text-align: center;
 		text-transform: uppercase;
-		color: $white;
-		transition:color .3s;
+		font-weight: bold;
+		padding: 2em;
 	}
-	a:hover{
-		color:$main-color;
-	}
-}
-.carousel-indicators{
-	padding-bottom: 1em;
+	.see-more{
+		display: block;
+		position: relative;
+		height: 30px;
+		width: 30px;
+		margin-bottom:1em;
+		// bottom: 3em;
+		left: 50%;
+		// padding: 2em;
+		transform: translateX(-50%);
+		border: 1px solid $second-color;
+		border-radius: 50%;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: 100%;
+			height: 100%;
+			border: 1px solid $second-color;
+			border-radius: 50%;
+			animation: pulse2 2s infinite;
+		}
+		.read-more {
+			
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
 	
-}
-.carousel-indicators [data-bs-target]{
-	background-color:$main-color;
-}
-.carousel-control-next-icon{
-	width: 3rem;
-	height: 3rem;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius:50%;
-}
-.carousel-control-prev-icon{
-	width: 3rem;
-	height: 3rem;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius:50%;
+			color: $second-color;
+			font-size: 3rem;
+			text-shadow: (2px 2px 5px #000000);
+			cursor: pointer;
+			transition: color .3s;
+		}
+		.read-more:hover{
+			color:#d5604c;
+		}
+	}
+	
 }
 
 
@@ -438,6 +451,7 @@ header {
 @media (min-width: 992px) {
 	nav {
 		background-color: rgba(0, 0, 0, 0.4);
+		
 		.logo {
 			height: 5em;
 			width: 5em;
@@ -473,9 +487,54 @@ header {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	
 	}
 	.navbar-collapse {
 		border-top: none;
+	}
+	.carousel{
+		display: block;
+		.carousel-caption{
+			background-color: rgba(0, 0, 0, 0.5);
+			left: 0;
+			right: 0;
+			
+			
+			p{
+				padding:1em;
+			}
+			.to-gallery{
+				display: inline-block;
+				padding:1em;
+				text-decoration: none;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $white;
+				transition:color .3s;
+			}
+			a:hover{
+				color:$main-color;
+			}
+		}
+		.carousel-indicators{
+			padding-bottom: 1em;
+			
+		}
+		.carousel-indicators [data-bs-target]{
+			background-color:$main-color;
+		}
+		.carousel-control-next-icon{
+			width: 3rem;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius:50%;
+		}
+		.carousel-control-prev-icon{
+			width: 3rem;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius:50%;
+		}
 	}
 }
 @media (min-width: 1200px) {
