@@ -474,7 +474,7 @@ header {
 	}
 	
 		form {
-			padding: 0 4em;
+			padding-left: 4em;
 			width: 90%;
 			max-width: 600px;
 			margin-top: 4em;
@@ -513,14 +513,23 @@ button{
 	cursor: pointer;
 }
 
-input:focus~label{
+input:focus~label,input:valid~label{
 	top:-35px;
 	font-size: 1.3rem;
 }
-textarea:focus~label{
+textarea:focus~label,textarea:valid~label{
 	top:-35px;
 	font-size: 1.3rem;
 }
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.input-group{
+		flex-basis: 48%;
+	}
+}
+
 }
 
 // @media (min-width: 375px) {
