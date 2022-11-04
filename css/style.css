@@ -502,8 +502,9 @@ header .hero-text span {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 0.7em;
+  padding: 1em;
   color: #000;
+  font-size: 1.3rem;
   cursor: text;
   transition: top 0.3s, font-size 0.3s;
 }
@@ -548,13 +549,13 @@ footer .row {
 }
 footer span.logo-element {
   color: rgb(25, 177, 191);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 footer p {
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 footer .socials {
   display: flex;
