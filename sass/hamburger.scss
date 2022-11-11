@@ -1,4 +1,5 @@
-.animated-icon2 {
+
+.animated-icon2{
 	width: 30px;
 	height: 20px;
 	position: relative;
@@ -14,7 +15,9 @@
 	cursor: pointer;
 }
 
-.animated-icon2 span {
+
+.animated-icon2 span
+{
 	display: block;
 	position: absolute;
 	height: 3px;
@@ -32,9 +35,17 @@
 	transition: 0.25s ease-in-out;
 }
 
+
+
 .animated-icon2 span {
 	background: #e3f2fd;
 }
+
+
+
+
+
+
 
 .animated-icon2 span:nth-child(1) {
 	top: 0px;
