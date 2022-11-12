@@ -545,7 +545,7 @@ footer .row {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5em;
+  padding: 3em;
 }
 footer span.logo-element {
   color: rgb(25, 177, 191);
@@ -591,140 +591,89 @@ footer .copyright {
   font-size: 1rem;
 }
 
-.faq-hero {
-  position: relative;
-  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
-  background-position: center;
-  background-size: cover;
-  color: #ddd;
-  z-index: 0;
+.faqbody {
+  background-image: repeating-linear-gradient(to top, #330867 0%, #30cfd0 100%);
 }
-.faq-hero .faq-shadow {
-  position: absolute;
-  top: 0;
+.faqbody .hero-shadow {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -5;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
 }
-.faq-hero .container {
+
+.faq {
+  padding-top: 5em;
   width: 100%;
-  max-width: 80em;
-  margin: 0 auto;
-  padding: 0 1.5em;
+  height: 100%;
 }
-.faq-hero .accordion-item {
+.faq h2 {
+  color: white;
+}
+.faq .accordion {
+  padding: 3em;
+}
+.faq .accordion-item {
   background-color: #283042;
-  border-radius: 8px;
   border: none;
-  margin-bottom: 1em;
-  padding: 1em;
+  margin: 0.5em;
   box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
-  scroll-margin: 150px;
 }
-.faq-hero .accordion-link {
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: #283042;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.8em 0;
-}
-.faq-hero .accordion-link i {
-  color: rgb(168, 222, 226);
-  padding: 0.5em;
-}
-.faq-hero .accordion-link .fa-minus {
-  display: none;
-}
-.faq-hero .answer {
-  max-height: 0;
-  overflow: hidden;
+.faq .accordion-body {
   position: relative;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #212838;
-  transition: max-height 0.65s;
+  padding: 2em;
+  margin-bottom: 1em;
+  font-size: 1.4rem;
 }
-.faq-hero .answer::before {
+.faq .accordion-body::before {
   content: "";
   position: absolute;
-  width: 0.3em;
+  width: 0.2em;
   height: 90%;
   background-color: rgb(25, 177, 191);
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
-.faq-hero .answer p {
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 2em;
-  padding-bottom: 0;
+.faq button {
+  background-color: #283042;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: none;
 }
-.faq-hero .answer li {
-  font-size: 1.4rem;
+.faq .accordion-button:not(.collapsed) {
+  background-color: #283042;
+  box-shadow: none;
+  color: #fff;
+}
+.faq .accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.faq .faq-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.faq .faq-contact p {
+  font-size: 1.6rem;
+}
+.faq .faq-contact a {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  margin-left: 0.5em;
-  margin-top: 1em;
+  font-size: 3rem;
   padding: 0.5em;
+  transition: color 0.3s;
 }
-.faq-hero .accordion-item:target .answer {
-  max-height: 30em;
-}
-.faq-hero .accordion-item:target .accordion-link .fa-plus {
-  display: none;
-}
-.faq-hero .accordion-item:target .accordion-link .fa-minus {
-  display: block;
+.faq .faq-contact a:hover {
+  color: rgb(25, 177, 191);
 }
 
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 4.5rem;
-  }
-  header p {
-    font-size: 2rem;
-    padding-top: 0.5em;
-  }
-  .about__box {
-    padding: 5em 2em;
-  }
-  .about__card--one {
-    grid-row: 1/2;
-    grid-column: 1/4;
-  }
-  .about__card--two {
-    grid-row: 1/2;
-    grid-column: 4/7;
-  }
-  .about__card--three {
-    grid-row: 1/2;
-    grid-column: 7/10;
-  }
-  .about__card--four {
-    grid-row: 2/3;
-    grid-column: 1/4;
-  }
-  .about__card--five {
-    grid-row: 2/3;
-    grid-column: 4/7;
-  }
-  .about__card--six {
-    grid-row: 2/3;
-    grid-column: 7/10;
-  }
-  .contact h3 {
-    text-align: left;
-  }
-  .contact p {
-    text-align: left;
-  }
-  .contact form {
-    margin-top: 0;
-  }
-}
 @media (min-width: 992px) {
   nav {
     background-color: rgba(0, 0, 0, 0.4);
