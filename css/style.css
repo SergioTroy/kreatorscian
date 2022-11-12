@@ -591,6 +591,95 @@ footer .copyright {
   font-size: 1rem;
 }
 
+.faq-hero {
+  position: relative;
+  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.faq-hero .faq-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -5;
+}
+.faq-hero .container {
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.faq-hero .accordion-item {
+  background-color: #283042;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1em;
+  padding: 1em;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+  scroll-margin: 150px;
+}
+.faq-hero .accordion-link {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #283042;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8em 0;
+}
+.faq-hero .accordion-link i {
+  color: rgb(168, 222, 226);
+  padding: 0.5em;
+}
+.faq-hero .accordion-link .fa-minus {
+  display: none;
+}
+.faq-hero .answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #212838;
+  transition: max-height 0.65s;
+}
+.faq-hero .answer::before {
+  content: "";
+  position: absolute;
+  width: 0.3em;
+  height: 90%;
+  background-color: rgb(25, 177, 191);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.faq-hero .answer p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 2em;
+  padding-bottom: 0;
+}
+.faq-hero .answer li {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0.5em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+.faq-hero .accordion-item:target .answer {
+  max-height: 30em;
+}
+.faq-hero .accordion-item:target .accordion-link .fa-plus {
+  display: none;
+}
+.faq-hero .accordion-item:target .accordion-link .fa-minus {
+  display: block;
+}
+
 @media (min-width: 768px) {
   header h1 {
     font-size: 4.5rem;
