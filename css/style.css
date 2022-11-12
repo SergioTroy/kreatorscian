@@ -169,11 +169,12 @@ header {
   color: white;
 }
 header h1 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   text-transform: uppercase;
 }
 header p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  white-space: nowrap;
 }
 header .hero-img {
   position: relative;
