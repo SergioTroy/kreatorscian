@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const navOff = () => {
 		navList.classList.remove("show");
 		burgerIcon.classList.remove("open");
+		document.querySelector('body').classList.remove('noscroll')
 	}
 
 	allnNavItems.forEach((item) =>
