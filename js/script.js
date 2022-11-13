@@ -29,12 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	
 		burgerBtn.addEventListener("click", () => {
+			
 			console.log(burgerBtn)
 			if(burgerIcon.classList.contains('open')==false && burgerBtn.classList.contains('collapsed')==false){
 				burgerIcon.classList.add("open");
+				document.querySelector('body').classList.add('noscroll')
 			}
 			else if (burgerIcon.classList.contains('open')==true && burgerBtn.classList.contains('collapsed')==true){
 				burgerIcon.classList.remove("open");
+				document.querySelector('body').classList.remove('noscroll')
 			}
 		});
 });

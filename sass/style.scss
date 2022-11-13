@@ -16,6 +16,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: $bg-color;
 	font-size: 1.6rem;
+	
 }
 
 h2 {
@@ -23,6 +24,11 @@ h2 {
 	text-align: center;
 	margin-top: 1.5em;
 	font-size: 2rem;
+}
+
+.noscroll{
+	height: 100%; 
+	overflow: hidden;
 }
 .underline {
 	margin: 1.5em auto 3em;
@@ -71,10 +77,10 @@ nav {
 	}
 	.social-media__box-mobile {
 		text-align: center;
-		margin: 0.6em 0;
+		margin: 3em 0;
 		i {
-			font-size: 1.7rem;
-			padding: 0 0.7em;
+			font-size: 2.5rem;
+			padding: 0 1.5em;
 			color: $white;
 			transition: color 0.3s;
 		}
@@ -86,8 +92,9 @@ nav {
 
 	.nav-link {
 		text-align: center;
-		padding: 0.7em 0;
-		font-size: 1.3rem;
+		padding: 1.6em 0;
+		border-bottom:1px solid rgba(185, 185, 185,.6);
+		font-size: 2rem;
 		margin: 0 0.9em;
 		font-weight: bold;
 		color: $white;
@@ -99,8 +106,15 @@ nav {
 	}
 }
 .navbar-nav {
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	.nav-link.active {
 		color: $main-color;
+		
 	}
 }
 a.navbar-brand {
@@ -695,7 +709,10 @@ footer {
 @media (min-width: 992px) {
 	nav {
 		background-color: rgba(0, 0, 0, 0.4);
-
+		.nav-link{
+			font-size: 1.3rem;
+			padding: 0.7em 0;
+		}
 		.logo {
 			height: 5em;
 			width: 5em;
@@ -731,6 +748,8 @@ footer {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		background-color: transparent;
+	
 	}
 	.navbar-collapse {
 		border-top: none;
