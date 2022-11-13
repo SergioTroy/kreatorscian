@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const logo = document.querySelector(".navbar-brand");
 	const burgerIcon = document.querySelector(".animated-icon2")
 	const burgerBtn = document.querySelector(".second-button")
+	const navArea = document.querySelector('.navbar-nav')
 
 	function addShadow() {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
@@ -26,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 
 	window.addEventListener("scroll", addShadow);
-
+	window.addEventListener("click", (e) =>
+	e.target === navArea ? navOff() : false
+);
 	
 		burgerBtn.addEventListener("click", () => {
 			
