@@ -22,6 +22,7 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 1.5em;
+	font-size: 2rem;
 }
 .underline {
 	margin: 1.5em auto 3em;
@@ -621,6 +622,7 @@ footer {
 	.accordion-item {
 		background-color: #283042;
 		border: none;
+		border-radius: 8px;
 		margin: 0.5em;
 		box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
 	}
@@ -628,6 +630,7 @@ footer {
 		position: relative;
 		color: rgba(255, 255, 255, 0.6);
 		background-color: #212838;
+		border-radius: 8px;
 		padding: 2em;
 		margin-bottom: 1em;
 		font-size: 1.4rem;
@@ -680,6 +683,12 @@ footer {
 		a:hover{
 			color:$main-color;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	h2 {
+		font-size: 3rem;
 	}
 }
 
@@ -780,6 +789,6 @@ footer {
 		}
 	}
 	h2 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 	}
 }
