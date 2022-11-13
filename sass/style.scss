@@ -16,25 +16,22 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: $bg-color;
 	font-size: 1.6rem;
-	
 }
 
 h2 {
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 1.5em;
-	font-size: 2rem;
-}
-
-.noscroll{
-	height: 100%; 
-	overflow: hidden;
 }
 .underline {
 	margin: 1.5em auto 3em;
 	width: 4em;
 	height: 2px;
 	background-color: $main-color;
+}
+.noscroll{
+	height: 100%; 
+	overflow: hidden;
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.9);
@@ -114,7 +111,7 @@ nav {
 }
 .navbar-nav {
 	height: 100vh;
-	width: 100vw;
+	
 	
 	display: flex;
 	flex-direction:column;
@@ -156,12 +153,11 @@ header {
 	color: $white;
 
 	h1 {
-		font-size: 3.3rem;
+		font-size: 3.5rem;
 		text-transform: uppercase;
 	}
 	p {
-		font-size: 1.4rem;
-		white-space: nowrap;
+		font-size: 1.5rem;
 	}
 	.hero-img {
 		position: relative;
@@ -213,7 +209,6 @@ header {
 		justify-items: center;
 		align-items: center;
 		justify-content: center;
-
 		padding: 6.5em;
 		text-align: center;
 		border: 1px solid transparent;
@@ -250,7 +245,7 @@ header {
 
 		&::before {
 			position: absolute;
-			content: '';
+			content: "";
 			width: 100%;
 			height: 100%;
 			border: 1px solid $main-color;
@@ -344,7 +339,7 @@ header {
 			position: absolute;
 			top: 0;
 			left: 0;
-			content: '';
+			content: "";
 			width: 100%;
 			height: 100%;
 			border: 1px solid $second-color;
@@ -368,7 +363,6 @@ header {
 		}
 	}
 }
-
 
 /////portfolio////
 ///
@@ -572,7 +566,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 3em;
+		padding: 5em;
 	}
 	span.logo-element {
 		color: $main-color;
@@ -618,6 +612,10 @@ footer {
 		font-size: 1rem;
 	}
 }
+
+/////FAQ/////
+//////////////
+/// 
 
 /////FAQ/////
 //////////////
@@ -712,10 +710,9 @@ footer {
 	}
 }
 
+// @media (min-width: 375px) {
+// }
 @media (min-width: 768px) {
-	h2{
-		font-size: 3rem;
-	}
 	header {
 		h1 {
 			font-size: 4.5rem;
@@ -769,7 +766,6 @@ footer {
 		}
 	}
 }
-
 @media (min-width: 992px) {
 	nav {
 		background-color: rgba(0, 0, 0, 0.4);
@@ -813,6 +809,7 @@ footer {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		height: 100%;
 		background-color: transparent;
 	
 	}
@@ -873,6 +870,6 @@ footer {
 		}
 	}
 	h2 {
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 }

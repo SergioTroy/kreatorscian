@@ -61,12 +61,6 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   margin-top: 1.5em;
-  font-size: 2rem;
-}
-
-.noscroll {
-  height: 100%;
-  overflow: hidden;
 }
 
 .underline {
@@ -74,6 +68,11 @@ h2 {
   width: 4em;
   height: 2px;
   background-color: rgb(25, 177, 191);
+}
+
+.noscroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 .shadow-bg {
@@ -148,7 +147,6 @@ nav .nav-link:hover {
 
 .navbar-nav {
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,12 +189,11 @@ header {
   color: white;
 }
 header h1 {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
 }
 header p {
-  font-size: 1.4rem;
-  white-space: nowrap;
+  font-size: 1.5rem;
 }
 header .hero-img {
   position: relative;
@@ -568,7 +565,7 @@ footer .row {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3em;
+  padding: 5em;
 }
 footer span.logo-element {
   color: rgb(25, 177, 191);
@@ -702,9 +699,6 @@ footer .copyright {
 }
 
 @media (min-width: 768px) {
-  h2 {
-    font-size: 3rem;
-  }
   header h1 {
     font-size: 4.5rem;
   }
@@ -787,6 +781,7 @@ footer .copyright {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 100%;
     background-color: transparent;
   }
   .navbar-collapse {
@@ -843,6 +838,6 @@ footer .copyright {
     padding-top: 0.5em;
   }
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
