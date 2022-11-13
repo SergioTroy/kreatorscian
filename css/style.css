@@ -186,6 +186,10 @@ button:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
+#navbarNavAltMarkup {
+  transition: height 0.8s ease;
+}
+
 header {
   color: white;
 }

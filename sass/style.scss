@@ -149,6 +149,9 @@ button:focus:not(:focus-visible) {
 	outline: none;
 	box-shadow: none;
 }
+#navbarNavAltMarkup {
+    transition: height .8s ease;
+}
 
 header {
 	color: $white;
