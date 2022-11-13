@@ -194,6 +194,7 @@ header h1 {
 }
 header p {
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 header .hero-img {
   position: relative;
