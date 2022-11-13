@@ -83,7 +83,7 @@ nav {
 	}
 	.social-media__box-mobile {
 		text-align: center;
-		margin: 2em 0;
+		margin: 3.5em 0;
 		i {
 			font-size: 2.5rem;
 			padding: 0 1.5em;
@@ -115,11 +115,13 @@ nav {
 .navbar-nav {
 	height: 100vh;
 	width: 100vw;
-	background-color: #000;
+	margin-top: 3.5em;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction:column;
+	justify-content:flex-start;
 	align-items: center;
+	background-color: #000;
+	
 	.nav-link.active {
 		color: $main-color;
 		

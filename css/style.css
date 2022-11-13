@@ -121,7 +121,7 @@ nav .social-media__box {
 }
 nav .social-media__box-mobile {
   text-align: center;
-  margin: 2em 0;
+  margin: 3.5em 0;
 }
 nav .social-media__box-mobile i {
   font-size: 2.5rem;
@@ -149,11 +149,12 @@ nav .nav-link:hover {
 .navbar-nav {
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  margin-top: 3.5em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background-color: #000;
 }
 .navbar-nav .nav-link.active {
   color: rgb(25, 177, 191);
