@@ -22,6 +22,7 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 1.5em;
+	font-size: 2.2rem;
 }
 .underline {
 	margin: 1.5em auto 3em;
@@ -155,8 +156,10 @@ header {
 	h1 {
 		font-size: 3.5rem;
 		text-transform: uppercase;
+		white-space: nowrap;
 	}
 	p {
+		margin-top: 1em;
 		font-size: 1.5rem;
 		white-space: nowrap;
 	}
@@ -221,7 +224,7 @@ header {
 		// overflow: hidden;
 		.text {
 			position: absolute;
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 			width: 100%;
 			height: 100%;
 			display: flex;
@@ -320,7 +323,7 @@ header {
 			text-shadow: (2px 2px 5px #000000);
 		}
 		.aboutus-hero-title {
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 	.info-circle {
@@ -712,6 +715,9 @@ footer {
 // @media (min-width: 375px) {
 // }
 @media (min-width: 768px) {
+	h2{
+		font-size: 2.6rem;
+	}
 	header {
 		h1 {
 			font-size: 4.5rem;
