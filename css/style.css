@@ -161,6 +161,9 @@ h2 {
   margin: 20px 5px;
   z-index: 10;
 }
+.floating-container .element-container {
+  display: none;
+}
 .floating-container a {
   text-decoration: none;
   color: white;
@@ -234,7 +237,7 @@ h2 {
   line-height: 40px;
   z-index: 0;
   opacity: 0;
-  transform: translateY(300px);
+  transform: translateY(100px);
 }
 
 .floating-container .float-element:nth-child(1) {

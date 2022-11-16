@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const navArea = document.querySelector('.navbar-nav')
 	const fabBtn = document.querySelector('.floating-button')
 	const fabContainer = document.querySelector('.floating-container')
-
+	const elementContainer = document.querySelector('.element-container')
 
 	function addShadow() {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	const startAnimation = () => {
 		fabContainer.style.height = "250px"
+		elementContainer.style.display = "block"
 	}
 	
 	const navOff = () => {
