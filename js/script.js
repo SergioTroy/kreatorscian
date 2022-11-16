@@ -6,10 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const burgerIcon = document.querySelector(".animated-icon2")
 	const burgerBtn = document.querySelector(".second-button")
 	const navArea = document.querySelector('.navbar-nav')
-	const fabBtn = document.querySelector('.floating-button')
-	const floatElement1 = document.querySelector('.float-element1')
-	const floatElement2 = document.querySelector('.float-element2')
-	const floatElement3 = document.querySelector('.float-element3')
+
 
 	function addShadow() {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
@@ -21,12 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 	
-	const toggleBtn = () => {
-		floatElement1.classList.toggle('animation1')
-		floatElement2.classList.toggle('animation2')
-		floatElement3.classList.toggle('animation3')
-		console.log("yess")
-	}
+	
 	const navOff = () => {
 		navList.classList.remove("show");
 		burgerIcon.classList.remove("open");
@@ -55,5 +47,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 
-	fabBtn.addEventListener('click',toggleBtn)
+	
 });
