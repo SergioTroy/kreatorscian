@@ -57,10 +57,10 @@ h2 {
 	}
   }
   .floating-container:hover {
-	height: 265px;
+	height: 250px;
   }
   .floating-container:hover .floating-button {
-	box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+	box-shadow: 0px 0px 35px rgba(44, 179, 240, 0.6);
 	-webkit-transform: translatey(5px);
 			transform: translatey(5px);
 	-webkit-transition: all 0.3s;
@@ -82,7 +82,7 @@ h2 {
 	position: absolute;
 	width: 45px;
 	height: 45px;
-	background: #2cb3f0;
+	background: $main-color;
 	bottom: 0;
 	border-radius: 50%;
 	left: 0;
@@ -93,7 +93,7 @@ h2 {
 	text-align: center;
 	font-size: 23px;
 	z-index: 100;
-	box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+	// box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
 	cursor: pointer;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
@@ -120,15 +120,15 @@ h2 {
   }
   .floating-container .float-element:nth-child(1) {
 	background: #42A5F5;
-	box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+	// box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
   }
   .floating-container .float-element:nth-child(2) {
 	background: #4CAF50;
-	box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+	// box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
   }
   .floating-container .float-element:nth-child(3) {
 	background: #FF9800;
-	box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+	// box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
   }
   
 nav {
@@ -862,6 +862,9 @@ footer {
 	}
 }
 @media (min-width: 992px) {
+	.floating-container{
+		display: none;
+	}
 	nav {
 		background-color: rgba(0, 0, 0, 0.4);
 		.nav-link{
