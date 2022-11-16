@@ -43,6 +43,18 @@ h2 {
 	width: 100%;
 	max-width: 1200px;
 }
+.animation1{
+	-webkit-animation: come-in 0.4s forwards 0.2s;
+			animation: come-in 0.4s forwards 0.2s;
+}
+.animation2{
+	-webkit-animation: come-in 0.4s forwards 0.4s;
+			animation: come-in 0.4s forwards 0.4s;
+}
+.animation3{
+	-webkit-animation: come-in 0.4s forwards 0.6s;
+			animation: come-in 0.4s forwards 0.6s;
+}
 .floating-container {
 	position: fixed;
 	width: 70px;
@@ -66,18 +78,18 @@ h2 {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
   }
-  .floating-container:hover .element-container .float-element:nth-child(1) {
-	-webkit-animation: come-in 0.4s forwards 0.2s;
-			animation: come-in 0.4s forwards 0.2s;
-  }
-  .floating-container:hover .element-container .float-element:nth-child(2) {
-	-webkit-animation: come-in 0.4s forwards 0.4s;
-			animation: come-in 0.4s forwards 0.4s;
-  }
-  .floating-container:hover .element-container .float-element:nth-child(3) {
-	-webkit-animation: come-in 0.4s forwards 0.6s;
-			animation: come-in 0.4s forwards 0.6s;
-  }
+//   .floating-container:hover .element-container .float-element:nth-child(1) {
+// 	-webkit-animation: come-in 0.4s forwards 0.2s;
+// 			animation: come-in 0.4s forwards 0.2s;
+//   }
+//   .floating-container:hover .element-container .float-element:nth-child(2) {
+// 	-webkit-animation: come-in 0.4s forwards 0.4s;
+// 			animation: come-in 0.4s forwards 0.4s;
+//   }
+//   .floating-container:hover .element-container .float-element:nth-child(3) {
+// 	-webkit-animation: come-in 0.4s forwards 0.6s;
+// 			animation: come-in 0.4s forwards 0.6s;
+//   }
   .floating-container .floating-button {
 	position: absolute;
 	width: 45px;
@@ -114,10 +126,7 @@ h2 {
 	-webkit-transform: translateY(100px);
 			transform: translateY(100px);
   }
-  .floating-container .float-element .material-icons {
-	vertical-align: middle;
-	font-size: 16px;
-  }
+
   .floating-container .float-element:nth-child(1) {
 	background: #42A5F5;
 	// box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
