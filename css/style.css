@@ -162,7 +162,7 @@ h2 {
   z-index: 10;
 }
 .floating-container .element-container {
-  display: none;
+  visibility: hidden;
 }
 .floating-container a {
   text-decoration: none;

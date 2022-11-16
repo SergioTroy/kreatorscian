@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	const startAnimation = () => {
 		fabContainer.style.height = "250px"
-		elementContainer.style.display = "block"
+		elementContainer.style.visibility = "visible"
 	}
 	
 	const navOff = () => {
