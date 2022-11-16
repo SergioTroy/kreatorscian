@@ -152,6 +152,53 @@ h2 {
   max-width: 1200px;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.fab-click {
+  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  transform: translateY(5px);
+}
+
+.come-in1 {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+
+.come-in2 {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+
+.come-in3 {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+
+.come-out1 {
+  -webkit-animation: come-out 0.4s backwards 0.2s;
+          animation: come-out 0.4s backwards 0.2s;
+}
+
+.come-out2 {
+  -webkit-animation: come-out 0.4s backwards 0.4s;
+          animation: come-out 0.4s backwards 0.4s;
+}
+
+.come-out3 {
+  -webkit-animation: come-out 0.4s backwards 0.6s;
+          animation: come-out 0.4s backwards 0.6s;
+}
+
+.cross-rotate {
+  transform: rotate(135deg);
+}
+
+.fab-height {
+  height: 250px;
+}
+
 .floating-container {
   position: fixed;
   width: 70px;
@@ -169,42 +216,6 @@ h2 {
   color: white;
 }
 
-.floating-container:hover .floating-button {
-  box-shadow: 0px 0px 35px rgba(44, 179, 240, 0.6);
-  transform: translatey(5px);
-  transition: all 0.3s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(1) {
-  -webkit-animation: come-in 0.4s forwards 0.2s;
-          animation: come-in 0.4s forwards 0.2s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(2) {
-  -webkit-animation: come-in 0.4s forwards 0.4s;
-          animation: come-in 0.4s forwards 0.4s;
-}
-
-.floating-container:hover .element-container .float-element:nth-child(3) {
-  -webkit-animation: come-in 0.4s forwards 0.6s;
-          animation: come-in 0.4s forwards 0.6s;
-}
-
-.floating-container .element-container .float-element:nth-child(1) {
-  -webkit-animation: come-out 0.4s backwards 0.2s;
-          animation: come-out 0.4s backwards 0.2s;
-}
-
-.floating-container .element-container .float-element:nth-child(2) {
-  -webkit-animation: come-out 0.4s backwards 0.4s;
-          animation: come-out 0.4s backwards 0.4s;
-}
-
-.floating-container .element-container .float-element:nth-child(3) {
-  -webkit-animation: come-out 0.4s backwards 0.6s;
-          animation: come-out 0.4s backwards 0.6s;
-}
-
 .floating-container .floating-button {
   position: absolute;
   width: 45px;
@@ -217,11 +228,20 @@ h2 {
   margin: auto;
   color: white;
   line-height: 45px;
-  text-align: center;
-  font-size: 23px;
   z-index: 100;
   cursor: pointer;
   transition: all 0.3s;
+  transform: rotate();
+}
+.floating-container .floating-button .cross {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transition: transform 0.3s;
 }
 
 .floating-container .float-element {
@@ -237,19 +257,24 @@ h2 {
   line-height: 40px;
   z-index: 0;
   opacity: 0;
-  transform: translateY(500px);
+  transform: translateY(100px);
+}
+
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
 }
 
 .floating-container .float-element:nth-child(1) {
-  background: #42A5F5;
+  background: #42a5f5;
 }
 
 .floating-container .float-element:nth-child(2) {
-  background: #4CAF50;
+  background: #4caf50;
 }
 
 .floating-container .float-element:nth-child(3) {
-  background: #FF9800;
+  background: #ff9800;
 }
 
 nav {
