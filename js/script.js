@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const burgerIcon = document.querySelector(".animated-icon2")
 	const burgerBtn = document.querySelector(".second-button")
 	const navArea = document.querySelector('.navbar-nav')
+	const fabBtn = document.querySelector('.floating-button')
+	const fabContainer = document.querySelector('.floating-container')
 
 
 	function addShadow() {
@@ -17,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			logo.style.fontSize = "";
 		}
 	}
-	
+	const startAnimation = () => {
+		fabContainer.style.height = "250px"
+	}
 	
 	const navOff = () => {
 		navList.classList.remove("show");
@@ -46,6 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				document.querySelector('body').classList.remove('noscroll')
 			}
 		});
-
+	fabBtn.addEventListener('click',startAnimation)
 	
 });

@@ -70,6 +70,40 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes come-out {
+  0% {
+    transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(0px) scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-50px) scale(0.4);
+  }
+  100% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+}
+@keyframes come-out {
+  0% {
+    transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(0px) scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-50px) scale(0.4);
+  }
+  100% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+}
 *,
 *::before,
 *::after {
@@ -132,10 +166,6 @@ h2 {
   color: white;
 }
 
-.floating-container:hover {
-  height: 250px;
-}
-
 .floating-container:hover .floating-button {
   box-shadow: 0px 0px 35px rgba(44, 179, 240, 0.6);
   transform: translatey(5px);
@@ -144,17 +174,32 @@ h2 {
 
 .floating-container:hover .element-container .float-element:nth-child(1) {
   -webkit-animation: come-in 0.4s forwards 0.2s;
-  animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
 }
 
 .floating-container:hover .element-container .float-element:nth-child(2) {
   -webkit-animation: come-in 0.4s forwards 0.4s;
-  animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
 }
 
 .floating-container:hover .element-container .float-element:nth-child(3) {
   -webkit-animation: come-in 0.4s forwards 0.6s;
-  animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+
+.floating-container .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-out 0.4s backwards 0.2s;
+          animation: come-out 0.4s backwards 0.2s;
+}
+
+.floating-container .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-out 0.4s backwards 0.4s;
+          animation: come-out 0.4s backwards 0.4s;
+}
+
+.floating-container .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-out 0.4s backwards 0.6s;
+          animation: come-out 0.4s backwards 0.6s;
 }
 
 .floating-container .floating-button {
