@@ -666,6 +666,9 @@ header {
 			flex-basis: 48%;
 		}
 	}
+	input[type="file"]{
+		color:#000;
+	}
 	input[type="file"]::file-selector-button {
 		// border: 2px solid #00cec9;
 		border:none;

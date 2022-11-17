@@ -758,6 +758,9 @@ header .hero-text span {
 .contact .row .input-group {
   flex-basis: 48%;
 }
+.contact input[type=file] {
+  color: #000;
+}
 .contact input[type=file]::-webkit-file-upload-button {
   border: none;
   padding: 0.2em 0.4em;
