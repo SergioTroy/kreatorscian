@@ -760,6 +760,7 @@ header .hero-text span {
 }
 .contact input[type=file] {
   color: #000;
+  font-size: 1.3rem;
 }
 .contact input[type=file]::-webkit-file-upload-button {
   border: none;
