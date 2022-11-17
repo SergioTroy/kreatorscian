@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 
 	const checkFile = () => {
-		if(uploadField.files[0].size > 2097152){
+		if(uploadField.files[0].size > 4097152){
 			alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
 			uploadField.value = "";
 		 };
