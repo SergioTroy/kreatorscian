@@ -758,6 +758,31 @@ header .hero-text span {
 .contact .row .input-group {
   flex-basis: 48%;
 }
+.contact input[type=file]::-webkit-file-upload-button {
+  border: none;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: rgb(25, 177, 191);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+.contact input[type=file]::file-selector-button {
+  border: none;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: rgb(25, 177, 191);
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+.contact input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #000;
+}
+.contact input[type=file]::file-selector-button:hover {
+  background-color: #000;
+}
 
 footer .row {
   display: flex;

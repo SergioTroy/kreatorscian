@@ -666,6 +666,21 @@ header {
 			flex-basis: 48%;
 		}
 	}
+	input[type="file"]::file-selector-button {
+		// border: 2px solid #00cec9;
+		border:none;
+		padding: 0.2em 0.4em;
+		border-radius: 0.2em;
+		background-color: $main-color;
+		transition: .3s;
+		color:white;
+		cursor: pointer;
+	  }
+	  
+	  input[type="file"]::file-selector-button:hover {
+		background-color: #000;
+		// border: 2px solid #00cec9;
+	  }
 }
 ///footer///
 ///
