@@ -46,32 +46,32 @@ h2 {
 .visible {
 	visibility: visible;
 }
-.fab-click{
+.fab-click {
 	box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
 	transform: translateY(5px);
 }
-.come-in1{
+.come-in1 {
 	animation: come-in 0.4s forwards 0.2s;
 }
-.come-in2{
+.come-in2 {
 	animation: come-in 0.4s forwards 0.4s;
 }
-.come-in3{
+.come-in3 {
 	animation: come-in 0.4s forwards 0.6s;
 }
-.come-out1{
+.come-out1 {
 	animation: come-out 0.4s backwards 0.2s;
 }
-.come-out2{
+.come-out2 {
 	animation: come-out 0.4s backwards 0.4s;
 }
-.come-out3{
+.come-out3 {
 	animation: come-out 0.4s backwards 0.6s;
 }
-.cross-rotate{
+.cross-rotate {
 	transform: rotate(135deg);
 }
-.fab-height{
+.fab-height {
 	height: 250px;
 }
 .floating-container {
@@ -86,28 +86,13 @@ h2 {
 	.element-container {
 		visibility: hidden;
 	}
+
 	a {
 		text-decoration: none;
 		color: white;
 	}
 }
-//   .floating-container:hover {
-// 	height: 250px;
-//   }
 
-	
-	
-  
-  
-// .floating-container .element-container .float-element:nth-child(1) {
-// 	animation: come-out 0.4s backwards 0.2s;
-// }
-// .floating-container .element-container .float-element:nth-child(2) {
-// 	animation: come-out 0.4s backwards 0.4s;
-// }
-// .floating-container .element-container .float-element:nth-child(3) {
-// 	animation: come-out 0.4s backwards 0.6s;
-// }
 .floating-container .floating-button {
 	position: absolute;
 	width: 45px;
@@ -120,24 +105,20 @@ h2 {
 	margin: auto;
 	color: white;
 	line-height: 45px;
-	// text-align: center;
-
 	z-index: 100;
-	// box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
 	cursor: pointer;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	transition: box-shadow 0.3s, transform 0.3s;
 	transform: rotate();
 	.cross {
 		position: relative;
 		width: 100%;
 		height: 100%;
 		display: flex;
-		justify-content: center;align-items: center;
+		justify-content: center;
+		align-items: center;
 		font-size: 3rem;
-		transition: transform .3s;
+		transition: transform 0.3s;
 	}
-	
 }
 .floating-container .float-element {
 	position: relative;
@@ -152,24 +133,20 @@ h2 {
 	line-height: 40px;
 	z-index: 0;
 	opacity: 0;
-	-webkit-transform: translateY(100px);
 	transform: translateY(100px);
 }
 .floating-container .float-element .material-icons {
 	vertical-align: middle;
 	font-size: 16px;
-  }
+}
 .floating-container .float-element:nth-child(1) {
-	background: #42a5f5;
-	// box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+	background: #6b19be;
 }
 .floating-container .float-element:nth-child(2) {
-	background: #4caf50;
-	// box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+	background: #4219be;
 }
 .floating-container .float-element:nth-child(3) {
-	background: #ff9800;
-	// box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+	background: #196bbe;
 }
 
 nav {

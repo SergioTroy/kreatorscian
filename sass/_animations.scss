@@ -1,65 +1,55 @@
 @keyframes pulse {
-    from{
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    to{
-        transform: scale(1.4);
-        opacity: 0;
-    }
+	from {
+		transform: scale(1);
+		opacity: 0.5;
+	}
+	to {
+		transform: scale(1.4);
+		opacity: 0;
+	}
 }
 
 @keyframes pulse2 {
-    from{
-        transform: scale(1);
-        opacity: 1;
-    }
-    to{
-        transform: scale(1.6);
-        opacity: 0;
-    }
+	from {
+		transform: scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: scale(1.6);
+		opacity: 0;
+	}
 }
 
-
-  @keyframes come-in {
-    0% {
-     
-              transform: translatey(100px);
-      opacity: 0;
-    }
-    30% {
-      
-              transform: translateX(-50px) scale(0.4);
-    }
-    70% {
-      
-              transform: translateX(0px) scale(1.2);
-    }
-    100% {
-    
-              transform: translatey(0px) scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes come-out {
-    0% {
-      
-      transform: translatey(0px) scale(1);
-      opacity: 1;
-    }
-    30% {
-      
-            
-              transform: translateX(0px) scale(1.2);
-              opacity: 1;
-    }
-    70% {
-     
-        transform: translateX(-50px) scale(0.4);
-    }
-    100% {
-      
-        transform: translatey(100px);
-        opacity: 0;
-    }
-  }
+@keyframes come-in {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	30% {
+		transform: translateX(-50px) scale(0.4);
+	}
+	70% {
+		transform: translateX(0px) scale(1.2);
+	}
+	100% {
+		transform: translateY(0px) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes come-out {
+	0% {
+		transform: translateY(0px) scale(1);
+		opacity: 1;
+	}
+	30% {
+		transform: translateX(0px) scale(1.2);
+		opacity: 1;
+	}
+	70% {
+		transform: translateX(-50px) scale(0.4);
+	}
+	100% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+}

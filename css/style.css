@@ -40,7 +40,7 @@
 }
 @-webkit-keyframes come-in {
   0% {
-    transform: translatey(100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   30% {
@@ -50,13 +50,13 @@
     transform: translateX(0px) scale(1.2);
   }
   100% {
-    transform: translatey(0px) scale(1);
+    transform: translateY(0px) scale(1);
     opacity: 1;
   }
 }
 @keyframes come-in {
   0% {
-    transform: translatey(100px);
+    transform: translateY(100px);
     opacity: 0;
   }
   30% {
@@ -66,13 +66,13 @@
     transform: translateX(0px) scale(1.2);
   }
   100% {
-    transform: translatey(0px) scale(1);
+    transform: translateY(0px) scale(1);
     opacity: 1;
   }
 }
 @-webkit-keyframes come-out {
   0% {
-    transform: translatey(0px) scale(1);
+    transform: translateY(0px) scale(1);
     opacity: 1;
   }
   30% {
@@ -83,13 +83,13 @@
     transform: translateX(-50px) scale(0.4);
   }
   100% {
-    transform: translatey(100px);
+    transform: translateY(100px);
     opacity: 0;
   }
 }
 @keyframes come-out {
   0% {
-    transform: translatey(0px) scale(1);
+    transform: translateY(0px) scale(1);
     opacity: 1;
   }
   30% {
@@ -100,7 +100,7 @@
     transform: translateX(-50px) scale(0.4);
   }
   100% {
-    transform: translatey(100px);
+    transform: translateY(100px);
     opacity: 0;
   }
 }
@@ -230,7 +230,7 @@ h2 {
   line-height: 45px;
   z-index: 100;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s;
   transform: rotate();
 }
 .floating-container .floating-button .cross {
@@ -266,15 +266,15 @@ h2 {
 }
 
 .floating-container .float-element:nth-child(1) {
-  background: #42a5f5;
+  background: #6b19be;
 }
 
 .floating-container .float-element:nth-child(2) {
-  background: #4caf50;
+  background: #4219be;
 }
 
 .floating-container .float-element:nth-child(3) {
-  background: #ff9800;
+  background: #196bbe;
 }
 
 nav {
