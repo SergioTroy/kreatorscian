@@ -14,13 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	const element3 = document.querySelector('.float-element3')
 	const cross = document.querySelector('.cross')
 	let uploadField = document.getElementById("file");
+	
 
-uploadField.onchange = function() {
-    if(this.files[0].size > 2097152){
-       alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
-       this.value = "";
-    };
-};
+	const checkFile = () => {
+		if(uploadField.files[0].size > 2097152){
+			alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
+			uploadField.value = "";
+		 };
+	}
+		
 
 	function addShadow() {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
@@ -112,4 +114,5 @@ uploadField.onchange = function() {
 		}
 	});
 	fabBtn.addEventListener("click", startAnimation);
+	uploadField.addEventListener('change',checkFile)
 });
