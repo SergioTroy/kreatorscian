@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	let uploadField = document.getElementById("file");
 	
 
-	const checkFile = () => {
-		if(uploadField.files[0].size > 4097152){
-			alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
-			uploadField.value = "";
-		 };
-	}
+	// const checkFile = () => {
+	// 	if(uploadField.files[0].size > 4097152){
+	// 		alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
+	// 		uploadField.value = "";
+	// 	 };
+	// }
 		
 
 	function addShadow() {
@@ -114,5 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 	fabBtn.addEventListener("click", startAnimation);
-	uploadField.addEventListener('change',checkFile)
+	// uploadField.addEventListener('change',checkFile)
 });
