@@ -14,16 +14,42 @@ document.addEventListener("DOMContentLoaded", function () {
 	const element3 = document.querySelector('.float-element3')
 	const cross = document.querySelector('.cross')
 	let uploadField = document.getElementById("file");
-	
+	let uploadField1 = document.getElementById("file1");
+	let uploadField2 = document.getElementById("file2");
+	const newsubmission = document.getElementById('newsubmission')
+	const name = document.getElementById('name')
+	const addBtn = document.querySelector('.add-more')
+	const files = document.querySelector('.files')
+	let number = 1;
 
-	// const checkFile = () => {
-	// 	if(uploadField.files[0].size > 4097152){
-	// 		alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
-	// 		uploadField.value = "";
-	// 	 };
-	// }
+	const addField = () => {
 		
+		let fileName = 'input' + number
+		if(number<3)
+		{
+			let newField = document.createElement('div')
+			newField.setAttribute('class','input-group')
+			let newInput = document.createElement('input')
+			newInput.setAttribute('type','file')
+			newInput.setAttribute('name',fileName)
+			newInput.setAttribute('accept','image/*')
+			newInput.setAttribute('id',fileName)
+			newField.appendChild(newInput)
+			files.appendChild(newField)
+			number++;
+		}
+		
+	}
 
+	const checkFile = (e) => {
+		if(e.target.files[0].size > 4097152){
+			alert("Plik jest za duży! Maksymalny rozmiar obrazu to 2MB\nProsimy o przesłanie pliku bezpośrednio na nasz adres mailowy :)");
+			e.target.value = "";
+		 };
+		
+	}
+	
+	
 	function addShadow() {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
 			nav.classList.add("shadow-bg");
@@ -113,6 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.querySelector("body").classList.remove("noscroll");
 		}
 	});
+	
+	
 	fabBtn.addEventListener("click", startAnimation);
-	// uploadField.addEventListener('change',checkFile)
+	uploadField.addEventListener('change',checkFile)
+	// 
+	name.addEventListener("blur", function() {
+		newsubmission.value = newsubmission.value + name.value
+		console.log(newsubmission.value)
+	  });
+	addBtn.addEventListener('click',addField)
 });

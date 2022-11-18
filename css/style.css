@@ -693,9 +693,6 @@ header .hero-text span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.contact .contact-text {
-  display: inline-block;
-}
 .contact form {
   padding-left: 4em;
   width: 90%;
@@ -752,7 +749,6 @@ header .hero-text span {
 }
 .contact .row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .contact .row .input-group {
@@ -1061,6 +1057,11 @@ footer .copyright {
     height: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+  }
+  .contact .contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {

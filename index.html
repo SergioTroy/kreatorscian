@@ -297,7 +297,8 @@
 
                     </div>
                     <div class="col-md-8 container ">
-                        <form action="https://formsubmit.co/4c8fee65da1bd14e2d288a55459aab96" method="POST" enctype="multipart/form-data">
+                        <form action="https://formsubmit.co/kreatorscian@gmail.com" method="POST"
+                            enctype="multipart/form-data">
                             <div class="row">
                                 <div class="input-group">
                                     <input type="text" id="name" name="Nazwisko:" required>
@@ -316,10 +317,32 @@
                                 <textarea id="message" rows="8" name="Wiadomość:" required></textarea>
                                 <label for="message"><i class="fas fa-comments"></i> Twoja wiadomość:</label>
                             </div>
-                            <div class="input-group">
-                                <input type="file" name="file" accept="image/*" id="file">
+                            <div class="files">
+                                <div class="input-group">
+                                    <input type="file" name="file" accept="image/*" id="file">
+                                </div>
                             </div>
-                            <button type="submit">Wyślij <i class="fas fa-paper-plane"></i></button>
+                            
+                            <!-- <div class="controls">
+                                <a href="" class="add_more_fields"><i class="fa fa-plus"></i> Dodaj kolejne</a>
+                                
+                            </div> -->
+                            <!-- <div class="input-group">
+                                <input type="file" name="file2" accept="image/*" id="file2">
+                            </div> -->
+                            <input type="hidden" id="newsubmission" name="_subject" value="New submission from: ">
+                            <input type="hidden" name="_template" value="box">
+                            <div class="row">
+                                <div class="input-group">
+                                    <button type="button" class="add-more">Dodaj więcej</button>
+
+                                </div>
+                                <div class="input-group">
+
+                                    <button type="submit">Wyślij <i class="fas fa-paper-plane"></i></button>
+                                </div>
+
+                            </div>
                         </form>
                     </div>
                 </div>

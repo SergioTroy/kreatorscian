@@ -598,15 +598,16 @@ header {
 			// color:$main-color;
 		}
 	}
-	.contact-text {
-		display: inline-block;
-	}
+	// .contact-text {
+	// 	display: inline-block;
+	// }
 
 	form {
 		padding-left: 4em;
 		width: 90%;
 		max-width: 600px;
 		margin-top: 4em;
+		
 	}
 	.input-group {
 		margin-bottom: 30px;
@@ -660,7 +661,7 @@ header {
 	}
 	.row {
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		justify-content: space-between;
 		.input-group {
 			flex-basis: 48%;
@@ -670,6 +671,7 @@ header {
 		color:#000;
 		font-size: 1.3rem;
 	}
+	
 	input[type="file"]::file-selector-button {
 		// border: 2px solid #00cec9;
 		border:none;
@@ -686,6 +688,7 @@ header {
 		// border: 2px solid #00cec9;
 	  }
 }
+
 ///footer///
 ///
 footer {
@@ -984,6 +987,13 @@ footer {
 			height: 3rem;
 			background-color: rgba(0, 0, 0, 0.5);
 			border-radius: 50%;
+		}
+	}
+	.contact{
+		.contact-item{
+			display: flex;
+			flex-direction: column;
+			justify-content:flex-start;
 		}
 	}
 }
