@@ -14,13 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	const element3 = document.querySelector('.float-element3')
 	const cross = document.querySelector('.cross')
 	let uploadField = document.getElementById("file");
-	let uploadField1 = document.getElementById("file1");
-	let uploadField2 = document.getElementById("file2");
+	let uploadField1 
+	let uploadField2 
+	let uploadFieldX
 	const newsubmission = document.getElementById('newsubmission')
 	const name = document.getElementById('name')
 	const addBtn = document.querySelector('.add-more')
 	const files = document.querySelector('.files')
 	let number = 1;
+	
 
 	const addField = () => {
 		
@@ -36,10 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			newInput.setAttribute('id',fileName)
 			newField.appendChild(newInput)
 			files.appendChild(newField)
+			uploadFieldX = document.getElementById(fileName);
+			uploadFieldX.addEventListener('change',checkFile)
 			number++;
 		}
 		if(number==3){
 			addBtn.setAttribute('disabled','')
+			
 		}
 		
 	}
@@ -102,14 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 		
 	};
-	// const endAnimation = () => {
-		
-	// 	if(elementContainer.classList.contains('visible')==true)
-	// 	{
-	// 		fabContainer.style.height = "0";
-	// 		elementContainer.classList.add('hidden')
-	// 	}
-	// };
+	
 
 	const navOff = () => {
 		navList.classList.remove("show");
@@ -123,9 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("click", (e) =>
 		e.target === navArea ? navOff() : false
 	);
-	// window.addEventListener("click", (e) =>
-	// 	e.target !== fabBtn ? end() : false
-	// );
+	
 	burgerBtn.addEventListener("click", () => {
 		console.log(burgerBtn);
 		if (
@@ -146,10 +142,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	fabBtn.addEventListener("click", startAnimation);
 	uploadField.addEventListener('change',checkFile)
-	// 
+	
 	name.addEventListener("blur", function() {
 		newsubmission.value = newsubmission.value + name.value
 		console.log(newsubmission.value)
 	  });
 	addBtn.addEventListener('click',addField)
+
+	
 });
