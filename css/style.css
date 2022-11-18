@@ -783,6 +783,10 @@ header .hero-text span {
 .contact input[type=file]::file-selector-button:hover {
   background-color: #000;
 }
+.contact .add-more:disabled {
+  background: #dddddd;
+  cursor: not-allowed;
+}
 
 footer .row {
   display: flex;

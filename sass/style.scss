@@ -687,6 +687,10 @@ header {
 		background-color: #000;
 		// border: 2px solid #00cec9;
 	  }
+	  .add-more:disabled {
+  background: #dddddd;
+  cursor:not-allowed;
+}
 }
 
 ///footer///

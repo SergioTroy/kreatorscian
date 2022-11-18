@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			files.appendChild(newField)
 			number++;
 		}
+		if(number==3){
+			addBtn.setAttribute('disabled','')
+		}
 		
 	}
 
