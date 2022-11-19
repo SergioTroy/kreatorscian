@@ -25,17 +25,21 @@
   grid-column: span 2;
 }
 
+.gallery div {
+  overflow: hidden;
+}
+
 .gallery div img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .gallery div img:hover {
-  transform: scale(0.95);
+  transform: scale(1.3);
 }
 
 /******** Full screen *******/
@@ -48,6 +52,7 @@
   left: 0;
   display: none;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   z-index: 100;
 }
@@ -64,6 +69,12 @@
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}
+
+.full-img-box .image-description {
+  margin-top: 2em;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8rem;
 }
 
 /******* Responsive *****/

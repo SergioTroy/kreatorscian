@@ -3,10 +3,13 @@ const fullImg = document.querySelector(".full-img");
 const fullImgBox = document.querySelector(".full-img-box");
 const nav = document.querySelector('nav')
 const closeImgBtn = document.querySelector('.closeFullImg')
+const description = document.querySelector('.image-description')
 
 const showPicture = (e) => {
 	let imgPath = e.target.getAttribute("src");
+    let imgDescription = e.target.getAttribute('alt');
 	fullImg.setAttribute("src", imgPath);
+    description.textContent = imgDescription
     nav.style.display = "none";
     fullImgBox.style.display = "flex";
 
