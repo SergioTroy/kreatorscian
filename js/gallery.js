@@ -9,7 +9,9 @@ const showPicture = (e) => {
 	let imgPath = e.target.getAttribute("src");
     let imgDescription = e.target.getAttribute('alt');
 	fullImg.setAttribute("src", imgPath);
-    description.textContent = imgDescription
+    if(imgDescription!=null){
+        description.textContent = imgDescription
+    }
     nav.style.display = "none";
     fullImgBox.style.display = "flex";
 
