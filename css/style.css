@@ -146,6 +146,16 @@ h2 {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.bgbody {
+  background-image: repeating-linear-gradient(to top, #330867 0%, #30cfd0 100%);
+}
+.bgbody .hero-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -839,16 +849,6 @@ footer .copyright {
   font-size: 1rem;
 }
 
-.faqbody {
-  background-image: repeating-linear-gradient(to top, #330867 0%, #30cfd0 100%);
-}
-.faqbody .hero-shadow {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -10;
-}
-
 .faq {
   padding-top: 5em;
   width: 100%;
@@ -924,6 +924,18 @@ footer .copyright {
 }
 .faq .faq-contact a:hover {
   color: rgb(25, 177, 191);
+}
+
+.comercialGallery, .nonComercialGallery {
+  padding-top: 5em;
+  width: 100%;
+  height: 100%;
+}
+.comercialGallery p, .nonComercialGallery p {
+  margin: 0;
+}
+.comercialGallery h2, .nonComercialGallery h2 {
+  color: white;
 }
 
 @media (min-width: 768px) {
