@@ -80,9 +80,9 @@
 }
 
 .full-img-box .image-description {
-  margin-top: 2em;
+  margin-top: 0.5em;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .box-buttons {
@@ -141,10 +141,6 @@
   .big-stretch {
     grid-row: span 1;
     grid-column: span 1;
-  }
-  .full-img-box img {
-    width: 90%;
-    max-width: 500px;
   }
   .full-img-box .prevBtn {
     left: 10px;
