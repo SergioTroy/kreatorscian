@@ -1,94 +1,169 @@
-.gallery{
-    padding: 10px;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-auto-rows: 250px;
-    grid-auto-flow:dense;
+.gallery {
+	padding: 10px;
+	max-width: 1100px;
+	margin: 0 auto;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 250px;
+	grid-auto-flow: dense;
 }
 
 /******** stretch vertically ************/
 
-.v-stretch{
-    grid-row: span 2;
+.v-stretch {
+	grid-row: span 2;
 }
 /****** stretch horizontally ***/
-.h-stretch{
-    grid-column: span 2;
+.h-stretch {
+	grid-column: span 2;
 }
 /********** stretch vertically & horizontally ****/
-.big-stretch{
-    grid-row: span 2;
-    grid-column: span 2;
+.big-stretch {
+	grid-row: span 2;
+	grid-column: span 2;
 }
-.gallery div{
-   
-    overflow: hidden;
+.gallery div {
+	overflow: hidden;
 }
 
-.gallery div img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    cursor: pointer;
-    transition: transform .3s ease-in-out;
+.gallery div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
 }
-.gallery div img:hover{
-    transform: scale(1.3);
-    // box-shadow:0px 0px 20px rgba(68,77,136, 0.2);
+.gallery div img:hover {
+	transform: scale(1.3);
+	// box-shadow:0px 0px 20px rgba(68,77,136, 0.2);
 }
 
 /******** Full screen *******/
 
-.full-img-box{
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 100;
+.full-img-box {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 100;
 }
 
-
-.full-img-box img{
-    width: 90%;
-    max-width: 500px;
+.full-img-box img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	max-width: 1080px;
 }
 
-.full-img-box span{
-    position: absolute;
-    top: 2%;
-    right: 5%;
-    font-size: 30px;
-    color: #fff;
-    cursor:pointer;
+.add-animation {
+	animation: showImg 0.4s forwards;
 }
 
-.full-img-box .image-description{
-    margin-top: 2em;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.8rem;
+.full-img-box span {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
 }
 
+.full-img-box .image-description {
+	margin-top: 2em;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 1.8rem;
+}
+
+.box-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	max-width: 1080px;
+	position: relative;
+}
+
+.box-buttons button {
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	background: none;
+	border: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	i {
+		width: 3rem;
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 50%;
+        opacity:0.5;
+        transition: opacity .3s ease;
+	}
+}
+
+.box-buttons button i:hover{
+    opacity: 1;
+}
+.full-img-box .prevBtn {
+	left: 20px;
+	// margin-left: 10em;
+}
+
+.full-img-box .nextBtn {
+	right: 20px;
+	// margin-right: 10em;
+}
 /******* Responsive *****/
 
-@media(max-width:560px)
-{
-    .v-stretch{
-        grid-row: span 1;
-    }
-    .h-stretch{
-        grid-column: span 1;
-    }
-    .big-stretch{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
+@media (max-width: 560px) {
+	.v-stretch {
+		grid-row: span 1;
+	}
+	.h-stretch {
+		grid-column: span 1;
+	}
+	.big-stretch {
+		grid-row: span 1;
+		grid-column: span 1;
+	}
+
+	.full-img-box img {
+		width: 90%;
+		max-width: 500px;
+	}
+	.full-img-box .prevBtn {
+		left: 10px;
+		// margin-left: 10em;
+	}
+
+	.full-img-box .nextBtn {
+		right: 10px;
+		// margin-right: 10em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.full-img-box .prevBtn {
+		left: 10px;
+		// margin-left: 10em;
+	}
+
+	.full-img-box .nextBtn {
+		right: 10px;
+		// margin-right: 10em;
+	}
 }
