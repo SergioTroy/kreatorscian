@@ -609,6 +609,7 @@ header .hero-text span {
 
 .carousel {
   display: none;
+  margin-bottom: 4em;
 }
 
 .card-body h5 {
@@ -658,8 +659,63 @@ header .hero-text span {
   transform-origin: left;
 }
 
-.cooperation {
-  background-color: #f7f7f7;
+.cooperation-hero {
+  position: relative;
+  background-image: url("../img/coop2bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddd;
+  z-index: 0;
+}
+.cooperation-hero .underline {
+  margin-bottom: 1.5em;
+}
+.cooperation-hero p {
+  text-align: center;
+}
+.cooperation-hero .last-line {
+  margin-bottom: 3em;
+}
+.cooperation-hero .cooperation-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+.cooperation-hero .process-wrap i {
+  font-size: 3rem;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: #fff;
+}
+.cooperation-hero .process-wrap h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 30px 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.cooperation-hero .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cooperation-hero .process-description:first-of-type {
+  margin-top: 2em;
+}
+.cooperation-hero .price {
+  font-weight: bold;
+  color: white;
+  font-size: 1.7rem;
 }
 
 .contact {
@@ -1001,6 +1057,19 @@ footer .copyright {
   .contact form {
     margin-top: 0;
   }
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+  .col-sm-5ths:nth-child(even) {
+    margin-top: 3em;
+  }
+  .cooperation-hero .process-wrap i {
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
 }
 @media (min-width: 992px) {
   .floating-container {
@@ -1094,6 +1163,12 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+  .cooperation-hero .process-wrap i {
+    font-size: 3rem;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
   }
 }
 @media (min-width: 1200px) {
