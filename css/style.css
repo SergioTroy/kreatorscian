@@ -1067,6 +1067,9 @@ footer .copyright {
   .col-sm-5ths:nth-child(even) {
     margin-top: 3em;
   }
+  .cooperation-hero {
+    background-image: url("../img/coop-bg-big.jpg");
+  }
   .cooperation-hero .process-wrap i {
     font-size: 2rem;
     width: 100px;
@@ -1166,9 +1169,6 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
-  .cooperation-hero {
-    background-image: url("../img/coop-bg-big.jpg");
   }
   .cooperation-hero .process-wrap i {
     font-size: 3rem;
