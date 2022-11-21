@@ -544,7 +544,7 @@ header {
 //cooperation///
 .cooperation-hero {
 	position: relative;
-	background-image: url("../img/coop2bg.jpg");
+	background-image: url("../img/coop-bg-small.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1091,6 +1091,8 @@ footer {
 		}
 	}
 	.cooperation-hero{
+	
+			background-image: url("../img/coop-bg-big.jpg");
 		.process-wrap i {
 			font-size: 3rem;
 			width: 120px;
