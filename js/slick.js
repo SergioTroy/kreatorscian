@@ -5,6 +5,7 @@ $('.team-carousel').slick({
     slidesToScroll: 1,
     arrows: false,
     useTransform: false,
+    easing: 'swing',
     responsive: [
 
         {
