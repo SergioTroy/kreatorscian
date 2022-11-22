@@ -604,6 +604,39 @@ header {
 	}
 }
 
+/////client/////////
+/// 
+.clients-hero{
+	
+	.container{
+		.container h2{
+			color:white;
+			
+			
+		}
+		.card{
+			transition: transform 0.3s;
+			height: 600px;
+			img{
+				height: 300px;
+				object-fit:cover;
+				// object-position: center;
+			}
+			i{
+				padding: 10px;
+			}
+		}
+		.card:hover{
+			transform: scale(0.96);
+		}
+		.card-title{
+			margin-bottom: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
 //contact//
 
 .contact {

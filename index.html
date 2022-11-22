@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/55fe1b5204.js" crossorigin="anonymous"></script>
@@ -324,7 +325,56 @@
                 <div class="container py-5">
                     <h2>do kogo kierujemy ofertę</h2>
                     <div class="underline"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iste maiores ipsam eius deleniti, eveniet nesciunt qui, quidem eum delectus debitis hic, dolor fugit illum quae consequuntur iure nobis. Ratione, sunt aliquid.</p>
+                    <div class="card-group team-carousel">
+                        <div class="card mx-3">
+                            <img src="img/house-g950a24f79_640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Osoby prywatne</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card mx-3">
+                            <img src="img/bussines.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Przedsiębiorcy</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                           
+                        </div>
+                        <div class="card mx-3">
+                            <img src="img/british-museum-g55fb61d3c_640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Placówki</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
+                            
+                        </div>
+                        <!-- <div class="card mx-3">
+                            <img src="img/team/horse-gd617233b7_1920.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Projektanci</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
+                          
+                        </div> -->
+                        <div class="card mx-3">
+                            <img src="img/mural-g596d41510_640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Artyści</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This card has even longer content than the first to show that equal
+                                    height action.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -446,24 +496,30 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/aossettings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
+
+        <script src="./js/slick.js"></script>
+        <script src="./js/form.js"></script>
+        <script>
+            $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        
+        </script>
     <script src="./js/script.js"></script>
-    <script src="./js/form.js"></script>
-    <script>
-        $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
     
-    </script>
+    
 </body>
 
 </html>

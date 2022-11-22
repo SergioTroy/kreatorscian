@@ -719,6 +719,30 @@ header .hero-text span {
   font-size: 1.7rem;
 }
 
+.clients-hero .container .container h2 {
+  color: white;
+}
+.clients-hero .container .card {
+  transition: transform 0.3s;
+  height: 600px;
+}
+.clients-hero .container .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.clients-hero .container .card i {
+  padding: 10px;
+}
+.clients-hero .container .card:hover {
+  transform: scale(0.96);
+}
+.clients-hero .container .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .contact {
   margin: 4em 0;
 }
