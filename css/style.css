@@ -1038,11 +1038,6 @@ footer .copyright {
   color: white;
 }
 
-.slick-initialized .slick-slide {
-  visibility: visible;
-  display: block;
-}
-
 @media (min-width: 768px) {
   h2 {
     font-size: 2.6rem;
