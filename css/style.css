@@ -146,7 +146,7 @@ h2 {
   font-size: 2.2rem;
 }
 
-.slick-initialized .slick-slide {
+.slick-slide {
   visibility: visible;
   display: block;
 }
