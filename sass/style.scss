@@ -946,6 +946,12 @@ footer {
 	}
 }
 
+.slick-track,
+.slick-list {
+-webkit-perspective: 2000;
+-webkit-backface-visibility: hidden;
+}
+
 // @media (min-width: 375px) {
 // }
 @media (min-width: 768px) {
