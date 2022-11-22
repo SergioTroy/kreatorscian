@@ -545,7 +545,7 @@ header .hero-text span {
 
 .aboutus-hero {
   position: relative;
-  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
+  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
   background-position: center;
   background-size: cover;
   color: #ddd;
