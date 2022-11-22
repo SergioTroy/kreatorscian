@@ -24,6 +24,12 @@ h2 {
 	margin-top: 1.5em;
 	font-size: 2.2rem;
 }
+
+.slick-initialized .slick-slide {
+	visibility: visible;
+	display: block;
+	}
+	
 .underline {
 	margin: 1.5em auto 3em;
 	width: 4em;

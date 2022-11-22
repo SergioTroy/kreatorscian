@@ -4,7 +4,7 @@ $('.team-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    useTransform: false,
+    // useTransform: false,
     easing: 'swing',
     responsive: [
 
