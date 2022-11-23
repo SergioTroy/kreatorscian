@@ -276,7 +276,7 @@ nav {
 	.nav-link,
 .nav-link::after,
 .nav-link::before {
-	transition: 0.3s;
+	transition: width 0.3s, height 0.3s, border-top 0.3s, border-left 0.3s, border-bottom 0.3s, border-right 0.3s;
 }
 
 	.nav-link:hover {
