@@ -400,6 +400,7 @@ nav .social-media__box-mobile i:hover {
   color: rgb(25, 177, 191);
 }
 nav .nav-link {
+  position: relative;
   text-align: center;
   padding: 1.6em 0;
   border-bottom: 1px solid rgba(185, 185, 185, 0.6);
@@ -408,6 +409,11 @@ nav .nav-link {
   font-weight: bold;
   color: white;
   transition: color 0.3s;
+}
+nav .nav-link,
+nav .nav-link::after,
+nav .nav-link::before {
+  transition: 0.3s;
 }
 nav .nav-link:hover {
   color: rgb(25, 177, 191);
@@ -423,6 +429,38 @@ nav .nav-link:hover {
 }
 .navbar-nav .nav-link.active {
   color: rgb(25, 177, 191);
+}
+.navbar-nav .two::before,
+.navbar-nav .two::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.navbar-nav .two::before {
+  top: -2px;
+  left: -8px;
+  border-top: 0px solid #fff;
+  border-left: 0px solid #fff;
+}
+.navbar-nav .two::after {
+  bottom: -2px;
+  right: -8px;
+  border-bottom: 0px solid #fff;
+  border-right: 0px solid #fff;
+}
+.navbar-nav .two:hover::before,
+.navbar-nav .two:hover::after {
+  width: 20px;
+  height: 50%;
+}
+.navbar-nav .two:hover::before {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.navbar-nav .two:hover::after {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 a.navbar-brand {
