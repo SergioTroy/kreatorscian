@@ -8,6 +8,8 @@ const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
 let imgPath = "";
 let imgDescription = "";
+
+
 const showPicture = (e) => {
 	imgPath = e.target.getAttribute("src");
 	imgDescription = e.target.getAttribute("alt");
@@ -68,3 +70,18 @@ gallery.forEach((item) => item.addEventListener("click", showPicture));
 closeImgBtn.addEventListener("click", closeImg);
 prevBtn.addEventListener("click", prevImg);
 nextBtn.addEventListener("click", nextImg);
+document.addEventListener('keydown', (event) => {
+	if (event.key === 'Escape') {
+	  closeImg()
+	}
+  })
+  document.addEventListener('keydown', (e) => {
+	if (e.keyCode == '37') {
+	  prevImg()
+	}
+  })
+  document.addEventListener('keydown', (e) => {
+	if (e.keyCode == '39') {
+	  nextImg()
+	}
+  })
