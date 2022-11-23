@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const element2 = document.querySelector('.float-element2')
 	const element3 = document.querySelector('.float-element3')
 	const cross = document.querySelector('.cross')
-	const homeFab = document.querySelector('.floating-home-container')
+	
 	
 	
 	
@@ -23,11 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
 			nav.classList.add("shadow-bg");
 			logo.style.fontSize = "0.9rem";
-			homeFab.classList.add('homeFab-position')
 		} else {
 			nav.classList.remove("shadow-bg");
 			logo.style.fontSize = "";
-			homeFab.classList.remove('homeFab-position')
 		}
 	}
 

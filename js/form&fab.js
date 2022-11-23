@@ -8,6 +8,8 @@ const files = document.querySelector(".files");
 let number = 1;
 let uploadFieldX;
 
+const homeFab = document.querySelector('.floating-home-container')
+
 const addField = () => {
 		
     let fileName = 'input' + number
@@ -41,6 +43,16 @@ const checkFile = (e) => {
     
 }
 
+function showFabButton() {
+    if (window.scrollY >= 50 && window.innerWidth >= 992) {
+        
+        homeFab.classList.add('homeFab-position')
+    } else {
+       
+        homeFab.classList.remove('homeFab-position')
+    }
+}
+window.addEventListener("scroll", showFabButton);
 uploadField.addEventListener('change',checkFile)
 	
 	name.addEventListener("blur", function() {
