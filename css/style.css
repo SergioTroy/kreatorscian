@@ -545,7 +545,7 @@ header .hero-text span {
 
 .aboutus-hero {
   position: relative;
-  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+  background-image: linear-gradient(to bottom, #330867 0%, #30cfd0 100%);
   background-position: center;
   background-size: cover;
   color: #ddd;
@@ -609,7 +609,10 @@ header .hero-text span {
 
 .carousel {
   display: none;
-  margin-bottom: 4em;
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5em;
 }
 
 .card-body h5 {
@@ -738,9 +741,13 @@ header .hero-text span {
   transform: scale(0.96);
 }
 .clients-hero .container .card-title {
-  margin-bottom: 20px;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
+}
+.clients-hero .container .card-text {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .contact {
@@ -1200,6 +1207,9 @@ footer .copyright {
     width: 120px;
     height: 120px;
     line-height: 120px;
+  }
+  .about__card .text {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
