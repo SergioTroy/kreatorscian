@@ -183,7 +183,7 @@ h2 {
 }
 
 .fab-click {
-  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  box-shadow: 0 0 2px #0ba9ca, 0 0 10px #0ba9ca, 0 0 20px #0ba9ca;
   transform: translateY(5px);
 }
 
@@ -296,13 +296,14 @@ h2 {
   position: absolute;
   width: 45px;
   height: 45px;
-  background: rgb(25, 177, 191);
+  background: #000;
   bottom: 0;
   border-radius: 50%;
+  border: 2px solid rgb(25, 177, 191);
   left: 0;
   right: 0;
   margin: auto;
-  color: white;
+  color: rgb(25, 177, 191);
   line-height: 45px;
   z-index: 100;
   cursor: pointer;
