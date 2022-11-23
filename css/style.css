@@ -225,6 +225,51 @@ h2 {
   height: 250px;
 }
 
+.homeFab-position {
+  transform: translateY(-100px);
+}
+
+.floating-home-container {
+  display: none;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: -100px;
+  right: 0;
+  margin: 20px 5px;
+  z-index: 10;
+  transition: transform 1s;
+}
+.floating-home-container a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floating-home-container .floating-home-button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: rgb(25, 177, 191);
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 45px;
+  z-index: 100;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.18);
+  transition: background-color 0.5s;
+}
+
+.floating-home-container .floating-home-button:hover {
+  background-color: #000;
+}
+
 .floating-container {
   position: fixed;
   width: 70px;
@@ -1116,6 +1161,9 @@ footer .copyright {
   }
 }
 @media (min-width: 992px) {
+  .floating-home-container {
+    display: block;
+  }
   .floating-container {
     display: none;
   }
