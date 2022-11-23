@@ -575,12 +575,14 @@ header {
 		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -5;
 	}
-
+	.process-wrap{
+		padding-bottom: 30px;
+	}
 	.process-wrap i {
-		font-size: 3rem;
-		width: 120px;
-		height: 120px;
-		line-height: 120px;
+		font-size: 2.5rem;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
 		text-align: center;
 		display: inline-block;
 		border: 2px solid rgba(25, 177, 191, 0.5);
