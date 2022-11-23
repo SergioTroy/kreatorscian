@@ -341,7 +341,7 @@ header {
 		// overflow: hidden;
 		.text {
 			position: absolute;
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 			width: 100%;
 			height: 100%;
 			display: flex;
@@ -1002,6 +1002,9 @@ footer {
 			&--six {
 				grid-row: 2/3;
 				grid-column: 7/10;
+			}
+			.text{
+				font-size: 1.3rem;
 			}
 		}
 	}
