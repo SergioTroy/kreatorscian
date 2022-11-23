@@ -23,12 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
 			nav.classList.add("shadow-bg");
 			logo.style.fontSize = "0.9rem";
-			fabContainer.classList.add('fab-position')
 		} else {
 			nav.classList.remove("shadow-bg");
 			logo.style.fontSize = "";
-			fabContainer.classList.remove('fab-position')
 		}
+	}
+
+	function showFab(){
 		if (window.scrollY >= 50 ) {
 			fabContainer.classList.add('fab-position')
 		} else {
@@ -86,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	allnNavItems.forEach((item) => item.addEventListener("click", navOff));
 
 	window.addEventListener("scroll", addShadow);
+	window.addEventListener("scroll", showFab);
 	window.addEventListener("click", (e) =>
 		e.target === navArea ? navOff() : false
 	);
