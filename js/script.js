@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			logo.style.fontSize = "";
 			fabContainer.classList.remove('fab-position')
 		}
+		if (window.scrollY >= 50 ) {
+			fabContainer.classList.add('fab-position')
+		} else {
+			fabContainer.classList.remove('fab-position')
+		}
 	}
 
 	
