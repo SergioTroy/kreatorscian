@@ -408,12 +408,11 @@ nav .nav-link {
   margin: 0 0.9em;
   font-weight: bold;
   color: white;
-  transition: color 0.3s;
 }
 nav .nav-link,
 nav .nav-link::after,
 nav .nav-link::before {
-  transition: width 0.3s, height 0.3s, border-top 0.3s, border-left 0.3s, border-bottom 0.3s, border-right 0.3s;
+  transition: width 0.3s, height 0.3s, border-top 0.3s, border-left 0.3s, border-bottom 0.3s, border-right 0.3s, color 0.3s;
 }
 nav .nav-link:hover {
   color: rgb(25, 177, 191);
