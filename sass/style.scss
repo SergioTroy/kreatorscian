@@ -107,6 +107,7 @@ h2 {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
+		transition: color .5s;
 	}
 }
 
@@ -117,6 +118,7 @@ h2 {
 	background: $main-color;
 	bottom: 0;
 	border-radius: 50%;
+	border:2px solid $main-color;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -129,6 +131,9 @@ h2 {
 }
 .floating-home-container .floating-home-button:hover{
 	background-color: #000;
+}
+.floating-home-container .floating-home-button:hover > a{
+	color:$main-color;
 }
 
 .floating-container {
