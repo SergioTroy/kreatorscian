@@ -82,6 +82,7 @@ h2 {
 }
 .cross-rotate {
 	transform: rotate(135deg);
+	color:white;
 }
 .fab-height {
 	height: 250px;
@@ -115,7 +116,7 @@ h2 {
 	position: absolute;
 	width: 45px;
 	height: 45px;
-	background: #000;
+	background: rgba(0, 0, 0, 0.6);
 	bottom: 0;
 	border-radius: 50%;
 	border:2px solid $main-color;
@@ -160,7 +161,7 @@ h2 {
 	position: absolute;
 	width: 45px;
 	height: 45px;
-	background: #000;
+	background: rgba(0, 0, 0, 0.6);
 	bottom: 0;
 	border-radius: 50%;
 	border:2px solid $main-color;
@@ -181,7 +182,7 @@ h2 {
 		justify-content: center;
 		align-items: center;
 		font-size: 3rem;
-		transition: transform 0.3s;
+		transition: transform 0.3s, color 0.3s;
 	}
 }
 .floating-container .float-element {
