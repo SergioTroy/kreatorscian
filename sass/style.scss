@@ -645,7 +645,7 @@ header {
 		}
 		.card-text{
 			text-align: center;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 	}
 }
@@ -1159,7 +1159,6 @@ footer {
 		}
 		
 	}
-	
 }
 @media (min-width: 1200px) {
 	header {
@@ -1173,5 +1172,13 @@ footer {
 	}
 	h2 {
 		font-size: 3rem;
+	}
+	.clients-hero{
+		.container{
+			.card-text{
+			
+				font-size: 1.4rem;
+			}
+		}
 	}
 }

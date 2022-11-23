@@ -750,7 +750,7 @@ header .hero-text span {
 }
 .clients-hero .container .card-text {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .contact {
@@ -1228,5 +1228,8 @@ footer .copyright {
   }
   h2 {
     font-size: 3rem;
+  }
+  .clients-hero .container .card-text {
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=style.css.map */
