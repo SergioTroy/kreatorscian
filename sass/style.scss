@@ -86,7 +86,7 @@ h2 {
 .fab-height {
 	height: 250px;
 }
-.homeFab-position{
+.fab-position{
 	transform: translateY(-100px);
 }
 .floating-home-container {
@@ -141,7 +141,7 @@ h2 {
 	position: fixed;
 	width: 70px;
 	height: 70px;
-	bottom: 0;
+	bottom: -100px;
 	right: 0;
 	margin: 20px 5px;
 	z-index: 10;

@@ -46,10 +46,10 @@ const checkFile = (e) => {
 function showFabButton() {
     if (window.scrollY >= 50 && window.innerWidth >= 992) {
         
-        homeFab.classList.add('homeFab-position')
+        homeFab.classList.add('fab-position')
     } else {
        
-        homeFab.classList.remove('homeFab-position')
+        homeFab.classList.remove('fab-position')
     }
 }
 window.addEventListener("scroll", showFabButton);

@@ -225,7 +225,7 @@ h2 {
   height: 250px;
 }
 
-.homeFab-position {
+.fab-position {
   transform: translateY(-100px);
 }
 
@@ -279,7 +279,7 @@ h2 {
   position: fixed;
   width: 70px;
   height: 70px;
-  bottom: 0;
+  bottom: -100px;
   right: 0;
   margin: 20px 5px;
   z-index: 10;

@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (window.scrollY >= 50 && window.innerWidth >= 992) {
 			nav.classList.add("shadow-bg");
 			logo.style.fontSize = "0.9rem";
+			fabContainer.classList.add('fab-position')
 		} else {
 			nav.classList.remove("shadow-bg");
 			logo.style.fontSize = "";
+			fabContainer.classList.remove('fab-position')
 		}
 	}
 
