@@ -243,7 +243,7 @@ h2 {
 }
 .floating-home-container a {
   text-decoration: none;
-  color: rgb(25, 177, 191);
+  color: white;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -254,10 +254,9 @@ h2 {
   position: absolute;
   width: 45px;
   height: 45px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(25, 177, 191);
   bottom: 0;
   border-radius: 50%;
-  border: 2px solid rgb(25, 177, 191);
   left: 0;
   right: 0;
   margin: auto;
@@ -298,14 +297,13 @@ h2 {
   position: absolute;
   width: 45px;
   height: 45px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(25, 177, 191);
   bottom: 0;
   border-radius: 50%;
-  border: 2px solid rgb(25, 177, 191);
   left: 0;
   right: 0;
   margin: auto;
-  color: rgb(25, 177, 191);
+  color: white;
   line-height: 45px;
   z-index: 100;
   cursor: pointer;
@@ -320,7 +318,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s;
 }
 
 .floating-container .float-element {
