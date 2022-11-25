@@ -568,49 +568,99 @@ header {
 		font-weight: bold;
 		padding: 2em;
 	}
-	.option-btn {
-		margin: 0.8em 0;
-		padding: 0.8em;
-		width: 50%;
-		color: $pure-white;
+	// .option-btn {
+	// 	margin: 0.8em 0;
+	// 	padding: 0.8em;
+	// 	width: 50%;
+	// 	color: $pure-white;
+	// 	background-color: $main-color;
+	// 	border: none;
+	// 	border-radius: 8px;
+	// 	cursor: pointer;
+	// 	display: inline-block;
+
+	// 	left: 50%;
+	// 	transform: translateX(-50%);
+	// }
+	// .option-btn::before {
+	// 	background-color: rgb(8, 115, 125);
+	// }
+
+	// .btn-special-animation {
+	// 	position: relative;
+	// 	transition: background-color 0.3s;
+	// 	overflow: hidden;
+	// 	z-index: 0;
+
+	// 	&::before {
+	// 		display: block;
+	// 		content: "";
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 0;
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		transform: scaleX(0);
+	// 		transform-origin: right;
+	// 		transition: transform 0.3s;
+	// 		z-index: -1;
+	// 	}
+
+	// 	&:hover::before {
+	// 		transform: scaleX(1);
+	// 		transform-origin: left;
+	// 	}
+	// }
+	a{
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1em;
+	}
+	.button-30 {
+		align-items: center;
+		appearance: none;
 		background-color: $main-color;
-		border: none;
-		border-radius: 8px;
+		border-radius: 4px;
+		border-width: 0;
+		box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+		box-sizing: border-box;
+		color: white;
 		cursor: pointer;
-		display: inline-block;
-
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	.option-btn::before {
-		background-color: rgb(8, 115, 125);
-	}
-
-	.btn-special-animation {
-		position: relative;
-		transition: background-color 0.3s;
+		display: inline-flex;
+		font-family: "JetBrains Mono",monospace;
+		height: 48px;
+		justify-content: center;
+		line-height: 1;
+		list-style: none;
 		overflow: hidden;
-		z-index: 0;
-
-		&::before {
-			display: block;
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			transform: scaleX(0);
-			transform-origin: right;
-			transition: transform 0.3s;
-			z-index: -1;
-		}
-
-		&:hover::before {
-			transform: scaleX(1);
-			transform-origin: left;
-		}
-	}
+		padding-left: 16px;
+		padding-right: 16px;
+		position: relative;
+		text-align: left;
+		text-decoration: none;
+		transition: box-shadow .15s,transform .15s;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		white-space: nowrap;
+		will-change: box-shadow,transform;
+		font-size: 18px;
+	  }
+	  
+	  .button-30:focus {
+		box-shadow: rgb(14, 94, 102) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+	  }
+	  
+	  .button-30:hover {
+		box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+		transform: translateY(-2px);
+	  }
+	  
+	  .button-30:active {
+		box-shadow: rgb(14, 94, 102) 0 3px 7px inset;
+		transform: translateY(2px);
+	  }
 }
 //cooperation///
 .cooperation-hero {
