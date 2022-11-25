@@ -907,7 +907,7 @@ header .hero-text span {
   cursor: pointer;
   transition: background 0.3s;
 }
-.contact button:hover {
+.contact button:active {
   background: #000;
 }
 .contact input:focus ~ label,
@@ -950,10 +950,10 @@ header .hero-text span {
   color: white;
   cursor: pointer;
 }
-.contact input[type=file]::-webkit-file-upload-button:hover {
+.contact input[type=file]::-webkit-file-upload-button:active {
   background-color: #000;
 }
-.contact input[type=file]::file-selector-button:hover {
+.contact input[type=file]::file-selector-button:active {
   background-color: #000;
 }
 .contact .add-more:disabled {
@@ -1298,6 +1298,15 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+  .contact button:hover {
+    background: #000;
+  }
+  .contact input[type=file]::-webkit-file-upload-button:hover {
+    background-color: #000;
+  }
+  .contact input[type=file]::file-selector-button:hover {
+    background-color: #000;
   }
   .cooperation-hero .process-wrap i {
     font-size: 3rem;
