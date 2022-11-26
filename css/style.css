@@ -178,6 +178,51 @@ h2 {
   max-width: 1200px;
 }
 
+.button-30 {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgb(25, 177, 191);
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 1.3rem;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: rgb(14, 94, 102) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 .visible {
   visibility: visible;
 }
@@ -684,51 +729,6 @@ header .hero-text span {
   justify-content: center;
   margin-bottom: 1em;
 }
-.card-body .button-30 {
-  align-items: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: rgb(25, 177, 191);
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono", monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow 0.15s, transform 0.15s;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow, transform;
-  font-size: 18px;
-}
-.card-body .button-30:focus {
-  box-shadow: rgb(14, 94, 102) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-}
-.card-body .button-30:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-.card-body .button-30:active {
-  box-shadow: rgb(14, 94, 102) 0 3px 7px inset;
-  transform: translateY(2px);
-}
 
 .cooperation-hero {
   position: relative;
@@ -911,16 +911,9 @@ header .hero-text span {
 }
 .contact button {
   padding: 0.7em 0;
-  color: white;
-  outline: none;
-  background: rgb(25, 177, 191);
-  border: none;
   width: 100%;
   cursor: pointer;
-  transition: background 0.3s;
-}
-.contact button:active {
-  background: #000;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .contact input:focus ~ label,
 .contact input:valid ~ label {
@@ -962,14 +955,9 @@ header .hero-text span {
   color: white;
   cursor: pointer;
 }
-.contact input[type=file]::-webkit-file-upload-button:active {
-  background-color: #000;
-}
-.contact input[type=file]::file-selector-button:active {
-  background-color: #000;
-}
 .contact .add-more:disabled {
   background: #dddddd;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(119, 123, 125) 0 -3px 0 inset;
   cursor: not-allowed;
 }
 
@@ -1116,7 +1104,15 @@ footer .copyright {
   color: white;
 }
 
+@media (min-width: 576px) {
+  .button-30 {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 768px) {
+  .button-30 {
+    font-size: 1.6rem;
+  }
   h2 {
     font-size: 2.6rem;
   }
@@ -1184,6 +1180,9 @@ footer .copyright {
   }
 }
 @media (min-width: 992px) {
+  .button-30 {
+    font-size: 1.7rem;
+  }
   .floating-home-container {
     display: block;
   }
@@ -1230,35 +1229,35 @@ footer .copyright {
     height: 100%;
     background-color: transparent;
   }
-  .navbar-nav .nav-link-animation::before,
-.navbar-nav .nav-link-animation::after {
+  .navbar-nav .link-animation::before,
+.navbar-nav .link-animation::after {
     content: "";
     position: absolute;
     width: 0;
     height: 0;
   }
-  .navbar-nav .nav-link-animation::before {
+  .navbar-nav .link-animation::before {
     top: -2px;
     left: -8px;
     border-top: 0px solid #fff;
     border-left: 0px solid #fff;
   }
-  .navbar-nav .nav-link-animation::after {
+  .navbar-nav .link-animation::after {
     bottom: -2px;
     right: -8px;
     border-bottom: 0px solid #fff;
     border-right: 0px solid #fff;
   }
-  .navbar-nav .nav-link-animation:hover::before,
-.navbar-nav .nav-link-animation:hover::after {
+  .navbar-nav .link-animation:hover::before,
+.navbar-nav .link-animation:hover::after {
     width: 20px;
     height: 50%;
   }
-  .navbar-nav .nav-link-animation:hover::before {
+  .navbar-nav .link-animation:hover::before {
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
   }
-  .navbar-nav .nav-link-animation:hover::after {
+  .navbar-nav .link-animation:hover::after {
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
   }
@@ -1310,9 +1309,6 @@ footer .copyright {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
-  .contact button:hover {
-    background: #000;
   }
   .contact input[type=file]::-webkit-file-upload-button:hover {
     background-color: #000;

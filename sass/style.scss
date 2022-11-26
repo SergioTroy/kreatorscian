@@ -47,6 +47,8 @@ h2 {
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -10;
+		
+		
 	}
 }
 
@@ -55,6 +57,50 @@ h2 {
 	width: 100%;
 	max-width: 1200px;
 }
+.button-30 {
+	align-items: center;
+	appearance: none;
+	background-color: $main-color;
+	border-radius: 4px;
+	border-width: 0;
+	box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "JetBrains Mono",monospace;
+	height: 48px;
+	justify-content: center;
+	line-height: 1;
+	list-style: none;
+	overflow: hidden;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	transition: box-shadow .15s,transform .15s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	will-change: box-shadow,transform;
+	font-size: 1.3rem;
+  }
+  
+ 
+  
+  .button-30:hover {
+	box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
+	transform: translateY(-2px);
+	
+  }
+  
+  .button-30:active {
+	box-shadow: rgb(14, 94, 102) 0 3px 7px inset;
+	transform: translateY(2px);
+	
+  }
 .visible {
 	visibility: visible;
 }
@@ -568,99 +614,14 @@ header {
 		font-weight: bold;
 		padding: 2em;
 	}
-	// .option-btn {
-	// 	margin: 0.8em 0;
-	// 	padding: 0.8em;
-	// 	width: 50%;
-	// 	color: $pure-white;
-	// 	background-color: $main-color;
-	// 	border: none;
-	// 	border-radius: 8px;
-	// 	cursor: pointer;
-	// 	display: inline-block;
-
-	// 	left: 50%;
-	// 	transform: translateX(-50%);
-	// }
-	// .option-btn::before {
-	// 	background-color: rgb(8, 115, 125);
-	// }
-
-	// .btn-special-animation {
-	// 	position: relative;
-	// 	transition: background-color 0.3s;
-	// 	overflow: hidden;
-	// 	z-index: 0;
-
-	// 	&::before {
-	// 		display: block;
-	// 		content: "";
-	// 		position: absolute;
-	// 		top: 0;
-	// 		left: 0;
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		transform: scaleX(0);
-	// 		transform-origin: right;
-	// 		transition: transform 0.3s;
-	// 		z-index: -1;
-	// 	}
-
-	// 	&:hover::before {
-	// 		transform: scaleX(1);
-	// 		transform-origin: left;
-	// 	}
-	// }
+	
 	a{
 		text-decoration: none;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 1em;
 	}
-	.button-30 {
-		align-items: center;
-		appearance: none;
-		background-color: $main-color;
-		border-radius: 4px;
-		border-width: 0;
-		box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-		box-sizing: border-box;
-		color: white;
-		cursor: pointer;
-		display: inline-flex;
-		font-family: "JetBrains Mono",monospace;
-		height: 48px;
-		justify-content: center;
-		line-height: 1;
-		list-style: none;
-		overflow: hidden;
-		padding-left: 16px;
-		padding-right: 16px;
-		position: relative;
-		text-align: left;
-		text-decoration: none;
-		transition: box-shadow .15s,transform .15s;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-		white-space: nowrap;
-		will-change: box-shadow,transform;
-		font-size: 18px;
-	  }
-	  
-	  .button-30:focus {
-		box-shadow: rgb(14, 94, 102) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-	  }
-	  
-	  .button-30:hover {
-		box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(14, 94, 102) 0 -3px 0 inset;
-		transform: translateY(-2px);
-	  }
-	  
-	  .button-30:active {
-		box-shadow: rgb(14, 94, 102) 0 3px 7px inset;
-		transform: translateY(2px);
-	  }
+	
 }
 //cooperation///
 .cooperation-hero {
@@ -864,18 +825,16 @@ header {
 	}
 	button {
 		padding: 0.7em 0;
-		color: $white;
-		outline: none;
-		background: $main-color;
-		border: none;
+		
+		
 		width: 100%;
 		cursor: pointer;
-		transition: background 0.3s;
+		transition: transform 0.3s, box-shadow 0.3s;
 	}
 	
-	button:active {
-		background:  #000;
-	}
+	// button:active {
+	// 	background:  #000;
+	// }
 
 	input:focus ~ label,
 	input:valid ~ label {
@@ -911,12 +870,13 @@ header {
 		cursor: pointer;
 	}
 
-	input[type="file"]::file-selector-button:active {
-		background-color: #000;
-		// border: 2px solid #00cec9;
-	}
+	// input[type="file"]::file-selector-button:active {
+	// 	background-color: #000;
+	// 	// border: 2px solid #00cec9;
+	// }
 	.add-more:disabled {
 		background: #dddddd;
+		box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(119, 123, 125) 0 -3px 0 inset;
 		cursor: not-allowed;
 	}
 }
@@ -1072,12 +1032,28 @@ footer {
 	h2 {
 		color: $white;
 	}
+	// a{
+	// display: flex;
+	// width: 300px;
+	// justify-content: center;
+	// align-items: center;
+	
+	// }
+	// a:hover{
+	// 	color:white;
+	// }
 }
 
 
-// @media (min-width: 375px) {
-// }
+@media (min-width: 576px) {
+	.button-30{
+		font-size: 1.5rem;
+	}
+}
 @media (min-width: 768px) {
+	.button-30{
+		font-size: 1.6rem;
+	}
 	h2 {
 		font-size: 2.6rem;
 	}
@@ -1154,6 +1130,9 @@ footer {
 	}
 }
 @media (min-width: 992px) {
+	.button-30{
+		font-size: 1.7rem;
+	}
 	.floating-home-container{
 		display: block;
 	}
@@ -1204,35 +1183,35 @@ footer {
 		transform: translate(-50%, -50%);
 		height: 100%;
 		background-color: transparent;
-		.nav-link-animation::before,
-.nav-link-animation::after {
+		.link-animation::before,
+.link-animation::after {
 	content: "";
 	position: absolute;
 	width: 0;
 	height: 0;
 }
-.nav-link-animation::before {
+.link-animation::before {
 	top: -2px;
 	left: -8px;
 	border-top: 0px solid #fff;
 	border-left: 0px solid #fff;
 }
-.nav-link-animation::after {
+.link-animation::after {
 	bottom: -2px;
 	right: -8px;
 	border-bottom: 0px solid #fff;
 	border-right: 0px solid #fff;
 }
-.nav-link-animation:hover::before,
-.nav-link-animation:hover::after {
+.link-animation:hover::before,
+.link-animation:hover::after {
 	width: 20px;
 	height: 50%;
 }
-.nav-link-animation:hover::before {
+.link-animation:hover::before {
 	border-top: 1px solid #fff;
 	border-left: 1px solid #fff;
 }
-.nav-link-animation:hover::after {
+.link-animation:hover::after {
 	border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;
 }
@@ -1262,6 +1241,7 @@ footer {
 			a:hover {
 				color: $main-color;
 			}
+			
 		}
 		.carousel-indicators {
 			padding-bottom: 1em;
@@ -1288,9 +1268,9 @@ footer {
 			flex-direction: column;
 			justify-content: flex-start;
 		}
-		button:hover {
-			background: #000;
-		}
+		// button:hover {
+		// 	background: #000;
+		// }
 		input[type="file"]::file-selector-button:hover {
 			background-color: #000;
 			// border: 2px solid #00cec9;
