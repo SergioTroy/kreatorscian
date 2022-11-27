@@ -120,6 +120,38 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-left {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -1016,6 +1048,133 @@ footer .copyright {
   padding-top: 5em;
   width: 100%;
   height: 100%;
+}
+.faq .bg-decoration {
+  margin: 1.5em auto 3em;
+  width: 4em;
+  height: 100%;
+  position: relative;
+}
+.faq .bg-decoration i {
+  position: absolute;
+  opacity: 1;
+  transition: color 1s, text-shadow 1s;
+}
+.faq .bg-decoration i:hover {
+  color: rgb(25, 177, 191);
+  text-shadow: 0 0 30px rgb(25, 177, 191);
+}
+.faq .bg-decoration .one {
+  font-size: 50px;
+  top: -40px;
+  -webkit-animation: rotate-right 55s infinite linear;
+          animation: rotate-right 55s infinite linear;
+  left: -65px;
+}
+.faq .bg-decoration .two {
+  font-size: 20px;
+  top: 5px;
+  -webkit-animation: rotate-left 25s infinite linear;
+          animation: rotate-left 25s infinite linear;
+  left: -30px;
+}
+.faq .bg-decoration .three {
+  font-size: 15px;
+  top: -25px;
+  -webkit-animation: rotate-right 10s infinite linear;
+          animation: rotate-right 10s infinite linear;
+  left: -10px;
+}
+.faq .bg-decoration .four {
+  font-size: 35px;
+  top: -15px;
+  -webkit-animation: rotate-right 45s infinite linear;
+          animation: rotate-right 45s infinite linear;
+  left: 10px;
+}
+.faq .bg-decoration .five {
+  font-size: 10px;
+  top: 20px;
+  -webkit-animation: rotate-left 10s infinite linear;
+          animation: rotate-left 10s infinite linear;
+  left: 35px;
+}
+.faq .bg-decoration .six {
+  font-size: 20px;
+  top: -35px;
+  -webkit-animation: rotate-left 20s infinite linear;
+          animation: rotate-left 20s infinite linear;
+  left: 35px;
+}
+.faq .bg-decoration .seven {
+  font-size: 13px;
+  top: -10px;
+  -webkit-animation: rotate-right 15s infinite linear;
+          animation: rotate-right 15s infinite linear;
+  left: 60px;
+}
+.faq .bg-decoration .eight {
+  font-size: 18px;
+  top: 10px;
+  -webkit-animation: rotate-left 35s infinite linear;
+          animation: rotate-left 35s infinite linear;
+  left: 65px;
+}
+.faq .bg-decoration .nine {
+  font-size: 10px;
+  top: 15px;
+  -webkit-animation: rotate-right 5s infinite linear;
+          animation: rotate-right 5s infinite linear;
+  left: 105px;
+}
+.faq .bg-decoration .ten {
+  font-size: 45px;
+  top: -38px;
+  -webkit-animation: rotate-left 35s infinite linear;
+          animation: rotate-left 35s infinite linear;
+  left: 85px;
+}
+.faq .bg-decoration .eleven {
+  font-size: 35px;
+  top: -10px;
+  -webkit-animation: rotate-left 35s infinite linear;
+          animation: rotate-left 35s infinite linear;
+  left: -100px;
+}
+.faq .bg-decoration .twelve {
+  font-size: 20px;
+  top: -40px;
+  -webkit-animation: rotate-left 25s infinite linear;
+          animation: rotate-left 25s infinite linear;
+  left: -100px;
+}
+.faq .bg-decoration .thirteen {
+  font-size: 15px;
+  top: -20px;
+  -webkit-animation: rotate-right 15s infinite linear;
+          animation: rotate-right 15s infinite linear;
+  left: -120px;
+}
+.faq .bg-decoration .fourteen {
+  font-size: 20px;
+  top: -40px;
+  -webkit-animation: rotate-right 15s infinite linear;
+          animation: rotate-right 15s infinite linear;
+  left: 130px;
+}
+.faq .bg-decoration .fiveteen {
+  font-size: 25px;
+  top: 0px;
+  -webkit-animation: rotate-right 35s infinite linear;
+          animation: rotate-right 35s infinite linear;
+  left: 140px;
+}
+.faq .bg-decoration .sixteen {
+  font-size: 13px;
+  top: -13px;
+  -webkit-animation: rotate-left 15s infinite linear;
+          animation: rotate-left 15s infinite linear;
+  left: 170px;
 }
 .faq h2 {
   color: white;
