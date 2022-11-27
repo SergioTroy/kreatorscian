@@ -131,6 +131,15 @@
   margin: 0;
   height: 100%;
 }
+.box-buttons .carousel img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+  height: 50vh;
+}
+
 /******* Responsive *****/
 @media (max-width: 560px) {
   .v-stretch {

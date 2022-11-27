@@ -3,23 +3,40 @@ const fullImg = document.querySelector(".full-img");
 const fullImgBox = document.querySelector(".full-img-box");
 const nav = document.querySelector("nav");
 const closeImgBtn = document.querySelector(".closeFullImg");
-const description = document.querySelector(".image-description");
-const prevBtn = document.querySelector(".prevBtn");
-const nextBtn = document.querySelector(".nextBtn");
+// const description = document.querySelector(".image-description");
+// const prevBtn = document.querySelector(".prevBtn");
+// const nextBtn = document.querySelector(".nextBtn");
 let imgPath = "";
 let imgDescription = "";
+const carouselItem = document.querySelectorAll('.carousel-item')
 const carouselImg = document.querySelectorAll('.carousel-inner img')
+
+console.log(carouselItem)
+console.log(carouselImg)
 
 
 const showPicture = (e) => {
+
+	carouselItem.forEach((item) => item.classList.remove('active'));
+	carouselImg.forEach((img) => img.classList.remove('full-img'));
+
+
 	imgPath = e.target.getAttribute("src");
+
+	for(i=0; i<carouselImg.length; i++){
+		if(imgPath==carouselImg[i].getAttribute('src')){
+			carouselImg[i].classList.add('full-img')
+			carouselImg[i].parentElement.classList.add('active')
+		}
+	}
 	// imgDescription = e.target.getAttribute("alt");
-	fullImg.setAttribute("src", imgPath);
+	// fullImg.setAttribute("src", imgPath);
 	// if (imgDescription != null) {
 	// 	description.textContent = imgDescription;
 	// }
 	nav.style.display = "none";
 	fullImgBox.style.display = "flex";
+	
 };
 
 const closeImg = () => {
@@ -76,6 +93,10 @@ document.addEventListener('keydown', (event) => {
 	  closeImg()
 	}
   })
+window.addEventListener("click", (e) =>
+
+		e.target.tagName === 'DIV' ? closeImg() : false
+	);
 //   document.addEventListener('keydown', (e) => {
 // 	if (e.keyCode == '37') {
 // 	  prevImg()
