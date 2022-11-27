@@ -598,7 +598,9 @@ header {
 
 /////portfolio////
 ///
-
+.portfolio{
+	background-color: #fff;
+}
 .carousel {
 	display: none;
 	height: 70%;
@@ -626,16 +628,34 @@ header {
 //cooperation///
 .cooperation-hero {
 	// position: relative;
-	background-image: url("../img/coop-bg-small-v2.jpg");
-	background-position: center center;
-	background-size: cover;
-	position:fixed;
-	background-repeat: no-repeat;
-	color: #ddd;
-	z-index: 0;
-	height: 100vh;
-	width: 100vw;
-	
+	// background-image: url("../img/coop-bg-small-v2.jpg");
+	// background-position: center center;
+	// background-size: cover;
+	// background-attachment: fixed;
+	// background-repeat: no-repeat;
+	// color: #ddd;
+	// z-index: 0;
+	.hero2 {
+		min-height: 100%;
+		position: relative;
+		overflow: hidden;
+	  z-index: -100;
+	  color:white;
+		&::before {
+		  background-image: url('../img/coop-bg-small-v2.jpg');
+		  background-repeat: no-repeat;
+		  background-position: center center;
+		  background-size: cover;
+		  content: '';
+		  height: 100%;
+		  left: 0;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  will-change: transform;
+		  z-index: -10;
+		}
+	  }
 	.underline {
 		margin-bottom: 1.5em;
 	}
@@ -694,7 +714,7 @@ header {
 /////client/////////
 /// 
 .clients-hero{
-	
+	background-color: #fff;
 	.container{
 		.container h2{
 			color:white;
@@ -731,7 +751,11 @@ header {
 //contact//
 
 .contact {
-	margin: 4em 0;
+	background-color: #fff;
+	// margin: 4em 0;
+	h2{
+		margin: 0;
+	}
 	h3 {
 		text-align: center;
 		text-transform: uppercase;
@@ -1232,7 +1256,7 @@ footer {
 		margin-top: 3em;
 	}
 	.cooperation-hero {
-			background-image: url("../img/coop-bg-big.jpg");
+			// background-image: url("../img/coop-bg-big.jpg");
 		.process-wrap i {
 			font-size: 2rem;
 			width: 100px;
@@ -1389,7 +1413,7 @@ footer {
 		}
 	}
 	.cooperation-hero {
-		
+		background-image: url(../img/coop-bg-big.jpg);
 		.process-wrap i {
 			font-size: 3rem;
 			width: 120px;

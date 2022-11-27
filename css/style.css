@@ -740,6 +740,10 @@ header .hero-text span {
   color: #d5604c;
 }
 
+.portfolio {
+  background-color: #fff;
+}
+
 .carousel {
   display: none;
   height: 70%;
@@ -762,16 +766,26 @@ header .hero-text span {
   margin-bottom: 1em;
 }
 
-.cooperation-hero {
+.cooperation-hero .hero2 {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -100;
+  color: white;
+}
+.cooperation-hero .hero2::before {
   background-image: url("../img/coop-bg-small-v2.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
   position: fixed;
-  background-repeat: no-repeat;
-  color: #ddd;
-  z-index: 0;
-  height: 100vh;
-  width: 100vw;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -10;
 }
 .cooperation-hero .underline {
   margin-bottom: 1.5em;
@@ -826,6 +840,9 @@ header .hero-text span {
   font-size: 1.7rem;
 }
 
+.clients-hero {
+  background-color: #fff;
+}
 .clients-hero .container .container h2 {
   color: white;
 }
@@ -855,7 +872,10 @@ header .hero-text span {
 }
 
 .contact {
-  margin: 4em 0;
+  background-color: #fff;
+}
+.contact h2 {
+  margin: 0;
 }
 .contact h3 {
   text-align: center;
@@ -1329,9 +1349,6 @@ footer .copyright {
   .col-sm-5ths:nth-child(even) {
     margin-top: 3em;
   }
-  .cooperation-hero {
-    background-image: url("../img/coop-bg-big.jpg");
-  }
   .cooperation-hero .process-wrap i {
     font-size: 2rem;
     width: 100px;
@@ -1475,6 +1492,9 @@ footer .copyright {
   }
   .contact input[type=file]::file-selector-button:hover {
     background-color: #000;
+  }
+  .cooperation-hero {
+    background-image: url(../img/coop-bg-big.jpg);
   }
   .cooperation-hero .process-wrap i {
     font-size: 3rem;
