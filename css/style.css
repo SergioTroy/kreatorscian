@@ -771,6 +771,7 @@ header .hero-text span {
   background-repeat: no-repeat;
   color: #ddd;
   z-index: 0;
+  will-change: transform;
 }
 .cooperation-hero .underline {
   margin-bottom: 1.5em;

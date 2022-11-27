@@ -633,6 +633,7 @@ header {
 	background-repeat: no-repeat;
 	color: #ddd;
 	z-index: 0;
+	will-change: transform;
 	.underline {
 		margin-bottom: 1.5em;
 	}
