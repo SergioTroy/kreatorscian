@@ -766,12 +766,11 @@ header .hero-text span {
   position: relative;
   background-image: url("../img/coop-bg-small-v2.jpg");
   background-position: center center;
-  background-size: cover;
+  background-size: auto 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #ddd;
   z-index: 0;
-  will-change: transform;
 }
 .cooperation-hero .underline {
   margin-bottom: 1.5em;
