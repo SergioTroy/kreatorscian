@@ -627,35 +627,15 @@ header {
 }
 //cooperation///
 .cooperation-hero {
-	// position: relative;
-	// background-image: url("../img/coop-bg-small-v2.jpg");
-	// background-position: center center;
-	// background-size: cover;
-	// background-attachment: fixed;
-	// background-repeat: no-repeat;
-	// color: #ddd;
-	// z-index: 0;
-	.hero2 {
-		min-height: 100%;
-		position: relative;
-		overflow: hidden;
-	  z-index: -100;
-	  color:white;
-		&::before {
-		  background-image: url('../img/coop-bg-small-v2.jpg');
-		  background-repeat: no-repeat;
-		  background-position: center center;
-		  background-size: cover;
-		  content: '';
-		  height: 100%;
-		  left: 0;
-		  position: fixed;
-		  top: 0;
-		  width: 100%;
-		  will-change: transform;
-		  z-index: -10;
-		}
-	  }
+	position: relative;
+	background-image: url("../img/coop-bg-small-v2.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ddd;
+	z-index: 0;
+	
 	.underline {
 		margin-bottom: 1.5em;
 	}
@@ -751,8 +731,8 @@ header {
 //contact//
 
 .contact {
-	background-color: #fff;
-	// margin: 4em 0;
+	
+	margin: 4em 0;
 	h2{
 		margin: 0;
 	}
