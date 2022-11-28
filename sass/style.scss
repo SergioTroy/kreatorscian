@@ -598,9 +598,7 @@ header {
 
 /////portfolio////
 ///
-.portfolio{
-	background-color: #fff;
-}
+
 .carousel {
 	display: none;
 	height: 70%;
@@ -635,7 +633,6 @@ header {
 	background-repeat: no-repeat;
 	color: #ddd;
 	z-index: 0;
-	
 	.underline {
 		margin-bottom: 1.5em;
 	}
@@ -694,7 +691,7 @@ header {
 /////client/////////
 /// 
 .clients-hero{
-	background-color: #fff;
+	
 	.container{
 		.container h2{
 			color:white;
@@ -731,11 +728,7 @@ header {
 //contact//
 
 .contact {
-	
 	margin: 4em 0;
-	h2{
-		margin: 0;
-	}
 	h3 {
 		text-align: center;
 		text-transform: uppercase;
@@ -1236,7 +1229,7 @@ footer {
 		margin-top: 3em;
 	}
 	.cooperation-hero {
-			// background-image: url("../img/coop-bg-big.jpg");
+			background-image: url("../img/coop-bg-big.jpg");
 		.process-wrap i {
 			font-size: 2rem;
 			width: 100px;
@@ -1393,7 +1386,7 @@ footer {
 		}
 	}
 	.cooperation-hero {
-		background-image: url(../img/coop-bg-big.jpg);
+		
 		.process-wrap i {
 			font-size: 3rem;
 			width: 120px;

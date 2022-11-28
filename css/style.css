@@ -740,10 +740,6 @@ header .hero-text span {
   color: #d5604c;
 }
 
-.portfolio {
-  background-color: #fff;
-}
-
 .carousel {
   display: none;
   height: 70%;
@@ -829,9 +825,6 @@ header .hero-text span {
   font-size: 1.7rem;
 }
 
-.clients-hero {
-  background-color: #fff;
-}
 .clients-hero .container .container h2 {
   color: white;
 }
@@ -862,9 +855,6 @@ header .hero-text span {
 
 .contact {
   margin: 4em 0;
-}
-.contact h2 {
-  margin: 0;
 }
 .contact h3 {
   text-align: center;
@@ -1338,6 +1328,9 @@ footer .copyright {
   .col-sm-5ths:nth-child(even) {
     margin-top: 3em;
   }
+  .cooperation-hero {
+    background-image: url("../img/coop-bg-big.jpg");
+  }
   .cooperation-hero .process-wrap i {
     font-size: 2rem;
     width: 100px;
@@ -1481,9 +1474,6 @@ footer .copyright {
   }
   .contact input[type=file]::file-selector-button:hover {
     background-color: #000;
-  }
-  .cooperation-hero {
-    background-image: url(../img/coop-bg-big.jpg);
   }
   .cooperation-hero .process-wrap i {
     font-size: 3rem;
