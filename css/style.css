@@ -1475,6 +1475,9 @@ footer .copyright {
   .contact input[type=file]::file-selector-button:hover {
     background-color: #000;
   }
+  .cooperation-hero {
+    background-image: url("../img/coop-bg-big.jpg");
+  }
   .cooperation-hero .process-wrap i {
     font-size: 3rem;
     width: 120px;
