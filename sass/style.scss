@@ -461,20 +461,31 @@ header {
 		
 	}
 	.title{
-		font-size: 4em;
+		font-size: 3em;
 		position: absolute;
-		top: 45%;
-		
-		left: 75%;
-		
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+font-weight: bold;
 		z-index: 3;
 		color:#fff;
-		text-shadow: 0 5px 10px rgba(0,0,0,0.3);
+		text-shadow: 0 5px 10px rgba(0,0,0,0.4);
 		text-transform: uppercase;
 		text-align: center;
-		span{
-			color:$main-color;
+		.left{
+			position: absolute;
+			// transform: translateY(-170px);
+			margin-bottom: 100px;
+			transform: translateX(-710px);
+		
 		}
+		.right{
+			position: absolute;
+			transform: translateX(560px);
+			color:$main-color;
+			
+		}
+		
 	}
 }
 header::before{

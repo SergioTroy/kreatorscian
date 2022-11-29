@@ -1,9 +1,15 @@
 const images = document.querySelectorAll('.images img')
-const title  = document.querySelector('.title')
+const leftTitle  = document.querySelector('.title .left')
+const rightTitle  = document.querySelector('.title .right')
 
 window.addEventListener('scroll', ()=>{
-    title.style.left = (75 - window.scrollY/10) + "%"; 
-if(window.scrollY >= 20){
+    if(window.scrollY<=215){
+        leftTitle.style.left = (window.scrollY *2.2) + "px"; 
+        console.log(window.scrollY)
+        rightTitle.style.left = '-' + (window.scrollY *2.5) + "px"; 
+    }
+
+if(window.scrollY >= 50){
     images[1].style.zIndex = 1;
 }
 else{
