@@ -455,23 +455,26 @@ header {
 			z-index: 4;
 		}
 		.img4{
-			z-index: 2;
+			z-index: 5;
 		}
 
 		
 	}
 	.title{
-		font-size: 6em;
+		font-size: 4em;
 		position: absolute;
 		top: 45%;
 		
-		left: 55%;
+		left: 75%;
 		
 		z-index: 3;
 		color:#fff;
 		text-shadow: 0 5px 10px rgba(0,0,0,0.3);
 		text-transform: uppercase;
 		text-align: center;
+		span{
+			color:$main-color;
+		}
 	}
 }
 header::before{

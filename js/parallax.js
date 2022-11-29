@@ -2,7 +2,7 @@ const images = document.querySelectorAll('.images img')
 const title  = document.querySelector('.title')
 
 window.addEventListener('scroll', ()=>{
-    title.style.left = (60 - window.scrollY/10) + "%"; 
+    title.style.left = (75 - window.scrollY/10) + "%"; 
 if(window.scrollY >= 20){
     images[1].style.zIndex = 1;
 }
