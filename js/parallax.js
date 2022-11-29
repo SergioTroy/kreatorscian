@@ -13,7 +13,7 @@ if(window.scrollY >= 50){
     images[1].style.zIndex = 1;
 }
 else{
-    images[1].style.zIndex = 2; 
+    images[1].style.zIndex = 6; 
 }
 //    images[2].style.top = '-' + (window.scrollY / 2.5) + "px"; 
 //    images[3].style.top = '-' + (window.scrollY / 2.5) + "px"; 
