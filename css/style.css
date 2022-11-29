@@ -549,42 +549,59 @@ button:focus:not(:focus-visible) {
 
 header {
   color: white;
-}
-header h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-header p {
-  margin-top: 1em;
-  font-size: 1.5rem;
-  white-space: nowrap;
-}
-header .hero-img {
-  position: relative;
+  min-height: 40em;
   height: 100vh;
-  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
-  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to top, #0f031f 0%, #186667 100%);
 }
-header .hero-shadow {
+header .images {
+  height: 100vh;
+  overflow: hidden;
+}
+header .images img {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.1s;
 }
-header .hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 2em;
+header .images .img1 {
+  z-index: 2;
+}
+header .images .img2 {
+  z-index: 3;
+}
+header .images .img3 {
+  z-index: 4;
+}
+header .images .img4 {
+  z-index: 2;
+}
+header .title {
+  font-size: 6em;
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  z-index: 3;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
   text-align: center;
-  z-index: 10;
 }
-header .hero-text span {
-  color: rgb(25, 177, 191);
+
+header::before {
+  content: "";
+  background: linear-gradient(0deg, #ebeff6, rgba(235, 239, 246, 0));
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .about {
