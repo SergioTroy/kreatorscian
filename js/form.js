@@ -44,7 +44,7 @@ const checkFile = (e) => {
 }
 
 function showFabButton() {
-    if (window.scrollY >= 50 && window.innerWidth >= 992) {
+    if (window.scrollY >= 400 && window.innerWidth >= 992) {
         
         homeFab.classList.add('fab-position')
     } else {
