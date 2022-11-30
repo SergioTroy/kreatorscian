@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	
 	function addShadow() {
-		if (window.scrollY >= 50 && window.innerWidth >= 992) {
+		if (window.scrollY >= 450 && window.innerWidth >= 992) {
 			nav.classList.add("shadow-bg");
 			logo.style.fontSize = "0.9rem";
 		} else {
