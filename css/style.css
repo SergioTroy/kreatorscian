@@ -1329,6 +1329,10 @@ footer .copyright {
   }
 }
 @media (min-width: 768px) {
+  header .title {
+    z-index: 3;
+    transform: translateY(0);
+  }
   .button-30 {
     font-size: 1.6rem;
   }
