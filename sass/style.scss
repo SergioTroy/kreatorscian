@@ -430,7 +430,7 @@ header {
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
-	background-image: linear-gradient(to top, #0f031f 0%, #186667 100%);
+	background-color: $bg-color;
 	
 	.images{
 		// width: 100vw;
