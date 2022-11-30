@@ -582,22 +582,23 @@ header .images .img4 {
   z-index: 5;
 }
 header .title {
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  z-index: 3;
+  z-index: 10;
   color: #fff;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   text-align: center;
+  transform: translateY(60px);
 }
 header .title .left {
   position: absolute;
   margin-bottom: 100px;
-  transform: translateX(-710px);
+  transform: translateX(-620px);
 }
 header .title .right {
   position: absolute;
@@ -1395,6 +1396,15 @@ footer .copyright {
   }
 }
 @media (min-width: 992px) {
+  header .title {
+    font-size: 3em;
+  }
+  header .title .left {
+    transform: translateX(-710px);
+  }
+  header .title .right {
+    transform: translateX(560px);
+  }
   .button-30 {
     font-size: 1.7rem;
   }
