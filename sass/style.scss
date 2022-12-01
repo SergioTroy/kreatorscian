@@ -91,7 +91,7 @@ h2 {
 	touch-action: manipulation;
 	white-space: nowrap;
 	will-change: box-shadow,transform;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
   }
   
  
@@ -586,7 +586,7 @@ header::before{
 		// overflow: hidden;
 		.text {
 			position: absolute;
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 			width: 100%;
 			height: 100%;
 			display: flex;
@@ -690,6 +690,9 @@ header::before{
 		}
 		
 	}
+	.aboutus-card-text{
+		font-size: 1.7rem;
+	}
 	.info-circle {
 		display: block;
 		position: relative;
@@ -754,7 +757,7 @@ header::before{
 }
 .card-body {
 	h5 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -766,6 +769,7 @@ header::before{
 		display: flex;
 		justify-content: center;
 		margin-bottom: 1em;
+		
 	}
 	
 }
@@ -857,7 +861,7 @@ header::before{
 		}
 		.card{
 			transition: transform 0.3s;
-			height: 600px;
+			height: 650px;
 			img{
 				height: 300px;
 				object-fit:cover;
@@ -877,7 +881,7 @@ header::before{
 		}
 		.card-text{
 			text-align: center;
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -1375,7 +1379,7 @@ footer {
 				grid-column: 7/10;
 			}
 			.text{
-				font-size: 1.3rem;
+				font-size: 1.5rem;
 			}
 		}
 	}
@@ -1585,7 +1589,7 @@ footer {
 				animation:none;
 			}
 			.text{
-				font-size: 1.5rem;
+				font-size: 1.7rem;
 			}
 		}
 		
