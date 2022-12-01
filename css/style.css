@@ -581,6 +581,39 @@ header .images .img3 {
 header .images .img4 {
   z-index: 5;
 }
+header .mobile-text {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s, bottom 1s ease-in-out;
+}
+header .mobile-text .title-mobile {
+  font-size: 1.7em;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+header .mobile-text .title-mobile .right {
+  color: rgb(25, 177, 191);
+}
+header .mobile-text p {
+  padding-top: 0.5em;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.7);
+}
+header .mobile-text-animation {
+  bottom: 100px;
+  opacity: 1;
+}
+header .title-desktop {
+  display: none;
+}
 header .title {
   font-size: 2em;
   position: absolute;
@@ -1400,6 +1433,12 @@ footer .copyright {
   }
 }
 @media (min-width: 992px) {
+  header .mobile-text {
+    display: none;
+  }
+  header .title-desktop {
+    display: block;
+  }
   header .title {
     font-size: 3em;
   }

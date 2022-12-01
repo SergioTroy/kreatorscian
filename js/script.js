@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	function showFab(){
-		if (window.scrollY >= 50 ) {
+		if (window.scrollY >= 400 ) {
 			fabContainer.classList.add('fab-position')
 		} else {
 			fabContainer.classList.remove('fab-position')
