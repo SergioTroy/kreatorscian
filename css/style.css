@@ -589,7 +589,7 @@ header .mobile-text {
   z-index: 10;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s, bottom 1s ease-in-out;
+  transition: opacity 1s, bottom 2s ease-in-out;
 }
 header .mobile-text .title-mobile {
   font-size: 1.7em;
