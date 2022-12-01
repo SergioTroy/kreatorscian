@@ -13,11 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
 	const element2 = document.querySelector('.float-element2')
 	const element3 = document.querySelector('.float-element3')
 	const cross = document.querySelector('.cross')
+	const cardIcons = document.querySelectorAll('.about i')
+	const cards = document.querySelectorAll('.about__card')
 	
 	
-	
-	
-	
+	window.addEventListener("click", (e) =>{
+		if(window.innerWidth <= 768)
+		{
+			for(i=0; i<cards.length; i++){
+				if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i!=cards.length-1)
+				{
+					cardIcons[i].classList.remove('icon-animation')
+					cardIcons[i+1].classList.add('icon-animation')
+				}
+				else if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i==cards.length-1){
+					cardIcons[i].classList.remove('icon-animation')
+				}
+			}
+		}
+	}
+		
+	);
 	
 	function addShadow() {
 		if (window.scrollY >= 400 && window.innerWidth >= 992) {

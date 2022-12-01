@@ -15,7 +15,6 @@ window.addEventListener('scroll', ()=>{
     showTitle();
     if(window.scrollY<=800){
         leftTitle.style.left = (window.scrollY *1.5) + "px"; 
-        console.log(window.scrollY)
         rightTitle.style.left = '-' + (window.scrollY *1.3) + "px"; 
     }
     

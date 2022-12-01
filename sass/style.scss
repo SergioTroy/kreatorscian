@@ -485,14 +485,15 @@ header {
 			text-shadow: 0 5px 10px rgba(0,0,0,0.3);
 			text-transform: uppercase;
 			
-	// 		.right{
-	// 			background-clip: text;
-	// -webkit-background-clip: text;
-	// color: transparent;
-	// background-image: url('../img/bg-header/background-g326dc8eee_1280.jpg');
-	// background-size: cover;
-	// background-position: center;
-	// 		}
+			.right{
+				// color:$main-color;
+				background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0, 0, 0, 0.3);
+	background-image: url('../img/bg-header/background-g326dc8eee_1280.jpg');
+	background-size: cover;
+	background-position: center;
+			}
 		}
 		p{
 		padding-top: 0.5em;
@@ -554,7 +555,9 @@ header::before{
 	background-color: $bg-color;
 	// background-image: linear-gradient(to bottom, #000 0%, #190433 100%);
 	overflow: hidden;
-	
+	.icon-animation{
+		animation:tilt-n-move-shaking 0.5s infinite;
+	}
 	// h2{
 	// 	padding-top: 3em;
 	// }
@@ -579,9 +582,7 @@ header::before{
 		transition: background-color 0.3s, border 0.3s;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
 		z-index: 5;
-		.fa-image{
-			animation:tilt-n-move-shaking 0.5s infinite;
-		}
+		
 		// overflow: hidden;
 		.text {
 			position: absolute;
@@ -607,6 +608,7 @@ header::before{
 		&:hover > .text {
 			clip-path: circle(120% at 50% 90%);
 		}
+		
 
 		&::before {
 			position: absolute;
@@ -1345,7 +1347,7 @@ footer {
 		}
 
 		&__card {
-			.fa-image{
+			i {
 				animation:none;
 			}
 			&--one {
@@ -1579,7 +1581,9 @@ footer {
 	.about {
 	
 		&__card{
-
+			.icon-animation{
+				animation:none;
+			}
 			.text{
 				font-size: 1.5rem;
 			}

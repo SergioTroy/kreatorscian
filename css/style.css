@@ -636,6 +636,14 @@ header .mobile-text .title-mobile {
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 }
+header .mobile-text .title-mobile .right {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/bg-header/background-g326dc8eee_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
 header .mobile-text p {
   padding-top: 0.5em;
   white-space: nowrap;
@@ -661,6 +669,10 @@ header::before {
   background-color: #ebeff6;
   overflow: hidden;
 }
+.about .icon-animation {
+  -webkit-animation: tilt-n-move-shaking 0.5s infinite;
+          animation: tilt-n-move-shaking 0.5s infinite;
+}
 .about__box {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -681,10 +693,6 @@ header::before {
   transition: background-color 0.3s, border 0.3s;
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
   z-index: 5;
-}
-.about__card .fa-image {
-  -webkit-animation: tilt-n-move-shaking 0.5s infinite;
-          animation: tilt-n-move-shaking 0.5s infinite;
 }
 .about__card .text {
   position: absolute;
@@ -1382,7 +1390,7 @@ footer .copyright {
   .about__box {
     padding: 5em 2em;
   }
-  .about__card .fa-image {
+  .about__card i {
     -webkit-animation: none;
             animation: none;
   }
@@ -1584,6 +1592,10 @@ footer .copyright {
     width: 120px;
     height: 120px;
     line-height: 120px;
+  }
+  .about__card .icon-animation {
+    -webkit-animation: none;
+            animation: none;
   }
   .about__card .text {
     font-size: 1.5rem;
