@@ -592,7 +592,7 @@ header .mobile-text {
   transition: opacity 1s, bottom 2s ease-in-out;
 }
 header .mobile-text .title-mobile {
-  font-size: 1.7em;
+  font-size: 2em;
   white-space: nowrap;
   font-weight: bold;
   color: #fff;
