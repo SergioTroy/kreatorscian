@@ -152,6 +152,40 @@
     transform: rotate(-360deg);
   }
 }
+@-webkit-keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -647,6 +681,10 @@ header::before {
   transition: background-color 0.3s, border 0.3s;
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
   z-index: 5;
+}
+.about__card .fa-image {
+  -webkit-animation: tilt-n-move-shaking 0.5s infinite;
+          animation: tilt-n-move-shaking 0.5s infinite;
 }
 .about__card .text {
   position: absolute;
@@ -1343,6 +1381,10 @@ footer .copyright {
   }
   .about__box {
     padding: 5em 2em;
+  }
+  .about__card .fa-image {
+    -webkit-animation: none;
+            animation: none;
   }
   .about__card--one {
     grid-row: 1/2;
