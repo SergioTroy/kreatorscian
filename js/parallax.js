@@ -13,19 +13,36 @@ function showTitle(){
 window.addEventListener('scroll', ()=>{
 
     showTitle();
-    if(window.scrollY<=215){
-        leftTitle.style.left = (window.scrollY *2.2) + "px"; 
+    if(window.scrollY<=800){
+        leftTitle.style.left = (window.scrollY *1.5) + "px"; 
         console.log(window.scrollY)
-        rightTitle.style.left = '-' + (window.scrollY *2.5) + "px"; 
+        rightTitle.style.left = '-' + (window.scrollY *1.3) + "px"; 
     }
     
-
-if(window.scrollY){
-    images[1].style.zIndex = 1;
+if(window.innerWidth >= 992){
+    if(window.scrollY){
+        images[1].style.zIndex = 2;
+    }
+    else{
+        images[1].style.zIndex = 7; 
+    }
+    if(window.scrollY>=50){
+        images[1].style.zIndex = 1;
+    }
+    else{
+        images[1].style.zIndex = 7; 
+    }
 }
 else{
-    images[1].style.zIndex = 6; 
+    if(window.scrollY){
+        images[1].style.zIndex = 1;
+    }
+    else{
+        images[1].style.zIndex = 7; 
+    } 
 }
+
+
 
 
 //    images[2].style.top = '-' + (window.scrollY / 2.5) + "px"; 
