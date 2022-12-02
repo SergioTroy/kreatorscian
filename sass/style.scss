@@ -1285,8 +1285,8 @@ footer {
 			img {
 			
 				padding-top: 2em;
-				width: 40%;
-				height: 40%;
+				width: 80%;
+				height: 80%;
 			}
 		}
 	
@@ -1496,6 +1496,19 @@ footer {
 			line-height: 100px;
 		}
 	}
+	.faq{
+		.accordion-item{
+			.margins-img{
+				
+				img {
+				
+					
+					width: 60%;
+					height: 60%;
+				}
+			}
+		}
+	}
 }
 @media (min-width: 992px) {
 	header{
@@ -1689,6 +1702,20 @@ footer {
 	
 	height: 100vh;
 }
+.faq{
+	.accordion-item{
+		.margins-img{
+			
+			img {
+			
+				
+				width: 40%;
+				height: 40%;
+			}
+		}
+	}
+}
+
 }
 @media (min-width: 1200px) {
 	header {

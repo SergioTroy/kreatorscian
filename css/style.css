@@ -1349,8 +1349,8 @@ footer .rodo a:hover {
 }
 .faq .accordion-item .margins-img img {
   padding-top: 2em;
-  width: 40%;
-  height: 40%;
+  width: 80%;
+  height: 80%;
 }
 .faq .accordion-body {
   position: relative;
@@ -1522,6 +1522,10 @@ footer .rodo a:hover {
     height: 100px;
     line-height: 100px;
   }
+  .faq .accordion-item .margins-img img {
+    width: 60%;
+    height: 60%;
+  }
 }
 @media (min-width: 992px) {
   header .mobile-text .title-mobile {
@@ -1685,6 +1689,10 @@ footer .rodo a:hover {
   .comercialGallery,
 .nonComercialGallery {
     height: 100vh;
+  }
+  .faq .accordion-item .margins-img img {
+    width: 40%;
+    height: 40%;
   }
 }
 @media (min-width: 1200px) {
