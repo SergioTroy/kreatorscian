@@ -13,23 +13,20 @@ function showTitle(){
 window.addEventListener('scroll', ()=>{
 
     showTitle();
-    if(window.scrollY<=800){
-        leftTitle.style.left = (window.scrollY *1.5) + "px"; 
-        rightTitle.style.left = '-' + (window.scrollY *1.3) + "px"; 
-    }
-    
+    // if(window.scrollY<=800){
+    //     leftTitle.style.left = (window.scrollY *1.5) + "px"; 
+    //     rightTitle.style.left = '-' + (window.scrollY *1.3) + "px"; 
+    // }
+    console.log(window.scrollY)
 if(window.innerWidth >= 992){
     if(window.scrollY){
-        images[1].style.zIndex = 2;
+        images[1].style.zIndex = 3;
     }
     else{
         images[1].style.zIndex = 7; 
     }
-    if(window.scrollY>=50){
+    if(window.scrollY>=30){
         images[1].style.zIndex = 1;
-    }
-    else{
-        images[1].style.zIndex = 7; 
     }
 }
 else{
