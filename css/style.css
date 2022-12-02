@@ -1454,6 +1454,9 @@ footer .copyright {
   header .mobile-text .title-mobile {
     font-size: 5rem;
   }
+  header .mobile-text p {
+    font-size: 2rem;
+  }
   .button-30 {
     font-size: 1.7rem;
   }
