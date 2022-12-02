@@ -1394,7 +1394,21 @@ footer {
 	}
 }
 @media (min-width: 768px) {
-	
+	header{
+		.mobile-text{
+			// display: none;
+			.title-mobile {
+				font-size: 4rem;
+			}
+			p{
+				font-size: 1.8rem;
+			}
+		}
+		// .title-desktop{
+		// 	display: block;
+		// }
+		
+}
 	.button-30{
 		font-size: 1.6rem;
 	}
@@ -1689,4 +1703,11 @@ footer {
 			}
 		}
 	}
+}
+.preloader{
+	background: #0e111f url(../img/loading.gif) no-repeat center center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
 }
