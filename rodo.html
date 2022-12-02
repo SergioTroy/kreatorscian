@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>Kreator Ścian - Gdzie technologia spotyka się ze sztuką</title>
+    <link rel="icon" type="image/png" href="img/logo-small12.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/55fe1b5204.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#home"><img class="logo-bottom logo" src="./img/logo-small1.png"
+                    alt="logo kreator ścian"><img class="logo-top logo" src="./img/logo-small12.png"
+                    alt="logo kreator ścian"></a>
+            <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link link-animation" href="index.html#about">o nas</a>
+                    <a class="nav-link link-animation" href="index.html#portfolio">portfolio</a>
+                    <a class="nav-link link-animation" href="index.html#cooperation">współpraca</a>
+                    <a class="nav-link link-animation" href="index.html#contact">kontakt</a>
+                    <a class="nav-link link-animation" href="faq.html">faq</a>
+                    <div class="social-media__box-mobile">
+                        <a href="https://www.facebook.com/kreatorScian/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kreator_scian/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@kreator_scian" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-tiktok"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="social-media__box">
+                <a href="https://www.facebook.com/kreatorScian/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kreator_scian/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kreator_scian" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-tiktok"></i></a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="floating-home-container">
+        <div class="floating-home-button"><a href="#home"><i class="fa-solid fa-chevron-up"></i></a></div>
+    </div>
+
+    <div class="floating-container">
+        <div class="floating-button"><span class="cross">+</span></div>
+        <div class="element-container">
+
+            <a href="tel:+48 575 732 864"> <span class="float-element float-element1 tooltip-left">
+                    <i class="fa-solid fa-phone"></i></a>
+            </span>
+            <span class="float-element float-element2">
+                <a href="mailto:kreatorscian@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </i>
+            </span>
+            <span class="float-element float-element3">
+                <a href="https://www.instagram.com/kreator_scian/"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+        </div>
+    </div>
+
+    
+
+    <main>
+        <section class="privacypolitics py-5" id="privacypolitics">
+
+            <div class="wrapper">
+                <div class="container">
+                    <h2>polityka prywatności i rodo</h2>
+                    <div class="underline"></div>
+                </div>
+                <h3>Polityka prywatności:</h3>
+                <p class="first-p">Administrator portalu www.kreatorscian.pl nie wykorzystuje portalu do gromadzenia
+                    danych osobowych użytkowników w celach innych niż sprzedaż własnych produktów i
+                    usług oraz w celu wewnętrznego marketingu i promocji własnych produktów.</p>
+                    <h4>Podmioty przetwarzające dane osobowe</h4>
+                   <p>
+                    Dane wprowadzane w formularzu kontaktowym na stronie www.kreatorscian.pl służą
+                    jedynie do realizacji procesu nawiązania kontaktu/współpracy i są przechowywane
+                    wyłącznie w tym celu.</p>
+                    <h4>Bezpieczeństwo – certyfikat ssl</h4>
+                    <p>
+                        Strona internetowa www.kreatorscian.pl działa w pełni w oparciu o certyfikaty SSL
+                        gwarantujące bezpieczeństwo transmisji od twojego komputera do naszych serwerów.
+                        Wpisane przez ciebie dane w formularzach na stronie nie są zatem dostępne dla nikogo,
+                        kto nie jest w jakiś sposób powiązany z realizacją zamówienia, płatności i dostarczeniem
+                        go do Ciebie.</p>
+                    <h4>Pliki cookies</h4>
+                   <p>
+                    Portal www.kreatorscian.pl wykorzystuje pliki „cookies”, które pozwalają na zapamiętanie
+                    wybranych informacji o jego użytkownikach i ich preferencjach. Za ich pomocą nie są
+                    jednak przetwarzane lub przechowywane dane osobowe, a jedynie informacje
+                    pozwalające na:<ul>
+                        <li>Dopasowanie portalu do potrzeb użytkowników;</li>
+                        <li>Tworzenie statystyk oglądalności podstron portalu;</li>
+                        <li>Dostosowanie części informacji wyświetlanych w portalu i na stronach partnerskich do
+                            zainteresowań użytkownika.</li>
+                    </ul>
+                    Użytkownik, który nie życzy sobie wykorzystywania plików „cookies” w opisanym
+                    powyżej celu, ma możliwość skonfigurowania ustawień wykorzystywanej przeglądarki
+                    internetowej w sposób uniemożliwiający przechowywanie wspomnianych plików w
+                    pamięci komputera. W każdej chwili może również usunąć je ręcznie. W celu
+                    zapoznania się ze szczegółową instrukcją postępowania prosimy o odwiedzenie strony
+                    internetowej producenta używanej przeglądarki internetowej.</p>
+                    <h4>Remarketing i narzędzia społecznościowe</h4>
+                    <p>
+                        Korzystamy w ramach serwisu www.kreatorscian.pl z narzędzi remarketingowych, takich
+                        jak Facebook Pixel lub Google Adwords, by kierować do Ciebie reklamy na tym oraz na
+                        innych serwisach, które mają zachęcić do powrotu do naszej strony. Rozwiązania te
+                        bazują na plikach cookies, zaś ich wyłączenie spowoduje zaprzestanie przetwarzania
+                        danych w tym zakresie. W przypadku Facebooka, wyświetlanie reklam na serwisie jest
+                        również uzależnione od tego czy jest się w tym serwisie zalogowanym.
+                        Na stronie dostępne są również funkcje społecznościowe, takie jak przyciski służące do
+                        udostępniania treści w serwisach społecznościowych, likeboxy, czy też materiały
+                        
+                        embedowane z serwisów zewnętrznych. Korzystanie z tych funkcji wymaga akceptacji
+                        plików cookies podmiotów trzecich, takich jak Facebook czy Google.</p>
+                        <h4>Usługi google</h4>
+                    <p>
+                        Strona www.kreatorscian.pl używa mechanizmów analizy ruchu sieciowego, która
+                        została udostępniona przez Google inc. („Google inc., 1600 Amphitheatre Parkway,
+                        Mountain View, CA 94043, USA”): Google Analytics, Google Ddouble Click oraz Google
+                        Tag Manager. Google Analytics, Google Double Click and Google Tag Manager używają
+                        tzw. Plików cookies, które umożliwiają analizę sposobu korzystania ze stron
+                        internetowych. Informacje zbieranie przez pliki cookies są w sposób pośredni
+                        przekazywane na serwery Google znajdujące się w USA i tam są archiwizowane.
+                        Jeżeli funkcja anonimizacji adresu ip jest włączona podczas korzystania z naszej strony
+                        internetowej, adres ip użytkownika jest skracany przez firmę Google i nie jest w żaden
+                        sposób przetwarzany – przetwarzany jest wyłącznie jego skrót nie będący daną
+                        osobową umożliwiającą identyfikację. Jedynie w wyjątkowych przypadkach pełen adres
+                        ip jest wysyłany do serwera google w USA i tam skracany. W ten sposób funkcja
+                        anonimizacji adresu ip będzie aktywna na naszej stronie internetowej. Google
+                        wykorzystuje przesyłane informacje do analizy korzystania przez użytkowników z naszej
+                        strony internetowej, przygotowywania raportów dotyczących korzystania ze strony
+                        internetowej i innych usług związanych z korzystaniem z internetu. Adres IP przekazany
+                        przez przeglądarkę użytkownika w ramach programu Google Analytics nie jest
+                        przechowywany wraz z innymi danymi Google.
+                        Użytkownik ma możliwość zapisywania plików cookie w przeglądarce internetowej.
+                        Jednakże w takim przypadku pełne wykorzystanie wszystkich funkcji strony internetowej
+                        nie będzie możliwe. Oprócz tego, użytkownik może zablokować zapisywanie danych
+                        zebranych przez cookies dotyczących używania strony internetowej (włącznie z adresem
+                        IP) i wysyłanie ich do Google, jak również przekazywanie tych danych przez Google,
+                        pobierając i instalując wtyczkę dostępną pod następującym linkiem: dodatek do
+                        przeglądarki blokujący Google Analytics (https://tools.google.com/dlpage/gaoptout?
+                        HL=pl).</p>
+                        <h4>Możliwość cofnięcia zgód lub zmiany i usunięcia danych</h4>
+                    <p>
+                        Masz możliwość w każdej chwili cofnąć wyrażone zgody, zmienić swoje dane, a także
+                        przesłać wniosek o ich całkowite usunięcie. Możesz tego dokonać kontaktując się z nami
+                        przesyłając nam wiadomość email z adresu powiązanego z twoim kontem. Zgody na
+                        przetwarzanie plików cookies możesz ustawić samodzielnie w swojej przeglądarce lub
+                        skorzystać z przesłanych wyżej porad.</p>
+                        <h4>Przetwarzanie danych technologicznych</h4>
+                    <p>
+                        Firma Kreator Ścian Daniel Chajęcki w pełni respektuje prawo do prywatności i ochrony
+                        danych technologicznych. Firma Kreator Ścian zbiera wyłącznie informacje o
+                        wykorzystywaniu niniejszego portalu przez zapisywanie do logów systemowych danych
+                        technologicznych, takich jak data połączenia z serwisem oraz adresu ip. Informacje te są
+                        wykorzystywane do celów wyłącznie administracyjnych i statystycznych i nie pozwalają
+                        na identyfikację pojedynczego użytkownika.
+                        Dane te przechowywane są w specjalnej strefie bezpieczeństwa i mają do nich dostęp
+                        tylko i wyłącznie upoważnione osoby związane z portalem www.kreatorscian.pl i
+                        zobowiązane do zachowania uzyskanych informacji w tajemnicy. Stosownie do zapisu
+                        art. 18 ust. 6 ustawy z dnia 18 lipca 2002 r. O świadczeniu usług drogą elektroniczną
+                        (dz. U. Nr 144, poz. 1204), Kreator Ścian może zostać zobowiązany do wydania
+                        informacji zawartych w logach dostępowych (w tym w szczególności numeru ip
+                        
+                        komputera) organom państwa, uprawnionym na podstawie prawa, na potrzeby
+                        prowadzonych przez nie postępowań.
+                        Firma Kreator Ścian Daniel Chajęcki jako administrator portalu www.kreatorscian.pl nie
+                        ponosi odpowiedzialności za politykę ochrony prywatności innych stron internetowych,
+                        zarówno tych dostępnych dla użytkowników dzięki linkom umieszczonym na stronach
+                        portalu www.kreatorscian.pl, jak i tych, które umieszczają linki do portalu
+                        www.kreatorscian.pl.<br>
+                        * * *</p>
+                    <p class="last-p">Powyższe zasady zachowania poufności mogą ulec w przyszłości zmianom. O
+                        wszelkich zmianach użytkownicy zostaną zawsze poinformowani z wyprzedzeniem.
+                        Wszelkie pytania i uwagi dotyczące warunków korzystania z portalu www.kreatorscian.pl
+                        oraz ochrony prywatności jego użytkowników można przekazać korzystając z danych
+                        podanych w zakładce „kontakt”.</p>
+                        <h3>Klauzula informacyjna:</h3>
+                        <p class="first-p">Dziękujemy za odwiedzenie naszej strony. W związku z rozpoczęciem od dnia 25 maja 2018 r.
+                            obowiązywanie Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27
+                            kwietnia 2016 r. „w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
+                            osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
+                            95/46/WE” zwanych dalej RODO informujemy:
+                           <ol>
+                            <li>Administratorem / Podmiotem przetwarzającym Państwa dane osobowe jest firma
+                                Kreator Ścian z siedzibą: Warszawa ul. winorośli 6/35 03-142 Warszawa.</li>
+                            <li>Przetwarzamy następujące dane: imiona i nazwiska, miejsca prowadzenia działalności
+                                gospodarczej i inne dane kontaktowe. Nie przetwarzamy danych wrażliwych ani danych
+                                osób małoletnich.</li>
+                            <li>Dane osobowe przetwarzane będą:
+                                w celu realizacji zadań związanych z profilem działalności naszej firmy</li>
+                            <li>Podstawą przetwarzania jest: <ul>
+                                <li>dobrowolna zgoda, wyrażona poprzez kontakt z nami - zgodnie art. 6. Ust 1. lit a) RODO
+                                    lub</li>
+                            <li>umowa pomiędzy administratorem danych osobowych a osobą fizyczną, której dane są
+                                przetwarzane - zgodnie art. 6. Ust 1. lit b) RODO lub</li>
+                            <li>prawnie uzasadnione interesy realizowane przez Kreator Ścian lub przez stronę trzecią -
+                                zgodnie Artykułem 6. Ust 1. lit f) RODO</li>
+                        </ul>
+                    </li>
+                            <li>Państwa dane osobowe będą przechowywane maksymalnie przez okres niezbędny dla
+                                realizacji prawnie uzasadnionych interesów firmy lub ochrony Państwa danych
+                                osobowych.</li>
+                            <li>Posiadacie Państwo prawo dostępu do treści swoich danych oraz macie prawo do ich
+                                sprostowania, usunięcia, ograniczenia przetwarzania, prawo do przenoszenia danych
+                                oraz prawo do cofnięcia zgody.</li>
+                            <li>W przypadku naruszenia przepisów ogólnego Rozporządzenia o Ochronie Danych
+                                Osobowych (RODO) macie Państwo prawo wniesienia skargi do organu nadzorczego.</li>
+                            <li>Nie podejmujemy decyzji opartych wyłącznie na zautomatyzowanym profilowaniu danych
+                                osobowych.</li>
+                            <li>Posiadane dane osobowe zabezpieczamy przed niepowołanym dostępem osób trzecich.
+                                Dostęp do aplikacji zawierającej dane osobowe posiadają tylko uprawnione osoby i tylko
+                                w niezbędnym zakresie, zaś dostęp do systemów realizowany jest poprzez unikalny
+                                identyfikator i zabezpieczony jest hasłem dostępu.</li>
+                            <li>W sprawach dotyczących przetwarzania Państwa danych osobowych można
+                                kontaktować się pisemnie na adres: Kreator Ścian Warszawa ul. Winorśli 6/35 03-142
+                                lub na adres poczty elektronicznej: biuro@kreatorscian.pl</li>
+                           </ol></p>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer minimal bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="footer-logo local-scroll mb-30 wow zoomIn">
+                        <p><span class="logo-element">- </span>KREATOR ŚCIAN<span class="logo-element"> -</span>
+                        </p>
+                    </div>
+                    <div class="socials footer-socials">
+                        <a href="https://www.facebook.com/kreatorScian/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kreator_scian/" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@kreatorscian_pl"><i class="fa-brands fa-youtube" target="_blank" rel="noopener noreferrer"></i></a>
+                        <a href="https://www.tiktok.com/@kreator_scian" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <span class="copyright text-center">&copy;&nbsp;
+                        <script>document.write(new Date().getFullYear())</script> | kreator ścian
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+       
+    
+    
+</body>
+
+</html>

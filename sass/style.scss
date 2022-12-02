@@ -489,7 +489,7 @@ header {
 				// color:$main-color;
 				background-clip: text;
 	-webkit-background-clip: text;
-	color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.5);
 	background-image: url('../img/bg-header/background-g326dc8eee_1280.jpg');
 	background-size: cover;
 	background-position: center;
@@ -503,7 +503,7 @@ header {
 		}
 	}
 	.mobile-text-animation{
-		bottom:100px;
+		bottom:150px;
 		opacity:1;
 	}
 // 	.title-desktop{
@@ -1096,13 +1096,24 @@ footer {
 			transform: translate(-50%, -50%);
 		}
 	}
-	.copyright {
+	.copyright, .rodo {
 		margin-top: 2em;
 		display: flex;
 		justify-content: center;
 		text-transform: uppercase;
 		color: $white;
 		font-size: 1rem;
+	}
+	.rodo{
+		text-transform: none;
+		a{
+			text-decoration: none;
+			color:white;
+			transition:color 0.3s;
+		}
+		a:hover{
+			color:$main-color;
+		}
 	}
 }
 
@@ -1261,6 +1272,17 @@ footer {
 		span{
 			font-weight: bold;
 		}
+		.margins-img{
+			display: flex;
+			justify-content: center;
+			img {
+			
+				padding-top: 2em;
+				width: 40%;
+				height: 40%;
+			}
+		}
+	
 	}
 	.accordion-body {
 		position: relative;
@@ -1336,6 +1358,31 @@ footer {
 	}
 }
 
+.privacypolitics{
+	h2{
+		padding-top: 3em;
+	}
+	background-color: $bg-color;
+
+	h3{
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	.first-p{
+		padding-top: 2em;
+	}
+	.last-p{
+		padding-bottom: 2em;
+	}
+	p{
+		text-indent: 30px;
+	}
+	h4{
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+	
+}
 
 
 @media (min-width: 576px) {

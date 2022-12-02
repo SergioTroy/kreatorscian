@@ -639,7 +639,7 @@ header .mobile-text .title-mobile {
 header .mobile-text .title-mobile .right {
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/bg-header/background-g326dc8eee_1280.jpg");
   background-size: cover;
   background-position: center;
@@ -651,7 +651,7 @@ header .mobile-text p {
   color: rgba(0, 0, 0, 0.7);
 }
 header .mobile-text-animation {
-  bottom: 100px;
+  bottom: 150px;
   opacity: 1;
 }
 
@@ -1152,13 +1152,24 @@ footer .socials i {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-footer .copyright {
+footer .copyright, footer .rodo {
   margin-top: 2em;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
   color: white;
   font-size: 1rem;
+}
+footer .rodo {
+  text-transform: none;
+}
+footer .rodo a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+footer .rodo a:hover {
+  color: rgb(25, 177, 191);
 }
 
 .faq {
@@ -1322,6 +1333,15 @@ footer .copyright {
 .faq .accordion-item span {
   font-weight: bold;
 }
+.faq .accordion-item .margins-img {
+  display: flex;
+  justify-content: center;
+}
+.faq .accordion-item .margins-img img {
+  padding-top: 2em;
+  width: 40%;
+  height: 40%;
+}
 .faq .accordion-body {
   position: relative;
   color: rgba(255, 255, 255, 0.6);
@@ -1392,6 +1412,30 @@ footer .copyright {
 .comercialGallery h2,
 .nonComercialGallery h2 {
   color: white;
+}
+
+.privacypolitics {
+  background-color: #ebeff6;
+}
+.privacypolitics h2 {
+  padding-top: 3em;
+}
+.privacypolitics h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.privacypolitics .first-p {
+  padding-top: 2em;
+}
+.privacypolitics .last-p {
+  padding-bottom: 2em;
+}
+.privacypolitics p {
+  text-indent: 30px;
+}
+.privacypolitics h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 @media (min-width: 576px) {

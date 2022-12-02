@@ -36,13 +36,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 	
 	function addShadow() {
-		if (window.scrollY >= 400 && window.innerWidth >= 992) {
-			nav.classList.add("shadow-bg");
-			logo.style.fontSize = "0.9rem";
-		} else {
-			nav.classList.remove("shadow-bg");
-			logo.style.fontSize = "";
+		if(window.location.pathname == '/index.html'){
+			if (window.scrollY >= 400 && window.innerWidth >= 992) {
+				nav.classList.add("shadow-bg");
+				logo.style.fontSize = "0.9rem";
+			} else {
+				nav.classList.remove("shadow-bg");
+				logo.style.fontSize = "";
+			}
 		}
+		else{
+			if (window.scrollY >= 50 && window.innerWidth >= 992) {
+				nav.classList.add("shadow-bg");
+				logo.style.fontSize = "0.9rem";
+			} else {
+				nav.classList.remove("shadow-bg");
+				logo.style.fontSize = "";
+			}
+		}
+		
 	}
 
 	function showFab(){
