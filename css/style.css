@@ -677,6 +677,7 @@ header::before {
 
 .about {
   background-color: #ebeff6;
+  overflow: hidden;
 }
 .about .icon-animation {
   -webkit-animation: tilt-n-move-shaking 0.5s infinite;
