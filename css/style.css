@@ -1425,8 +1425,8 @@ footer .rodo a:hover {
 .privacypolitics {
   background-color: #ebeff6;
 }
-.privacypolitics .wrapper {
-  padding: 0 2em;
+.privacypolitics .container {
+  padding: 1.5em;
 }
 .privacypolitics h2 {
   padding-top: 3em;
