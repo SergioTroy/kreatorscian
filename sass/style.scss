@@ -1248,6 +1248,19 @@ footer {
 		border-radius: 8px;
 		margin: 0.5em;
 		box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+		a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color:$main-color;
+			font-weight: bold;
+			transition:color 0.3s;
+		}
+		a:hover{
+			color:rgb(99, 233, 246);
+		}
+		span{
+			font-weight: bold;
+		}
 	}
 	.accordion-body {
 		position: relative;
@@ -1256,7 +1269,7 @@ footer {
 		border-radius: 8px;
 		padding: 2em;
 		margin-bottom: 1em;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 	.accordion-body::before {
 		content: "";

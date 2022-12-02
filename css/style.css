@@ -1309,6 +1309,19 @@ footer .copyright {
   margin: 0.5em;
   box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
 }
+.faq .accordion-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(25, 177, 191);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.faq .accordion-item a:hover {
+  color: rgb(99, 233, 246);
+}
+.faq .accordion-item span {
+  font-weight: bold;
+}
 .faq .accordion-body {
   position: relative;
   color: rgba(255, 255, 255, 0.6);
@@ -1316,7 +1329,7 @@ footer .copyright {
   border-radius: 8px;
   padding: 2em;
   margin-bottom: 1em;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .faq .accordion-body::before {
   content: "";
