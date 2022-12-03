@@ -1474,6 +1474,8 @@ footer {
 		}
 		form {
 			margin-top: 0;
+			width: 100%;
+			max-width: none;
 		}
 	}
 	.col-sm-5ths {
@@ -1733,4 +1735,12 @@ footer {
 			}
 		}
 	}
+}
+@media (min-width: 2000px) {
+.cooperation-hero{
+	.hero-img{
+		background-image: url(../img/coop-bg-ultrawide.jpg);
+	}
+}
+
 }

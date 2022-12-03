@@ -1502,6 +1502,8 @@ footer .rodo a:hover {
   }
   .contact form {
     margin-top: 0;
+    width: 100%;
+    max-width: none;
   }
   .col-sm-5ths {
     width: 20%;
@@ -1702,5 +1704,10 @@ footer .rodo a:hover {
   }
   .clients-hero .container .card-text {
     font-size: 1.4rem;
+  }
+}
+@media (min-width: 2000px) {
+  .cooperation-hero .hero-img {
+    background-image: url(../img/coop-bg-ultrawide.jpg);
   }
 }/*# sourceMappingURL=style.css.map */
