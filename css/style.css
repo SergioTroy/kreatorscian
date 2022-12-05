@@ -791,12 +791,13 @@ header::before {
   margin: 3em 0;
 }
 .aboutus-hero .aboutus-hero-item i {
+  color: #ebeff6;
   font-size: 3rem;
   margin: 0.5em 0;
   text-shadow: 2px 2px 5px #000000;
 }
 .aboutus-hero .aboutus-hero-item .aboutus-hero-title {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .aboutus-hero .aboutus-card-text {
   font-size: 1.7rem;
@@ -1129,7 +1130,8 @@ footer span.logo-element {
 footer p {
   text-align: center;
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 footer .socials {
   display: flex;
