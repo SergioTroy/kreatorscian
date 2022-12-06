@@ -22,6 +22,17 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
     <div class="preloader" id="preloader"></div>
+    <div class="cookies-popup">
+        <div class="content">
+            <i class="fa-solid fa-cookie-bite"></i> 
+            <h2>Polityka prywatności i cookies</h2>
+            <p>Ta strona używa plików cookies, w celu dostarczeniu usług na najwyższym poziomie. Dlasze korzystanie ze strony oznacza, że zgadzasz się na ich użycie. <a href="rodo.html">Więcej</a></p>
+            <div class="buttons">
+                <button class="item acceptBtn">Akceptuję</button>
+                <span class="closeCookies">X</span>
+            </div>
+        </div>
+    </div>
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container-fluid">
             <a class="navbar-brand " href="#home"><img class="logo-bottom logo" src="./img/logo-small1.png"
@@ -558,9 +569,41 @@
     <script src="./js/parallax.js"></script>
     <script>
         let loader = document.querySelector('.preloader')
+        const cookieBox = document.querySelector('.cookies-popup')
+         const acceptBtn = cookieBox.querySelector('.acceptBtn')
+         const closeCookies = cookieBox.querySelector('.closeCookies')
+         let checkCookie = document.cookie.indexOf("accepted_cookies=yes");
+         
+         if(checkCookie!=-1){
+            cookieBox.classList.add('hide')
+         }
+         else{
+            cookieBox.style.zIndex= 100;
+            cookieBox.classList.remove('hide');
+         }
         window.addEventListener('load', function () {
             loader.style.display = 'none'
+            
         })
+        acceptBtn.addEventListener('click', ()=>{
+            document.cookie = "accepted_cookies=yes; max-age="+60*60*24*30;
+            if(document.cookie){
+                cookieBox.classList.add('hide')
+                console.log("czesc")
+            }
+            else{
+                alert("Pliki cookies na tej stronie są zablokowane")
+            }
+            
+        })
+
+        closeCookies.addEventListener('click',()=>{
+            cookieBox.classList.add('hide')
+        })
+
+       
+        
+
     </script>
 
 </body>
