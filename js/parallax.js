@@ -14,7 +14,7 @@ window.addEventListener('scroll', ()=>{
 
     showTitle();
     
-    console.log(window.scrollY)
+    
 if(window.innerWidth >= 992){
     if(window.scrollY){
         images[1].style.zIndex = 3;

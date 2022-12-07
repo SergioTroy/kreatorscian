@@ -565,6 +565,8 @@ header::before{
 	background-color: $bg-color;
 	
 	overflow: hidden;
+	
+	
 	.icon-animation{
 		animation:tilt-n-move-shaking 0.5s infinite;
 	}

@@ -9,8 +9,6 @@ let imgDescription = "";
 const carouselItem = document.querySelectorAll('.carousel-item')
 const carouselImg = document.querySelectorAll('.carousel-inner img')
 
-console.log(carouselItem)
-console.log(carouselImg)
 
 
 const showPicture = (e) => {
