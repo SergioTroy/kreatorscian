@@ -3,9 +3,7 @@ const fullImg = document.querySelector(".full-img");
 const fullImgBox = document.querySelector(".full-img-box");
 const nav = document.querySelector("nav");
 const closeImgBtn = document.querySelector(".closeFullImg");
-// const description = document.querySelector(".image-description");
-// const prevBtn = document.querySelector(".prevBtn");
-// const nextBtn = document.querySelector(".nextBtn");
+
 let imgPath = "";
 let imgDescription = "";
 const carouselItem = document.querySelectorAll('.carousel-item')
@@ -29,11 +27,7 @@ const showPicture = (e) => {
 			carouselImg[i].parentElement.classList.add('active')
 		}
 	}
-	// imgDescription = e.target.getAttribute("alt");
-	// fullImg.setAttribute("src", imgPath);
-	// if (imgDescription != null) {
-	// 	description.textContent = imgDescription;
-	// }
+	
 	nav.style.display = "none";
 	fullImgBox.style.display = "flex";
 	
@@ -58,13 +52,3 @@ window.addEventListener("click", (e) =>
 
 		e.target.tagName === 'DIV' ? closeImg() : false
 	);
-//   document.addEventListener('keydown', (e) => {
-// 	if (e.keyCode == '37') {
-	  
-// 	}
-//   })
-//   document.addEventListener('keydown', (e) => {
-// 	if (e.keyCode == '39') {
-	 
-// 	}
-//   })
