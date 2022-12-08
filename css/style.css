@@ -348,7 +348,6 @@ h2 {
   color: white;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono", monospace;
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -554,6 +553,13 @@ h2 {
 
 .floating-container .float-element:nth-child(3) {
   background: #196bbe;
+}
+
+.header-top {
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  display: none;
 }
 
 nav {
@@ -1598,12 +1604,18 @@ footer .rodo a:hover {
     height: 100px;
     line-height: 100px;
   }
+  .cooperation-hero .process-wrap h3 {
+    font-size: 1.3rem;
+  }
   .faq .accordion-item .margins-img img {
     width: 60%;
     height: 60%;
   }
 }
 @media (min-width: 992px) {
+  .header-top {
+    display: block;
+  }
   header .mobile-text .title-mobile {
     font-size: 5rem;
   }
@@ -1754,6 +1766,9 @@ footer .rodo a:hover {
     width: 120px;
     height: 120px;
     line-height: 120px;
+  }
+  .cooperation-hero .process-wrap h3 {
+    font-size: 1.5rem;
   }
   .about__card .icon-animation {
     -webkit-animation: none;

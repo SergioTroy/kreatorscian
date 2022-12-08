@@ -159,7 +159,7 @@ h2 {
 	color: white;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: "JetBrains Mono",monospace;
+	// font-family: "JetBrains Mono",monospace;
 	height: 48px;
 	justify-content: center;
 	line-height: 1;
@@ -354,7 +354,12 @@ h2 {
 .floating-container .float-element:nth-child(3) {
 	background: #196bbe;
 }
-
+.header-top{
+	width: 100%;
+	height: 90px;
+	background-color: #000;
+	display: none;
+}
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
@@ -1477,6 +1482,11 @@ footer {
 			height: 100px;
 			line-height: 100px;
 		}
+		.process-wrap h3 {
+			
+			font-size: 1.3rem;
+			
+		}
 	}
 	.faq{
 		.accordion-item{
@@ -1493,6 +1503,9 @@ footer {
 	}
 }
 @media (min-width: 992px) {
+	.header-top{
+		display: block;
+	}
 	header{
 		.mobile-text{
 			
@@ -1660,6 +1673,9 @@ footer {
 			width: 120px;
 			height: 120px;
 			line-height: 120px;
+		}
+		.process-wrap h3 {
+			font-size: 1.5rem;
 		}
 	}
 
