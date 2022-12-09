@@ -7,6 +7,7 @@ $('.team-carousel').slick({
     useTransform: false,
     cssEase: 'ease-out',
     easing: 'swing',
+    dots:true,
     responsive: [
 
         {

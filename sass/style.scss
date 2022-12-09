@@ -893,6 +893,53 @@ header::before{
 		}
 	}
 }
+.slick-dots{
+	text-align: center;
+	margin-top: 20px;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: black;
+	transition: color 0.5s, opacity 0.5s, transform 0.5s;
+}
+li.slick-active button:before {
+	color:$main-color;
+	opacity:1;
+	transform: scale(1.5);
+}
 
 //contact//
 
