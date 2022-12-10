@@ -788,8 +788,8 @@ header::before {
   padding: 2em 0.5em;
   border-radius: 8px;
   background-color: #fff;
-  -webkit-clip-path: circle(0% at 50% 50%);
-          clip-path: circle(0% at 50% 50%);
+  -webkit-clip-path: circle(0% at 50% 0%);
+          clip-path: circle(0% at 50% 0%);
   transition: -webkit-clip-path 1.5s;
   transition: clip-path 1.5s;
   transition: clip-path 1.5s, -webkit-clip-path 1.5s;
