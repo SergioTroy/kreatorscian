@@ -610,7 +610,7 @@ header::before{
 			justify-content: center;
 			padding: 2em 0.5em;
 			border-radius: 8px;
-			will-change: auto;
+			will-change: clip-path;
 			background-color: #fff;
 			clip-path: circle(0% at 50% 0%);
 			transition: clip-path 1.5s;
