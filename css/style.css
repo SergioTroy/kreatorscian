@@ -791,9 +791,9 @@ header::before {
   background-color: #fff;
   -webkit-clip-path: circle(0% at 50% 0%);
           clip-path: circle(0% at 50% 0%);
-  transition: -webkit-clip-path 1.5s;
-  transition: clip-path 1.5s;
-  transition: clip-path 1.5s, -webkit-clip-path 1.5s;
+  transition: -webkit-clip-path 2s;
+  transition: clip-path 2s;
+  transition: clip-path 2s, -webkit-clip-path 2s;
 }
 .about__card:hover {
   background-color: white;
@@ -898,7 +898,7 @@ header::before {
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fa9483;
+  color: #ddd;
   font-weight: bold;
 }
 .aboutus-hero .info-circle::before {

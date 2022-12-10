@@ -613,7 +613,7 @@ header::before{
 			will-change: clip-path;
 			background-color: #fff;
 			clip-path: circle(0% at 50% 0%);
-			transition: clip-path 1.5s;
+			transition: clip-path 2s;
 		}
 
 		&:hover {
@@ -726,7 +726,7 @@ header::before{
 			top: 50px;
 			left: 50%;
 			transform: translateX(-50%);
-			color:$second-color;
+			color:#ddd;
 			font-weight: bold;
 		}
 		&::before {
