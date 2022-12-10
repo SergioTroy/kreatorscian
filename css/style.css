@@ -870,6 +870,15 @@ header::before {
   border: 1px solid #fa9483;
   border-radius: 50%;
 }
+.aboutus-hero .info-circle p {
+  white-space: nowrap;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fa9483;
+  font-weight: bold;
+}
 .aboutus-hero .info-circle::before {
   position: absolute;
   top: 0;
@@ -1587,9 +1596,6 @@ footer .rodo a:hover {
   .col-sm-5ths {
     width: 20%;
     float: left;
-  }
-  .col-sm-5ths:nth-child(even) {
-    margin-top: 3em;
   }
   .cooperation-hero .process-wrap i {
     font-size: 2rem;
