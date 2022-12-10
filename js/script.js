@@ -15,25 +15,57 @@ document.addEventListener("DOMContentLoaded", function () {
 	const cross = document.querySelector('.cross')
 	const cardIcons = document.querySelectorAll('.about i')
 	const cards = document.querySelectorAll('.about__card')
+	const texts = document.querySelectorAll('.about__card .text')
+	// const cardOne = document.querySelectorAll('.about__card--one')
 	
 	
-	window.addEventListener("click", (e) =>{
-		if(window.innerWidth <= 768)
-		{
-			for(i=0; i<cards.length; i++){
-				if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i!=cards.length-1)
-				{
-					cardIcons[i].classList.remove('icon-animation')
-					cardIcons[i+1].classList.add('icon-animation')
-				}
-				else if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i==cards.length-1){
-					cardIcons[i].classList.remove('icon-animation')
-				}
+
+
+window.onscroll = function elementInViewport() {
+	if(window.innerWidth <= 992){
+		for(i=0; i<cards.length; i++){
+			let bounding = cards[i].getBoundingClientRect();
+	
+			if (bounding.top >= 0 
+				&& bounding.left >= 0 
+				&& bounding.right <= (window.innerWidth || document.documentElement.clientWidth) 
+				&& bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+		
+				cards[i].style.backgroundColor = '#ffff'
+				cards[i].style.border = '1px solid rgb(25 177 191)'
+				cards[i].style.zIndex = 1;
+				texts[i].style.clipPath = 'circle(120% at 50% 90%)';
+				// 	background-color: $white;
+			// 	border: 1px solid $main-color;
+			// 	z-index: 1;
+			} else {
+				cards[i].style.backgroundColor = '#ebeff6'
+				cards[i].style.border = '1px solid transparent'
+				cards[i].style.zIndex = 0
+				texts[i].style.clipPath = 'circle(0% at 50% 50%)';
 			}
 		}
 	}
+	
+    
+}
+	// window.addEventListener("click", (e) =>{
+	// 	if(window.innerWidth <= 768)
+	// 	{
+	// 		for(i=0; i<cards.length; i++){
+	// 			if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i!=cards.length-1)
+	// 			{
+	// 				cardIcons[i].classList.remove('icon-animation')
+	// 				cardIcons[i+1].classList.add('icon-animation')
+	// 			}
+	// 			else if(cards[i]==e.target && cardIcons[i].classList.contains('icon-animation')==true && i==cards.length-1){
+	// 				cardIcons[i].classList.remove('icon-animation')
+	// 			}
+	// 		}
+	// 	}
+	// }
 		
-	);
+	// );
 	
 	function addShadow() {
 		if(window.location.pathname == '/index.html'){

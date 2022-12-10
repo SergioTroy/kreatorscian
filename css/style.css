@@ -768,7 +768,7 @@ header::before {
   justify-items: center;
   align-items: center;
   justify-content: center;
-  padding: 1.5em;
+  padding: 6.5em;
   text-align: center;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -777,10 +777,31 @@ header::before {
   box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
   z-index: 5;
 }
+.about__card .text {
+  position: absolute;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-clip-path: circle(0% at 50% 50%);
+          clip-path: circle(0% at 50% 50%);
+  transition: -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s;
+  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+}
 .about__card:hover {
   background-color: white;
   border: 1px solid rgb(25, 177, 191);
   z-index: 1;
+}
+.about__card:hover > .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
 }
 .about__card::before {
   position: absolute;
@@ -1802,26 +1823,6 @@ footer .rodo a:hover {
   .about .about__card--six {
     grid-row: 2/3;
     grid-column: 7/10;
-  }
-  .about .about__card .text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 2em 0.5em;
-    border-radius: 8px;
-    background-color: #fff;
-    -webkit-clip-path: circle(0% at 50% 50%);
-            clip-path: circle(0% at 50% 50%);
-    transition: -webkit-clip-path 0.5s;
-    transition: clip-path 0.5s;
-    transition: clip-path 0.5s, -webkit-clip-path 0.5s;
-    font-size: 1.7rem;
-  }
-  .about .about__card:hover > .text {
-    -webkit-clip-path: circle(120% at 50% 90%);
-            clip-path: circle(120% at 50% 90%);
   }
   .comercialGallery,
 .nonComercialGallery {
