@@ -572,9 +572,9 @@ header::before{
 	overflow: hidden;
 	
 	
-	.icon-animation{
-		animation:tilt-n-move-shaking 0.5s infinite;
-	}
+	// .icon-animation{
+	// 	animation:tilt-n-move-shaking 0.5s infinite;
+	// }
 	
 	&__box {
 		display: grid;
@@ -589,7 +589,8 @@ header::before{
 		justify-items: center;
 		align-items: center;
 		justify-content: center;
-		padding: 6.5em;
+		// padding: 6.5em;
+		padding: 3.5em;
 		text-align: center;
 		border: 1px solid transparent;
 		border-radius: 8px;
@@ -600,18 +601,18 @@ header::before{
 		
 		// overflow: hidden;
 		.text {
-			position: absolute;
-			font-size: 1.6rem;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			padding: 2em 0.5em;
-			border-radius: 8px;
+			// position: absolute;
+			// font-size: 1.6rem;
+			// width: 100%;
+			// height: 100%;
+			// display: flex;
+			// align-items: center;
+			// padding: 2em 0.5em;
+			// border-radius: 8px;
 		
-			background-color: #fff;
-			clip-path: circle(0% at 50% 50%);
-			transition: clip-path 0.5s;
+			// background-color: #fff;
+			// clip-path: circle(0% at 50% 50%);
+			// transition: clip-path 0.5s;
 		}
 
 		&:hover {
@@ -619,9 +620,9 @@ header::before{
 			border: 1px solid $main-color;
 			z-index: 1;
 		}
-		&:hover > .text {
-			clip-path: circle(120% at 50% 90%);
-		}
+		// &:hover > .text {
+		// 	clip-path: circle(120% at 50% 90%);
+		// }
 		
 
 		&::before {
@@ -1464,44 +1465,7 @@ footer {
 		font-size: 2.6rem;
 	}
 	
-	.about {
-		&__box {
-			padding: 5em 2em;
-		}
-
-		&__card {
-			i {
-				animation:none;
-			}
-			&--one {
-				grid-row: 1/2;
-				grid-column: 1/4;
-			}
-			&--two {
-				grid-row: 1/2;
-				grid-column: 4/7;
-			}
-			&--three {
-				grid-row: 1/2;
-				grid-column: 7/10;
-			}
-			&--four {
-				grid-row: 2/3;
-				grid-column: 1/4;
-			}
-			&--five {
-				grid-row: 2/3;
-				grid-column: 4/7;
-			}
-			&--six {
-				grid-row: 2/3;
-				grid-column: 7/10;
-			}
-			.text{
-				font-size: 1.5rem;
-			}
-		}
-	}
+	
 	.contact {
 		h3 {
 			text-align: left;
@@ -1727,15 +1691,68 @@ footer {
 	}
 
 	.about {
-	
-		&__card{
-			.icon-animation{
-				animation:none;
+		.about {
+			&__box {
+				padding: 5em 2em;
 			}
-			.text{
-				font-size: 1.7rem;
+	
+			&__card {
+				padding: 6.5em;
+				i {
+					animation:none;
+				}
+				&--one {
+					grid-row: 1/2;
+					grid-column: 1/4;
+				}
+				&--two {
+					grid-row: 1/2;
+					grid-column: 4/7;
+				}
+				&--three {
+					grid-row: 1/2;
+					grid-column: 7/10;
+				}
+				&--four {
+					grid-row: 2/3;
+					grid-column: 1/4;
+				}
+				&--five {
+					grid-row: 2/3;
+					grid-column: 4/7;
+				}
+				&--six {
+					grid-row: 2/3;
+					grid-column: 7/10;
+				}
+				.text{
+					position: absolute;
+					// font-size: 1.6rem;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					padding: 2em 0.5em;
+					border-radius: 8px;
+				
+					background-color: #fff;
+					clip-path: circle(0% at 50% 50%);
+					transition: clip-path 0.5s;
+					font-size: 1.7rem;
+				}
+				&:hover > .text {
+					clip-path: circle(120% at 50% 90%);
+				}
 			}
 		}
+		// &__card{
+		// 	.icon-animation{
+		// 		animation:none;
+		// 	}
+		// 	.text{
+		// 		font-size: 1.7rem;
+		// 	}
+		// }
 		
 	}
 	.comercialGallery,
