@@ -787,6 +787,7 @@ header::before {
   justify-content: center;
   padding: 2em 0.5em;
   border-radius: 8px;
+  will-change: auto;
   background-color: #fff;
   -webkit-clip-path: circle(0% at 50% 0%);
           clip-path: circle(0% at 50% 0%);

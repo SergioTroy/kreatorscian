@@ -42,7 +42,7 @@ window.onscroll = function elementInViewport() {
 				cards[i].style.backgroundColor = '#ebeff6'
 				cards[i].style.border = '1px solid transparent'
 				cards[i].style.zIndex = 0
-				texts[i].style.clipPath = 'circle(0% at 50% 50%)';
+				texts[i].style.clipPath = 'circle(0% at 50% 0%)';
 			}
 		}
 	}
