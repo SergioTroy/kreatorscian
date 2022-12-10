@@ -790,9 +790,9 @@ header::before {
   background-color: #fff;
   -webkit-clip-path: circle(0% at 50% 50%);
           clip-path: circle(0% at 50% 50%);
-  transition: -webkit-clip-path 0.8s;
-  transition: clip-path 0.8s;
-  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+  transition: -webkit-clip-path 1.5s;
+  transition: clip-path 1.5s;
+  transition: clip-path 1.5s, -webkit-clip-path 1.5s;
 }
 .about__card:hover {
   background-color: white;
@@ -1823,6 +1823,11 @@ footer .rodo a:hover {
   .about .about__card--six {
     grid-row: 2/3;
     grid-column: 7/10;
+  }
+  .about .about__card .text {
+    transition: -webkit-clip-path 0.8s;
+    transition: clip-path 0.8s;
+    transition: clip-path 0.8s, -webkit-clip-path 0.8s;
   }
   .comercialGallery,
 .nonComercialGallery {
